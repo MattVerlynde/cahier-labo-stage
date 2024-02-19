@@ -38,7 +38,7 @@ To understand this intuitively, let us visualize the 2D-case:
 On the left side is an ill-conditioned sytem since moveving slighty one of the line produce a vastly different solution while on the right it is not so big.
 
 <div style="display: flex">
-{{< chart 45 400 >}}
+{{< chart 45 400 true>}}
 {
             type: 'scatter',
             data: {
@@ -87,7 +87,7 @@ On the left side is an ill-conditioned sytem since moveving slighty one of the l
 }
 {{< /chart >}}
 
-{{< chart 45 400 >}}
+{{< chart 45 400 true>}}
 {
             type: 'scatter',
             data: {
