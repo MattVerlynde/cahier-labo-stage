@@ -1,0 +1,14 @@
+<!-- Taken from: https://github.com/shen-yu/hugo-chart -->
+{{ $seed := "foo" }}
+{{ $id := delimit (shuffle (split (md5 $seed) "" )) "" }}
+
+<script src="../pseudocode.min.js"></script>
+<link rel="stylesheet" href="../pseudocode.min.css">
+
+<pre id="{{ $id }}">
+{{ .Inner | chomp}}
+</pre>
+
+<script>
+pseudocode.renderElement(document.getElementById("{{ $id }}"));
+</script>

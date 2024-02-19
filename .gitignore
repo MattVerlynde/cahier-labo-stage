@@ -1,0 +1,8 @@
+.hugo_build.lock
+.lock
+.DS_Store
+node_modules
+dist
+tmp
+/public
+/ressources
