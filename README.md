@@ -4,7 +4,11 @@ Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir d
 
 ## Utilisation
 
-Un guide pour modifier le template est disponible en compilant ce code.
+Un guide pour modifier le template est disponible en compilant ce code. Une dépendence à hugo-cite est donéne sous fore de submodule. Ainsi pour obtenir tout le code, lancer:
+
+```console
+git clone https://github.com/AmmarMian/template_cahierlabo --recurse-submodules
+```
 
 ### Hugo
 
