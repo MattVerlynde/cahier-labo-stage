@@ -1,6 +1,6 @@
 # Template pour cahier de laboratoire
 
-Ceci es tun projet d'exemple pour générer un cahier de laboratoire à partir de mardown.
+Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir de mardown.
 
 ## Utilisation
 
