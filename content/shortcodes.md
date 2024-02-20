@@ -332,3 +332,5 @@ donne:
 {{<info>}}
 Il faut parfois relancer la page pour que l'affichage fasse effet. (Importation de MathJax).
 {{</info>}}
+
+
