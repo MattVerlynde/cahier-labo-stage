@@ -5,8 +5,10 @@ on:
     branches:
       - main  # Set a branch to deploy
   pull_request:
+
 permissions:
   contents: write
+  
 jobs:
   deploy:
     runs-on: ubuntu-22.04
@@ -25,7 +27,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
