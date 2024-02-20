@@ -4,7 +4,7 @@
     <img src="static/screenshot.png" alt="screenshot" width="75%"/>
 </div>
 
-Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir de mardown.
+Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir de mardown. Une démo en ligne est disponible [ici](https://ammarmian.github.io/template_cahierlabo/).
 
 
 ## Utilisation
