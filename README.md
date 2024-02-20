@@ -1,6 +1,11 @@
 # Template pour cahier de laboratoire
 
+<div style="text-align: center">
+    <img src="static/screenshot.png" alt="screenshot" width="75%"/>
+</div>
+
 Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir de mardown.
+
 
 ## Utilisation
 
