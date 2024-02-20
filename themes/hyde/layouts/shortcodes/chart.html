@@ -12,24 +12,42 @@
   outline: 0;
   border: none;
   cursor: pointer;
-  height: 40px;
-  padding: 12px 17px;
+  height: 15px;
+  padding: 12px;
+  padding-bottom: 20px;
+  text-align: center;
   border-radius: 50px;
   background-color: #2222220d;
   color: #222;
-  font-size: 16px;
-  font-weight: 500;
-  :hover {
-  background-color: #2222221a;
-  }
-
+  font-size: 11px;
+  font-weight: 300;
 }
+
+@media (max-width: 550px) {
+  .btn {
+    margin-top: 10px;
+  }
+}
+
+.btn:hover{
+  background-color: #222222;
+  color: #fff;
+}
+
+#btncontainer{
+  text-align: center;
+  margin-left:0px;
+  margin-top:10px;
+}
+
+
+
 </style>
 
 {{if $zoom}}
 <div style="width: {{ $w }}%;height: {{ $h }}px;margin: 0 auto; margin-bottom: 70px">
     <canvas id="{{ $id }}"></canvas>
-      <div style="text-align: left; margin-left:30px; margin-top:20px">
+  <div id="btncontainer">
     <button id="resetZoom-{{ $id }}" class="btn btn-primary"><i class="fa-solid fa-house"></i> Reset Zoom</button>
     <button id="toggleZoom-{{ $id }}" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Enable Zoom</button>
       </div>
