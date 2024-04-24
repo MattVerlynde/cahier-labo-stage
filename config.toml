@@ -3,7 +3,7 @@ relativeURLs = true
 languageCode = "en-us"
 theme = ["hyde", "hugo-cite"]
 title = """
-Projet
+Stage optimisation analyse d'images satellites
 """
 
 [params]
@@ -11,11 +11,12 @@ disqusShortname = ""
 googleAnalytics = ""
 layoutReverse = false
 description = """
-Un template de cahier de laboratoire
+Cahier de laboratoire sur l'optimisation d'algorithmes d'analyse d'image en télédetection, appliqué sur des images SAR.
 """
 math = true
 copyright = """
-Made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.
+Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.
 
 @2023 Université Savoie Mont-Blanc. All rights reserved.
 """
