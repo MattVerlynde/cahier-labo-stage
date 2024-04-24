@@ -372,5 +372,135 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "li2017",
+		"type": "paper-conference",
+		"abstract": "By stacking layers of convolution and nonlinearity, convolutional networks (ConvNets) effectively learn from lowlevel to high-level features and discriminative representations. Since the end goal of large-scale recognition is to delineate complex boundaries of thousands of classes, adequate exploration of feature distributions is important for realizing full potentials of ConvNets. However, state-of-theart works concentrate only on deeper or wider architecture design, while rarely exploring feature statistics higher than ﬁrst-order. We take a step towards addressing this problem. Our method consists in covariance pooling, instead of the most commonly used ﬁrst-order pooling, of highlevel convolutional features. The main challenges involved are robust covariance estimation given a small sample of large-dimensional features and usage of the manifold structure of covariance matrices. To address these challenges, we present a Matrix Power Normalized Covariance (MPNCOV) method. We develop forward and backward propagation formulas regarding the nonlinear matrix functions such that MPN-COV can be trained end-to-end. In addition, we analyze both qualitatively and quantitatively its advantage over the well-known Log-Euclidean metric. On the ImageNet 2012 validation set, by combining MPN-COV we achieve over 4%, 3% and 2.5% gains for AlexNet, VGG-M and VGG-16, respectively; integration of MPN-COV into 50-layer ResNet outperforms ResNet-101 and is comparable to ResNet-152. The source code will be available on the project page: http://www.peihuali.org/MPN-COV.",
+		"container-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+		"DOI": "10.1109/ICCV.2017.228",
+		"event-place": "Venice",
+		"event-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+		"ISBN": "978-1-5386-1032-9",
+		"language": "en",
+		"page": "2089-2097",
+		"publisher": "IEEE",
+		"publisher-place": "Venice",
+		"source": "DOI.org (Crossref)",
+		"title": "Is Second-Order Information Helpful for Large-Scale Visual Recognition?",
+		"URL": "http://ieeexplore.ieee.org/document/8237490/",
+		"author": [
+			{
+				"family": "Li",
+				"given": "Peihua"
+			},
+			{
+				"family": "Xie",
+				"given": "Jiangtao"
+			},
+			{
+				"family": "Wang",
+				"given": "Qilong"
+			},
+			{
+				"family": "Zuo",
+				"given": "Wangmeng"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "huang2016",
+		"type": "article",
+		"abstract": "Symmetric Positive Deﬁnite (SPD) matrix learning methods have become popular in many image and video processing tasks, thanks to their ability to learn appropriate statistical representations while respecting Riemannian geometry of underlying SPD manifolds. In this paper we build a Riemannian network architecture to open up a new direction of SPD matrix non-linear learning in a deep model. In particular, we devise bilinear mapping layers to transform input SPD matrices to more desirable SPD matrices, exploit eigenvalue rectiﬁcation layers to apply a non-linear activation function to the new SPD matrices, and design an eigenvalue logarithm layer to perform Riemannian computing on the resulting SPD matrices for regular output layers. For training the proposed deep network, we exploit a new backpropagation with a variant of stochastic gradient descent on Stiefel manifolds to update the structured connection weights and the involved SPD matrix data. We show through experiments that the proposed SPD matrix network can be simply trained and outperform existing SPD matrix learning and state-of-the-art methods in three typical visual classiﬁcation tasks.",
+		"language": "en",
+		"note": "arXiv:1608.04233 [cs]",
+		"number": "arXiv:1608.04233",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "A Riemannian Network for SPD Matrix Learning",
+		"URL": "http://arxiv.org/abs/1608.04233",
+		"author": [
+			{
+				"family": "Huang",
+				"given": "Zhiwu"
+			},
+			{
+				"family": "Van Gool",
+				"given": "Luc"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					12,
+					22
+				]
+			]
+		}
+	},
+	{
+		"id": "boumal2023",
+		"type": "book",
+		"abstract": "Optimization on Riemannian manifolds-the result of smooth geometry and optimization merging into one elegant modern framework-spans many areas of science and engineering, including machine learning, computer vision, signal processing, dynamical systems and scientific computing. This text introduces the differential geometry and Riemannian geometry concepts that will help students and researchers in applied mathematics, computer science and engineering gain a firm mathematical grounding to use these tools confidently in their research. Its charts-last approach will prove more intuitive from an optimizer's viewpoint, and all definitions and theorems are motivated to build time-tested optimization algorithms. Starting from first principles, the text goes on to cover current research on topics including worst-case complexity and geodesic convexity. Readers will appreciate the tricks of the trade for conducting research and for numerical implementations sprinkled throughout the book.",
+		"edition": "1",
+		"ISBN": "978-1-00-916616-4",
+		"language": "en",
+		"license": "https://www.cambridge.org/core/terms",
+		"note": "DOI: 10.1017/9781009166164",
+		"publisher": "Cambridge University Press",
+		"source": "DOI.org (Crossref)",
+		"title": "An Introduction to Optimization on Smooth Manifolds",
+		"URL": "https://www.cambridge.org/core/product/identifier/9781009166164/type/book",
+		"author": [
+			{
+				"family": "Boumal",
+				"given": "Nicolas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					16
+				]
+			]
+		}
 	}
 ]

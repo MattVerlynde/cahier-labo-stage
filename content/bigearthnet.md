@@ -21,6 +21,9 @@ Chaque patch (ensemble d'images sur le même lieu) est labellisé avec plusieurs
 <iframe src="../bigearthnet/class_distribution.html"
 width="1000" height="800" style="border: none;"></iframe>
 
+<iframe src="../bigearthnet/patch_label_visualization.html"
+width="1200" height="1000" style="border: none;"></iframe>
+
 ## Reproduction des expériences de la littérature
 
 {{<cite "sumbul2019">}} {{<cite "sumbul2021">}}
