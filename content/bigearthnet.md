@@ -352,15 +352,21 @@ Métriques de performances utilisées: F1-score (F1), F2-score (F2), précision 
 
 | Simulation | Modèle | Optimiseur | Fonction de coût | Taux d'apprentissage | Taille de batch | Epoques | Echantillon d'apprentissage | Echantillon de test | 
 |:-----:|------------------|------|------------------------|:-----:|:---:|:---:|:----------------:|:------------:|
-| **1** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 50  | **6%** (26969)  | 20% (125866) |
-| **2** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 150 | **6%** (26969)   | 20% (125866) |
-| **3** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.6%** (2697)  | 20% (125866) |
-| **4** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.6%** (2697)  | 20% (125866) |
-| **5** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.6%** (2697)  | 20% (125866) |
-| **6** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.06%** (270)  | 20% (125866) |
-| **7** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **6%** (26969)   | 20% (125866) |
-| **8** | **ResNet50**     | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **60%** (269695) | 20% (125866) |
-| **9** | **K-BranchCNN**  | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **60%** (269695) | 20% (125866) |
+| **1** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 50  | **5%** (26969)   | 25% (125866) |
+| **2** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 150 | **5%** (26969)   | 25% (125866) |
+| **3** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.5%** (2697)  | 25% (125866) |
+| **4** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.5%** (2697)  | 25% (125866) |
+| **5** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.5%** (2697)  | 25% (125866) |
+| **6** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **0.05%** (270)  | 25% (125866) |
+| **7** | **Inception-V2** | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **5%** (26969)   | 25% (125866) |
+| **8** | **ResNet50**     | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **50%** (269695) | 25% (125866) |
+| **9** | **K-BranchCNN**  | Adam | Cross-entropy sigmoïde | 0.001 | 500 | 100 | **50%** (269695) | 25% (125866) |
+
+Sur des données échantillonnées aléatoirement
+| Simulation | Modèle | Optimiseur | Fonction de coût | Taux d'apprentissage | Taille de batch | Epoques | Echantillon d'apprentissage | Echantillon de validation | Echantillon de test |
+|:-----:|------------------|------|------------------------|:------:|:---:|:---:|:--------------:|:------------:|:------------:|
+| **A** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001  | 500 | 50  | **5%** (26969) | 25% (123723) | 25% (125866) |
+| **B** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.0001 | 500 | 50  | **5%** (26969) | 25% (123723) | 25% (125866) |
 
 
 #### Résultats
@@ -369,23 +375,28 @@ Résultats de nos expériences :
 
 | Simulation            | Précision (%) | Rappel (%) | F1     | F2     | F0.5   | Durée d'exécution (s) |
 |-----------------------|:-------------:|:----------:|:------:|:------:|:------:|-----------------------|
-| **S-CNN-All (1)**     | 72.57         | 56.01      | 0.5994 | 0.5700 | 0.6551 | **12797.3266**        |
-| **S-CNN-All (2)**     | 74.11         | 53.89      | 0.5889 | 0.5528 | 0.6552 | **22205.8385**        |
-| **S-CNN-All (3a)**    | 61.38         | 43.07      | 0.4746 | 0.4427 | 0.5343 | **2262.1319**         |
-| **S-CNN-All (3b)**    | 63.46         | 46.90      | 0.5058 | 0.4780 | 0.5607 | **2314.8287**         |
-| **S-CNN-All (3c)**    | 63.79         | 47.32      | 0.5116 | 0.4828 | 0.5665 | **2286.6310**         |
-| **S-CNN-RGB (4a)**    | 55.14         | 36.03      | 0.4058 | 0.3733 | 0.4668 | **1706.7541**         |
-| **S-CNN-RGB (4b)**    | 51.39         | 31.54      | 0.3628 | 0.3295 | 0.4252 | **1863.3753**         |
-| **S-CNN-RGB (4c)**    | 54.17         | 37.56      | 0.4139 | 0.3857 | 0.4679 | **1869.9280**         |
-| **Inception V2 (5a)** | 26.51         | 21.29      | 0.1671 | 0.1666 | 0.2022 | **2248.8830**         |
-| **Inception V2 (5b)** | 27.15         | 22.40      | 0.1961 | 0.1989 | 0.2220 | **2274.6610**         |
-| **Inception V2 (5c)** | 20.65         | 19.20      | 0.1452 | 0.1523 | 0.1653 | **2263.2047** |
-| **Inception V2 (6)**  | 6.14          | 37.19      | 0.1012 | 0.1707 | 0.0728 | **237.2814**          |
-| **Inception V2 (7)**  | 70.58         | 50.32      | 0.5566 | 0.5189 | 0.6228 | **22888.0167**        |
-| **ResNet50 (8)**      | 79.35         | 75.39      | 0.7500 | 0.7470 | 0.7685 | **Pré-entrainé**      |
-| **K-BranchCNN (9)**   | 76.51         | 77.01      | 0.7435 | 0.7530 | 0.7497 | **Pré-entrainé**      |
+| **S-CNN-All (1)**     | 72.57         | 56.01      | 0.5994 | 0.5700 | 0.6551 | 12797.3266            |
+| **S-CNN-All (2)**     | 74.11         | 53.89      | 0.5889 | 0.5528 | 0.6552 | 22205.8385            |
+| **S-CNN-All (3a)**    | 61.38         | 43.07      | 0.4746 | 0.4427 | 0.5343 | 2262.1319             |
+| **S-CNN-All (3b)**    | 63.46         | 46.90      | 0.5058 | 0.4780 | 0.5607 | 2314.8287             |
+| **S-CNN-All (3c)**    | 63.79         | 47.32      | 0.5116 | 0.4828 | 0.5665 | 2286.6310             |
+| **S-CNN-RGB (4a)**    | 55.14         | 36.03      | 0.4058 | 0.3733 | 0.4668 | 1706.7541             |
+| **S-CNN-RGB (4b)**    | 51.39         | 31.54      | 0.3628 | 0.3295 | 0.4252 | 1863.3753             |
+| **S-CNN-RGB (4c)**    | 54.17         | 37.56      | 0.4139 | 0.3857 | 0.4679 | 1869.9280             |
+| **Inception V2 (5a)** | 26.51         | 21.29      | 0.1671 | 0.1666 | 0.2022 | 2248.8830             |
+| **Inception V2 (5b)** | 27.15         | 22.40      | 0.1961 | 0.1989 | 0.2220 | 2274.6610             |
+| **Inception V2 (5c)** | 20.65         | 19.20      | 0.1452 | 0.1523 | 0.1653 | 2263.2047             |
+| **Inception V2 (6)**  | 6.14          | 37.19      | 0.1012 | 0.1707 | 0.0728 | 237.2814              |
+| **Inception V2 (7)**  | 70.58         | 50.32      | 0.5566 | 0.5189 | 0.6228 | 22888.0167            |
+| **ResNet50 (8)**      | 79.35         | 75.39      | 0.7500 | 0.7470 | 0.7685 | Pré-entrainé          |
+| **K-BranchCNN (9)**   | 76.51         | 77.01      | 0.7435 | 0.7530 | 0.7497 | Pré-entrainé          |
 
-Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur l'ensemble de la base de données BigEarthNet :
+| Simulation            | Précision (%) | Rappel (%) | F1     | F2     | F0.5   | Durée d'exécution (s) |
+|-----------------------|:-------------:|:----------:|:------:|:------:|:------:|-----------------------|
+| **S-CNN-All (A)**     |  |  |  |  |  |  |
+| **S-CNN-All (B)**     |  |  |  |  |  |  |
+
+Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur **l'ensemble de la base de données BigEarthNet** :
 
 | Méthode              | Précision (%) | Rappel (%) | F1     | F2     |
 |----------------------|:-------------:|:----------:|:------:|:------:|
