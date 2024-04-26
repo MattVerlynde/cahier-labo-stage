@@ -366,15 +366,13 @@ Sur des données échantillonnées aléatoirement :
 
 | Simulation | Modèle | Optimiseur | Fonction de coût | Taux d'apprentissage | Taille de batch | Epoques | Echantillon d'apprentissage | Echantillon de validation | Echantillon de test |
 |:-----:|------------------|------|------------------------|:------:|:---:|:---:|:--------------:|:------------:|:------------:|
-| **A** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001  | 500 | 50  | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **B** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.0001 | 500 | 50  | **5%** (26969) | 25% (123723) | 25% (125866) |
+| **A** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.0001 | 500 | 50  | **5%** (26969) | 25% (123723) | 25% (125866) |
 
 #### Caractéristiques computationnelles
 
-CPU : 12th Gen Intel(R) Core(TM) i5-12600
+CPU : Intel i5-12600 3.30GHz
 GPU : NVIDIA T400 4GB
-RAM : 64 GiB
-
+RAM : 2 32 GB
 
 #### Résultats
 
@@ -400,8 +398,7 @@ Résultats de nos expériences :
 
 | Simulation            | Précision (%) | Rappel (%) | F1     | F2     | F0.5   | Durée d'exécution (s) |
 |-----------------------|:-------------:|:----------:|:------:|:------:|:------:|-----------------------|
-| **S-CNN-All (A)**     |  |  |  |  |  |  |
-| **S-CNN-All (B)**     |  |  |  |  |  |  |
+| **S-CNN-All (A)**     | 66.60         | 61.01      | 0.6074 | 0.6025 | 0.6315 |  |
 
 Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur **l'ensemble de la base de données BigEarthNet** :
 
@@ -424,11 +421,7 @@ Evolution de la fonction de coût au cours de l'entraînement pour le modèle In
 width="1000" height="500" style="border: none;"></iframe>
 
 Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-All (A) :
-<iframe src="../bigearthnet/training_losses_S-CNN-All_epochs_val_lr3.html"
-width="1000" height="500" style="border: none;"></iframe>
-
-Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-All (B) :
-<iframe src="../bigearthnet/training_losses_S-CNN-All_epochs_val_lr4.html"
+<iframe src="../bigearthnet/training_losses_S-CNN-All_epochs_val_compar.html"
 width="1000" height="500" style="border: none;"></iframe>
 
 <!--

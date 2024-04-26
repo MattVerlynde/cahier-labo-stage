@@ -502,5 +502,53 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "ionescu2015",
+		"type": "paper-conference",
+		"abstract": "Deep neural network architectures have recently produced excellent results in a variety of areas in artiﬁcial intelligence and visual recognition, well surpassing traditional shallow architectures trained using hand-designed features. The power of deep networks stems both from their ability to perform local computations followed by pointwise non-linearities over increasingly larger receptive ﬁelds, and from the simplicity and scalability of the gradient-descent training procedure based on backpropagation. An open problem is the inclusion of layers that perform global, structured matrix computations like segmentation (e.g. normalized cuts) or higher-order pooling (e.g. log-tangent space metrics deﬁned over the manifold of symmetric positive definite matrices) while preserving the validity and efﬁciency of an end-to-end deep training framework. In this paper we propose a sound mathematical apparatus to formally integrate global structured computation into deep computation architectures. At the heart of our methodology is the development of the theory and practice of backpropagation that generalizes to the calculus of adjoint matrix variations. We perform segmentation experiments using the BSDS and MSCOCO benchmarks and demonstrate that deep networks relying on second-order pooling and normalized cuts layers, trained end-to-end using matrix backpropagation, outperform counterparts that do not take advantage of such global layers.",
+		"container-title": "2015 IEEE International Conference on Computer Vision (ICCV)",
+		"DOI": "10.1109/ICCV.2015.339",
+		"event-place": "Santiago, Chile",
+		"event-title": "2015 IEEE International Conference on Computer Vision (ICCV)",
+		"ISBN": "978-1-4673-8391-2",
+		"language": "en",
+		"page": "2965-2973",
+		"publisher": "IEEE",
+		"publisher-place": "Santiago, Chile",
+		"source": "DOI.org (Crossref)",
+		"title": "Matrix Backpropagation for Deep Networks with Structured Layers",
+		"URL": "http://ieeexplore.ieee.org/document/7410696/",
+		"author": [
+			{
+				"family": "Ionescu",
+				"given": "Catalin"
+			},
+			{
+				"family": "Vantzos",
+				"given": "Orestis"
+			},
+			{
+				"family": "Sminchisescu",
+				"given": "Cristian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					12
+				]
+			]
+		}
 	}
 ]
