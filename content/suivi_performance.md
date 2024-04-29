@@ -424,3 +424,28 @@ Format de sortie dans `metrics_output` :
 
 [...]
 ```
+
+## Suivre les performances énergétiques
+
+```bash
+sudo docker run -d \
+  --name homeassistant \
+  --privileged \
+  --restart=unless-stopped \
+  -e TZ=Europe/Paris \
+  -v /home/verlyndem/homeassistant:/config \
+  -v /run/dbus:/run/dbus:ro \
+  --network=host \
+  ghcr.io/home-assistant/home-assistant:stable
+```
+
+```bash
+sudo docker run -d \
+  --restart=always \
+  -p 8091:8091 \
+  -p 5000:3000 \
+  --device=/dev/ttyUSB0 \
+  --name="zwave-js" \
+  -e "TZ=Europe/Paris" \
+  -v ~/homeassistant/docker/zwave-js:/usr/src/app/store zwavejs/zwavejs2mqtt:latest
+```

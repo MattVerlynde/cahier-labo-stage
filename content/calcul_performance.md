@@ -1,6 +1,6 @@
 ---
 layout: page
-title: II. Mesures de performance d'algorithme
+title: II. Bibliographie - Mesures de performance d'algorithme
 menu:
   main:
     weight: 2

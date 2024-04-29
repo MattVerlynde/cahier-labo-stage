@@ -8,7 +8,7 @@ bibFile: content/bibliography.json
 toc: True
 ---
 
-Notes de lectures de bibliographie sur les méthodes de covariance et d'optimisation.
+Notes de lectures de bibliographie sur les méthodes de _covariance pooling_ et d'optimisation.
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Notes de lectures de bibliographie sur les méthodes de covariance et d'optimisa
 
 {{<cite "li2017">}} {{<cite "huang2016">}} {{<cite "boumal2023">}} 
 
-## Questions
+### Is Second-order Information Helpful for Large-scale Visual Recognition?
 
 Sur l'article de {{<cite "li2017">}} :
 
@@ -95,7 +95,9 @@ Sur l'article de {{<cite "li2017">}} :
   * Comparaison suivant la **masse de données en entrée**, montrer que les performances sont élevées pour de grandes masses de données, mais donner une analyse quantitative du lien entre taille d'échantillon et performances suivant le modèle (là où le papier ne présente des rsultats que sur un seul même échantilllon pour l'ensemble des réseaux).
 
 
+### A Riemannian Network for SPD Matrix Learning
+
+Sur l'article de {{<cite "huang2016">}} :
 
 
 
-  
