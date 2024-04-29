@@ -36,7 +36,22 @@ Méthode d'estimation de covariance basée sur la vN-MLE (__von Neumann Maximum 
 
 * Quelles sont les résultats obtenus et avec quelle démarche méthodologique ?
 
-Comparaison de la méthode suivant plusieurs valeurs de paramètres, 
+  * Comparaison des taux d'erreur de type top-1 de la méthode suivant plusieurs valeurs du paramètre $\alpha$ (exposant de la matrice de puissance), implémenté sur AlexNet
+  
+    Le taux d'erreur de type top-1 correspond à la proportion du temps où le classifieur donne la probabilité la plus élevée à la mauvaise classe. Le taux d'erreur de type top-5 correspond à la proportion du temps où la classe réelle ne fait pas partie des 5 classes prédites avec la plus grande probabilité par prédiction.
+
+    Le paramètre $\alpha$ montre une diminution du taux d'erreur top-1 lorsque le paramètre est compris entre 0 et 1. Cette diminution est plus importante autour de $\alpha = 0.5$, mais tend à être moins importante lorsque $\alpha$ diminue en dessous de $0.5$.
+  
+  
+  * Comparaison des taux d'erreurs de type top-1 et top-5 avec d'autres méthodes de normalisation (M-Fro et M-l2) implémenté sur AlexNet,
+  
+    
+  
+  * Comparaison des taux d'erreurs de type top-1 et top-5 avec d'autres méthodes basées sur des statistiques d'ordre 2 (B-CNN et DeepO<sub>2</sub>P)
+
+
+
+  * Aussi implémentation dans des réseaux de neurones classiques (VGG-M, VGG-16, ResNet-50) et comparaison avec des taux d'erreurs avec et sans implémentation de la méthode, et avec d'autres réseaux classiques (PreLU-net B, GoogleNet)
 
 
 * Qu’est ce qu’on peut critiquer/améliorer sur la démarche du papier ?
