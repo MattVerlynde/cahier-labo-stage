@@ -396,9 +396,11 @@ Résultats de nos expériences :
 | **ResNet50 (8)**      | 79.35         | 75.39      | 0.7500 | 0.7470 | 0.7685 | Pré-entrainé          |
 | **K-BranchCNN (9)**   | 76.51         | 77.01      | 0.7435 | 0.7530 | 0.7497 | Pré-entrainé          |
 
-| Simulation            | Précision (%) | Rappel (%) | F1     | F2     | F0.5   | Durée d'exécution (s) |
+| Simulation            | Précision (%) | Rappel (%) | F1     | F2     | F0.5   | Durée d'exécution (s) | Commentaire |
 |-----------------------|:-------------:|:----------:|:------:|:------:|:------:|-----------------------|
-| **S-CNN-All (A)**     | 66.60         | 61.01      | 0.6074 | 0.6025 | 0.6315 |  |
+| **S-CNN-All (Aa)**     | 66.60         | 61.01      | 0.6074 | 0.6025 | 0.6315 | 27245.5799 | Réalisé sur CPU |
+| **S-CNN-All (Aa)**     |          |       |  |  |  |  | Réalisé sur GPU |
+| **S-CNN-All (Ab)**     | 66.74         | 60.53      | 0.6054 | 0.5989 | 0.6312 | 13666.1457 | Réalisé sur GPU |
 
 Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur **l'ensemble de la base de données BigEarthNet** :
 
