@@ -427,25 +427,111 @@ Format de sortie dans `metrics_output` :
 
 ## Suivre les performances énergétiques
 
+Récupération du nom du controleur USB :
+
+```bash
+dmesg | grep tty
+```
+
+Création du container Docker de l'application Home Assistant (dashboard spécifique optimisé pour Z-Wave): 
+
 ```bash
 sudo docker run -d \
   --name homeassistant \
   --privileged \
   --restart=unless-stopped \
   -e TZ=Europe/Paris \
-  -v /home/verlyndem/homeassistant:/config \
+  -v ~/homeassistant:/config \
   -v /run/dbus:/run/dbus:ro \
   --network=host \
   ghcr.io/home-assistant/home-assistant:stable
 ```
 
+Création du dossier contenant les configurations de Z-Wave: 
+
+```bash
+cd homeassistant
+mkdir docker
+mkdir docker/zwave-js
+```
+
+Création du container Docker de l'application Z-Wave JS: 
+
 ```bash
 sudo docker run -d \
   --restart=always \
   -p 8091:8091 \
-  -p 5000:3000 \
-  --device=/dev/ttyUSB0 \
+  -p 3002:3000 \
+  --device=[CONTROLLER_NAME] \
   --name="zwave-js" \
   -e "TZ=Europe/Paris" \
   -v ~/homeassistant/docker/zwave-js:/usr/src/app/store zwavejs/zwavejs2mqtt:latest
 ```
+
+Configuration de Z-Wave JS sur le port associé:
+
+Pour configurer l'application Z-Wave JS afin de collecter les données de la prise intelligente, rendons nous à l'adresse `http://localhost:8091` et dans l'onglet `Smart Start`.
+
+![Smart Start](/config_suivi/smart-switch/smart-start.png)
+
+Ajoutons les informations de notre périphérique Smart Switch, via le bouton `Add`, et ajoutons le code DSK de la prise intelligente (indiqué sur l'emballage) et activons tous les systèmes de sécurité.
+
+![Add device](/config_suivi/smart-switch/add-device.png)
+![New entry](/config_suivi/smart-switch/new-entry.png)
+
+Une fois la prise intelligente connectée, configurons les paramètres de l'application. Dans l'onglet `Settings`, et la partie `Z-Wave`, ajoutons le nom du contrôleur USB identifié précedemment avant la création des conteneurs Docker. 
+
+![Configure Z-Wave](/config_suivi/smart-switch/config-zwave.png)
+
+Vérifions que l'enregistrement des statistiques est activé.
+
+![Enable statistics](/config_suivi/smart-switch/enable-stats.png)
+
+Enfin, dans la partie Home Assistant, ajoutons l'adresse IP du conteneur Z-Wave comme hôte. Celle-ci peut être identifiée via la commande `docker sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' zwave-js` dans le terminal. Nous pouvons aussi modifier le port si nous le souhaitons.
+
+![Configure Home Assistant](/config_suivi/smart-switch/config-homeassist.png)
+
+Maintenant que l'application Z-Wave JS est configurée, rendons nous à l'adresse `http://localhost:8123` pour configurer l'application Home Assistant. Commençopns par créer un compte en suivant la procédure guidée à l'écran.
+Une fois notre compte créé, ajoutons le périphérique d'intérêt.
+
+Dans l'onglet `Settings`, rendons-nous sur la page `Devices & services`.
+![Add device](/config_suivi/smart-switch/add-device-ha.png)
+
+Ajoutons une intégration Z-Wave en nous rendant sur la fonction `Add integration` et en sélectionnant `Z-Wave`. Il nous faut alors renseigner l'adresse configurée dans les paramètres de Z-Wave JS sous la forme `ws://[IP du conteneur zwave-js]:[port configuré]`.
+![Connect to Z-Wave](/config_suivi/smart-switch/connect-zwave-ha.png)
+
+Séléctionnons notre périphérique Smart Switch 7, et nous avons alors bien ajouté notre périphérique. Nous pouvons alors observer les premières acquisitions de données de la prise intelligente, et créer un dashboard si nous le souhaitons.
+![Get first data](/config_suivi/smart-switch/first-data.png)
+
+### Connection à InfluxDB
+
+```sh
+pid_file /var/run/mosquitto.pid
+
+persistence true
+persistence_location /mosquitto/data/
+
+log_dest file /mosquitto/log/mosquitto.log
+log_dest stdout
+
+password_file /mosquitto/config/mosquitto.passwd
+allow_anonymous false
+```
+
+```bash
+sudo docker run -d \
+  --restart=always \
+  -p 1883:1883 \
+  --name="mosquitto" \
+  -v ~/homeassistant/docker/mqtt:/mosquitto eclipse-mosquitto:1.6.15
+```
+
+```bash
+sudo docker run --it mosquitto sh
+```
+
+```bash
+mosquitto_passwd -c mosquitto/config/mosquitto.passwd [user]
+[password]
+```
+
