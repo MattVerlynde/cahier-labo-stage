@@ -24,22 +24,31 @@ Ce rapport sera évalué essentiellement sur la qualité de la définition de l'
 
 Titre du stage: Rechercher un titre bref (éventuellement complété d'un sous-titre), centré sur un ou deux mots-clefs, caractérisant le principal apport scientifique ou technique attendu du stage.
 Couverture et page de titre normalisée.
-* Encadrement et environnement : 
-    - Directeur du stage 
-    - Localisation du bureau (téléphone) du directeur du stage et du stagiaire 
-    - Description de l'établissement d'accueil, du service d'accueil et de la situation du second dans le premier. 
-    - Personnes et organismes appelés à intervenir, contrats, moyens (langages informatiques, systèmes de traitement de texte...)
+
+* Encadrement et environnement :
+
+    Directeur du stage
+    Localisation du bureau (téléphone) du directeur du stage et du stagiaire
+    Description de l'établissement d'accueil, du service d'accueil et de la situation du second dans le premier.
+    Personnes et organismes appelés à intervenir, contrats, moyens (langages informatiques, systèmes de traitement de texte...)
+
 * Travail projeté :
-    - Présentation du sujet,
-    - Echéancier des travaux avec les dates absolues,
-    - Position dans l'organigramme de l'entreprise et du projet.
+
+    Présentation du sujet,
+    Echéancier des travaux avec les dates absolues,
+    Position dans l'organigramme de l'entreprise et du projet.
+
 * Intérêt du travail :
-    - État actuel des connaissances scientifiques et techniques sur le sujet.
-    - Apport attendu du travail (création de concepts, de méthodologie, d'outils scientifiques ou techniques, résultats originaux, application dans un domaine nouveau d'outils connus, étude exploratoire...),
-    - Disciplines concernées,
-    - Intérêt par rapport à la formation à la DA IODAA et par rapport aux métiers d'ingénieur AgroParisTech.
+
+    État actuel des connaissances scientifiques et techniques sur le sujet.
+    Apport attendu du travail (création de concepts, de méthodologie, d'outils scientifiques ou techniques, résultats originaux, application dans un domaine nouveau d'outils connus, étude exploratoire...),
+    Disciplines concernées,
+    Intérêt par rapport à la formation à la DA IODAA et par rapport aux métiers d'ingénieur AgroParisTech.
+
 * Bibliographie
+
 * En annexe, travail déjà effectué, fiches de lectures...
+
 
 ## Plan détaillé du rapport intermédiaire
 
@@ -59,13 +68,13 @@ Couverture et page de titre normalisée.
 
     * __B. Contexte scientifique__
 
-    Présentation courte des enjeux de la télédétection (domaines d'application, en lien avec les thèmes abordés en AFUTÉ), 
+    Présentation courte des enjeux de la télédétection (domaines d'application, en lien avec les thèmes abordés en AFUTÉ), présentation de l'imagerie SAR
 
 * __II. Projet__
 
     * __A. Présentation du projet__
 
-    Objectifs initiaux du stage, comme présenté 
+    Objectifs initiaux du stage, comme présenté dans la proposition de stage, problématique
 
     * __B. Etat de l'art__
 
@@ -75,14 +84,30 @@ Couverture et page de titre normalisée.
 
         * __1. Construction d'un référentiel méthodologique__
 
+        Début du stage, détection de changement sur images SAR basé sur les estimations de covariances, rpise en main des données SAR 
+
         * __2. Enregistrement de données d'efficience computationnelle__
         
+        Présentation de l'architecture Telegraf-InfluxDB-Grafana et de la connection Z-Wave-HomeAssistant (et MQTT ?), visualisation des consommations électriques
+
         * __3. Cas d'étude sur la base de données BigEarthNet__
+
+        Présentation de la base de données, des architectures testées pour créer la baseline et des tests réalisés, résultats intermédiaires
 
     * __D. Planification future__
 
+    Implémentation du covariance pooling, tests de performances électriques sur la base BigEarthNet, fusion d'inforamtion et choix d'une métrique de performance comprenant les performances calculatoires de la méthode et l'efficience énergétique.
+
 * __III. Intérêt pour la formation AgroParisTech__
 
-* __IV. Conclusion et perspectives__
+Démarche de projet construite, mise en situation sur des vraies données de consommation, prise en main de l'enjeu l'efficience énergétique (peu abordé au cours de la formation de 3e année, complémentarité avec la dominante Gestion et ingénierie de l'environnement en 2e année), intégration dans des dynamiques de laboratoire (séminaires, AG, recherches de financement)
+
+* __IV. Conclusion__
+
+* __Glossaire__
 
 * __Bibliographie__
+
+* __Annexes__
+
+Fiche de proposition de stage, organigramme du laboratoire
