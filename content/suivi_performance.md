@@ -462,7 +462,7 @@ sudo docker run -d \
   --restart=always \
   -p 8091:8091 \
   -p 3002:3000 \
-  --device=[CONTROLLER_NAME] \
+  --device=/dev/ttyUSB0 \
   --name="zwave-js" \
   -e "TZ=Europe/Paris" \
   -v ~/homeassistant/docker/zwave-js:/usr/src/app/store zwavejs/zwavejs2mqtt:latest
@@ -527,7 +527,7 @@ sudo docker run -d \
 ```
 
 ```bash
-sudo docker run --it mosquitto sh
+sudo docker exec -it mosquitto sh
 ```
 
 ```bash

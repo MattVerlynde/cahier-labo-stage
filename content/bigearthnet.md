@@ -334,8 +334,8 @@ Nombre d'épochs fixé à 100, et algorithme de descente de gradient stochastiqu
 
 Métriques de performances utilisées: F1-score (F1), F2-score (F2), précision (P) et rappel (R).
 
-<iframe src="../bigearthnet/subsambles_content.html"
-width="1000" height="800" style="border: none;"></iframe>
+<iframe src="../bigearthnet/subsambles_content_interact.html"
+width="1200" height="900" style="border: none;"></iframe>
 
 #### Plan d'exécution
 

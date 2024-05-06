@@ -78,7 +78,7 @@ Couverture et page de titre normalisée.
 
     * __B. Etat de l'art__
 
-    Bibliographie sur les méthodes de calcul d'efficience computationnelle, et sur les méthodes basées sur les statistiques de second ordre (covariance pooling)
+    Bibliographie sur les méthodes de calcul d'efficience computationnelle, méthodes de réduction d'architecture de réseaux de neurones, puis plus particulièrement sur les méthodes basées sur les statistiques de second ordre (covariance pooling)
 
     * __C. Résultats intermédiaires__
 
