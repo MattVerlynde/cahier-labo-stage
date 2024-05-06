@@ -27,7 +27,7 @@ Software complexity measures {{<cite "nurminen2003">}} :
 
 ## Energie
 
-Nvidia GPUs energy consumption using `pynvml` library 
+Nvidia GPUs energy consumption en utilisant la librarie `pynvml` ou l'utlisation d'une prise intelligente mesurant la consommation éléctrique de la machine en temps réel.
 
 $\text{EDP (Energy Delay Product)} = \text{Energy} \times \text{Runtime}$
 
@@ -37,3 +37,15 @@ Pour comparer deux programmes : Greenup-Powerup-Speedup (GPS-UP) {{<cite "abduls
 * $\text{Speedup} = S = \frac{T_{base}}{T_{optim}}$
 
 et on a $G = S \times P$. Cependant,<span style="font-weight: bold; color: #ffffff; background-color: red"> au moins deux </span> de ces ratios doivent être utilisés pour apporter une information pertinente sur la comparaison de l'optimalité.
+
+## Emission de GES (eqCO<sub>2</sub>)
+
+Utilisation de packages précontruits (Carbon tracker {{<cite "lasse2020">}} ou CodeCarbon ([lien GitHub](https://github.com/mlco2/codecarbon)) par exemple) ou calcul basé sur nos mesures de consommation électrique.
+
+Soit :
+
+* $C$ = Emission en équivalent carbone (eqCO<sub>2</sub>)
+* $E$ = Consommation énergétique (kWh)
+* $I$ = Intensité carbone au lieu de consommation (eqCO<sub>2</sub>/kWh)
+
+$C = E \times I$
