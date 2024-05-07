@@ -323,7 +323,7 @@ Nous pouvons ensuite modifier plus finement les affichages du dashboard selon no
 
 Une autre possibilité pour importer un dashboard est d'importer le fichier associé au forma `.json`. Le fichier configuré que nous pouvons importer est disponible sur la machine `lst-pa33` au chemin: `verlyndem/static/config_suivi/grafana_dashboard_template.json`.
 
-Le dashboard créé lors de notre projet est accessible sur [ce lien](http://localhost:9090/d/edh1jtjp0b4lcb/38860f63-1c6f-5143-a2a7-cfc431003966?orgId=1&var-datasource=edh4qbg5qdm9sb&var-bucket=telegraf_bucket&var-host=telegraf&var-inter=1s&var-cpu=All&var-disk=All&var-interface=All&var-PID=All&var-Process=python).
+Le dashboard créé lors de notre projet est accessible sur [ce lien](http://localhost:9090/d/edh1jtjp0b4lcb/38860f63-1c6f-5143-a2a7-cfc431003966?orgId=1&var-datasource=bdkz9h2ioyrk0f&var-bucket=telegraf_bucket&var-host=telegraf&var-inter=1s&var-cpu=All&var-disk=All&var-interface=All&var-PID=All&var-Process=python).
 
 ## Interrogation de la base
 
