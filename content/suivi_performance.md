@@ -22,10 +22,32 @@ flowchart LR
     a1[Container metrics] --> b{{Telegraf}}
     a2[CPU metrics] --> b{{Telegraf}}
     a3[GPU metrics] --> b{{Telegraf}}
-    subgraph A[Docker containers]
+    
     b{{Telegraf}} --> c[(InfluxDB)]
     c[(InfluxDB)] --> d((Grafana))
+
+    d ~~~ legend1[Docker container]
+    d ~~~ legend2[Data source]
+    subgraph Legend[<u>Legend</u>]
+    legend1 ~~~ legend3[(Database)]
+    legend2 ~~~ legend4((Visualizer))
     end
+
+    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+
+    style Legend fill:#fff,stroke-width:0px,color:#384d54
+    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
+    style legend2 stroke-width:0px,color:#384d54
+    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+
+    
 {{</mermaid>}}
 
 Le plugin Telegraf, produit par InfluxDB permet la collection des données du hardware de l'ordinateur en temps réel, ainsi que son formatage. 
@@ -427,12 +449,6 @@ Format de sortie dans `metrics_output` :
 
 ## Suivre les performances énergétiques
 
-Récupération du nom du controleur USB :
-
-```bash
-dmesg | grep tty
-```
-
 Création du container Docker de l'application Home Assistant (dashboard spécifique optimisé pour Z-Wave): 
 
 ```bash
@@ -455,14 +471,27 @@ mkdir docker
 mkdir docker/zwave-js
 ```
 
+Récupération du nom du Network sur lequel a été installé telegraf :
+
+```bash
+sudo docker inspect telegraf -f '{{range $k, $v := .NetworkSettings.Networks}}{{printf "%s\n" $k}}{{end}}'
+```
+
+Récupération du nom du controleur USB :
+
+```bash
+dmesg | grep tty
+```
+
 Création du container Docker de l'application Z-Wave JS: 
 
 ```bash
 sudo docker run -d \
+  --network [TELEGRAF_NETWORK] \
   --restart=always \
   -p 8091:8091 \
   -p 3002:3000 \
-  --device=/dev/ttyUSB0 \
+  --device=[USB_CONTROLLER] \
   --name="zwave-js" \
   -e "TZ=Europe/Paris" \
   -v ~/homeassistant/docker/zwave-js:/usr/src/app/store zwavejs/zwavejs2mqtt:latest
@@ -520,6 +549,7 @@ allow_anonymous false
 
 ```bash
 sudo docker run -d \
+  --network [TELEGRAF_NETWORK] \
   --restart=always \
   -p 1883:1883 \
   --name="mosquitto" \
@@ -535,3 +565,138 @@ mosquitto_passwd -c mosquitto/config/mosquitto.passwd [user]
 [password]
 ```
 
+```squidconf
+# # Read metrics from MQTT topic(s)
+[[inputs.mqtt_consumer]]
+#   ## Broker URLs for the MQTT server or cluster.  To connect to multiple
+#   ## clusters or standalone servers, use a separate plugin instance.
+#   ##   example: servers = ["tcp://localhost:1883"]
+#   ##            servers = ["ssl://localhost:1883"]
+#   ##            servers = ["ws://localhost:1883"]
+   servers = ["tcp://mosquitto:1883"]
+#
+#   ## Topics that will be subscribed to.
+   topics = [
+     "zwave/Smart_switch_PC/50/0/value/65537",
+     "zwave/Smart_switch_PC/50/0/value/66049",
+     "zwave/Smart_switch_PC/50/0/value/66561",
+     "zwave/Smart_switch_PC/50/0/value/66817",
+   ]
+#
+#   ## The message topic will be stored in a tag specified by this value.  If set
+#   ## to the empty string no topic tag will be created.
+#   # topic_tag = "topic"
+#
+#   ## QoS policy for messages
+#   ##   0 = at most once
+#   ##   1 = at least once
+#   ##   2 = exactly once
+#   ##
+#   ## When using a QoS of 1 or 2, you should enable persistent_session to allow
+#   ## resuming unacknowledged messages.
+#   # qos = 0
+#
+#   ## Connection timeout for initial connection in seconds
+connection_timeout = "60s"
+#
+#   ## Max undelivered messages
+#   ## This plugin uses tracking metrics, which ensure messages are read to
+#   ## outputs before acknowledging them to the original broker to ensure data
+#   ## is not lost. This option sets the maximum messages to read from the
+#   ## broker that have not been written by an output.
+#   ##
+#   ## This value needs to be picked with awareness of the agent's
+#   ## metric_batch_size value as well. Setting max undelivered messages too high
+#   ## can result in a constant stream of data batches to the output. While
+#   ## setting it too low may never flush the broker's messages.
+#   # max_undelivered_messages = 1000
+#
+#   ## Persistent session disables clearing of the client session on connection.
+#   ## In order for this option to work you must also set client_id to identify
+#   ## the client.  To receive messages that arrived while the client is offline,
+#   ## also set the qos option to 1 or 2 and don't forget to also set the QoS when
+#   ## publishing. Finally, using a persistent session will use the initial
+#   ## connection topics and not subscribe to any new topics even after
+#   ## reconnecting or restarting without a change in client ID.
+#   # persistent_session = false
+#
+#   ## If unset, a random client ID will be generated.
+client_id = "telegraf"
+#
+#   ## Username and password to connect MQTT server.
+username="********"
+password="********"
+#
+#   ## Optional TLS Config
+#   # tls_ca = "/etc/telegraf/ca.pem"
+#   # tls_cert = "/etc/telegraf/cert.pem"
+#   # tls_key = "/etc/telegraf/key.pem"
+#   ## Use TLS but skip chain & host verification
+#   # insecure_skip_verify = false
+#
+#   ## Client trace messages
+#   ## When set to true, and debug mode enabled in the agent settings, the MQTT
+#   ## client's messages are included in telegraf logs. These messages are very
+#   ## noisey, but essential for debugging issues.
+client_trace = true
+#
+#   ## Data format to consume.
+#   ## Each data format has its own unique set of configuration options, read
+#   ## more about them here:
+#   ## https://github.com/influxdata/telegraf/blob/master/docs/DATA_FORMATS_INPUT.md
+   data_format = "json"
+   interval = "60s"
+#
+#   ## Enable extracting tag values from MQTT topics
+#   ## _ denotes an ignored entry in the topic path
+#   # [[inputs.mqtt_consumer.topic_parsing]]
+#   #   topic = ""
+#   #   measurement = ""
+#   #   tags = ""
+#   #   fields = ""
+#   ## Value supported is int, float, unit
+#   #   [[inputs.mqtt_consumer.topic.types]]
+#   #      key = type
+```
+
+## Pipeline final
+
+{{<mermaid>}}
+flowchart LR
+    a4[Smart plug data] --> alpha{{Z-Wave}}
+    a1[Container metrics] --> b{{Telegraf}}
+    a2[CPU metrics] --> b{{Telegraf}}
+    a3[GPU metrics] --> b{{Telegraf}}
+    
+    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
+    beta{{MQTT Broker}} --> b{{Telegraf}}
+    b{{Telegraf}} --> c[(InfluxDB)]
+    c[(InfluxDB)] --> d((Grafana))
+    alpha{{Z-Wave}} --> gamma((HomeAssistant))
+
+    gamma ~~~ legend1[Docker container]
+    gamma ~~~ legend2[Data source]
+    subgraph Legend[<u>Legend</u>]
+    legend1 ~~~ legend3[(Database)]
+    legend2 ~~~ legend4((Visualizer))
+    end
+
+    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style gamma fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
+
+    style Legend fill:#fff,stroke-width:0px,color:#384d54
+    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
+    style legend2 stroke-width:0px,color:#384d54
+    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+{{</mermaid>}}
