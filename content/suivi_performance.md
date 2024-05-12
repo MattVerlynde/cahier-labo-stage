@@ -700,3 +700,43 @@ flowchart LR
     style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
     
 {{</mermaid>}}
+
+Sans HomeAssistant (inutile sur le long terme dans notre cas) :
+
+{{<mermaid>}}
+flowchart LR
+    a4[Smart plug data] --> alpha{{Z-Wave}}
+    a1[Container metrics] --> b{{Telegraf}}
+    a2[CPU metrics] --> b{{Telegraf}}
+    a3[GPU metrics] --> b{{Telegraf}}
+    
+    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
+    beta{{MQTT Broker}} --> b{{Telegraf}}
+    b{{Telegraf}} --> c[(InfluxDB)]
+    c[(InfluxDB)] --> d((Grafana))
+
+    d ~~~ legend1[Docker container]
+    d ~~~ legend2[Data source]
+    subgraph Legend[<u>Legend</u>]
+    legend1 ~~~ legend3[(Database)]
+    legend2 ~~~ legend4((Visualizer))
+    end
+
+    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
+
+    style Legend fill:#fff,stroke-width:0px,color:#384d54
+    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
+    style legend2 stroke-width:0px,color:#384d54
+    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+{{</mermaid>}}

@@ -6,6 +6,7 @@ menu:
     weight: 10
 bibFile: content/bibliography.json
 toc: True
+mermaid: True
 ---
 
 Cette section présente les éléments choisis ainsi que l'organisation du __rapport et de la présentation intermédiaire du stage__ se tenant à AgroParisTech (Palaiseau) le 4 juin 2024 de 9h45 à 10h25. Le projet Overleaf de ce rapport est accessible sur ce [lien](https://www.overleaf.com/read/sshbhhgmzksm#fa7d2e) et celui de la présentation sur ce [lien](https://www.overleaf.com/read/gbywzhjpfrgb#587646).
@@ -111,3 +112,45 @@ Démarche de projet construite, mise en situation sur des vraies données de con
 * __Annexes__
 
 Fiche de proposition de stage, organigramme du laboratoire
+
+{{<mermaid>}}
+flowchart LR
+    a4[Données de la
+     prise intelligente] --> alpha{{Z-Wave}}
+    a1[Données de la RAM] --> b{{Telegraf}}
+    a2[Données du CPU] --> b{{Telegraf}}
+    a3[Données du GPU] --> b{{Telegraf}}
+    
+    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
+    beta{{MQTT Broker}} --> b{{Telegraf}}
+    b{{Telegraf}} --> c[(InfluxDB)]
+    c[(InfluxDB)] --> d((Grafana))
+
+    d ~~~ legend1[Conteneur
+     Docker]
+    d ~~~ legend2[Source de
+     données]
+    subgraph Legend[<u>Légende :</u>]
+    legend1 ~~~ legend3[(Base de
+     données)]
+    legend2 ~~~ legend4((Visualiseur))
+    end
+
+    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
+
+    style Legend fill:#fff,stroke-width:0px,color:#384d54
+    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
+    style legend2 stroke-width:0px,color:#384d54
+    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+{{</mermaid>}}

@@ -48,29 +48,44 @@
 	{
 		"id": "mian2019",
 		"type": "thesis",
-		"abstract": "Thèse de doctorat dirigée par Ovarlez, Jean-Philippe et Ginolhac, Guillaume Traitement du signal et des images Université Paris-Saclay (ComUE) 2019.",
-		"publisher": "Paris-Saclay",
+		"abstract": "La télédétection par Radar à Synthèse d’Ouverture (RSO) offre une opportunité unique d’enregistrer, d’analyser et de prédire l’évolution de la surface de la Terre. La dernière décennie a permis l’avènement de nombreuses missions spatiales équipées de capteurs RSO (Sentinel-1, UAVSAR, TerraSAR X, etc.), ce qui a engendré une rapide amélioration des capacités d’acquisition d’images de la surface de la Terre. Le nombre croissant d’observations permet maintenant de construire des bases de données caractérisant l’évolution temporelle d’images, augmentant considérablement l’intérêt de l’analyse de séries temporelles pour caractériser des changements qui ont lieu à une échelle globale. Cependant, le développement de nouveaux algorithmes pour traiter ces données très volumineuses est un défi qui reste à relever. Dans ce contexte, l’objectif de cette thèse consiste ainsi à proposer et à développer des méthodologies relatives à la détection de changements dans les séries d’images ROS à très haute résolution spatiale.Le traitement de ces séries pose deux problèmes notables. En premier lieu, les méthodes d’analyse statistique performantes se basent souvent sur des données multivariées caractérisant, dans le cas des images RSO, une diversité polarimétrique, interférométrique, par exemple. Lorsque cette diversité n’est pas disponible et que les images RSO sont monocanal, de nouvelles méthodologies basées sur la décomposition en ondelettes ont été développées. Celles-ci permettent d’ajouter une diversité supplémentaire spectrale et angulaire représentant le comportement physique de rétrodiffusion des diffuseurs présents la scène de l’image. Dans un second temps, l’amélioration de la résolution spatiale sur les dernières générations de capteurs engendre une augmentation de l’hétérogénéité des données obtenues. Dans ce cas, l’hypothèse gaussienne, traditionnellement considérée pour développer les méthodologies standards de détection de changements, n’est plus valide. En conséquence, des méthodologies d’estimation robuste basée sur la famille des distributions elliptiques, mieux adaptée aux données, ont été développées.L’association de ces deux aspects a montré des résultats prometteurs pour la détection de changements.Le traitement de ces séries pose deux problèmes notables. En premier lieu, les méthodes d’analyse statistique performantes se basent souvent sur des données multivariées caractérisant, dans le cas des images RSO, une diversité polarimétrique ou interférométrique, par exemple. Lorsque cette diversité n’est pas disponible et que les images RSO sont monocanal, de nouvelles méthodologies basées sur la décomposition en ondelettes ont été développées. Celles-ci permettent d’ajouter une diversité spectrale et angulaire supplémentaire représentant le comportement physique de rétrodiffusion des diffuseurs présents la scène de l’image. Dans un second temps, l’amélioration de la résolution spatiale sur les dernières générations de capteurs engendre une augmentation de l’hétérogénéité des données obtenues. Dans ce cas, l’hypothèse gaussienne, traditionnellement considérée pour développer les méthodologies standards de détection de changements, n’est plus valide. En conséquence, des méthodologies d’estimation robuste basée sur la famille des distributions elliptiques, mieux adaptée aux données, ont été développées.L’association de ces deux aspects a montré des résultats prometteurs pour la détection de changements.",
+		"genre": "These de doctorat",
+		"license": "Licence Etalab",
+		"publisher": "Université Paris-Saclay (ComUE)",
+		"source": "theses.fr",
 		"title": "Contributions to SAR Image Time Series Analysis",
-		"URL": "https://www.theses.fr/2019SACLC069",
+		"URL": "https://theses.fr/2019SACLC074",
 		"author": [
 			{
 				"family": "Mian",
 				"given": "Ammar"
 			}
 		],
-		"issued": {
-			"date-parts": [
-				[
-					"2019"
-				]
-			]
-		},
+		"contributor": [
+			{
+				"family": "Ovarlez",
+				"given": "Jean-Philippe"
+			},
+			{
+				"family": "Ginolhac",
+				"given": "Guillaume"
+			}
+		],
 		"accessed": {
 			"date-parts": [
 				[
 					"2024",
-					3,
+					5,
 					11
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					9,
+					26
 				]
 			]
 		}
@@ -591,6 +606,100 @@
 					"2020",
 					7,
 					6
+				]
+			]
+		}
+	},{
+		"id": "sajja2021",
+		"type": "article-journal",
+		"container-title": "Journal of Ambient Intelligence and Humanized Computing",
+		"DOI": "10.1007/s12652-020-02663-y",
+		"ISSN": "1868-5137, 1868-5145",
+		"issue": "10",
+		"journalAbbreviation": "J Ambient Intell Human Comput",
+		"language": "en",
+		"page": "9423-9434",
+		"source": "DOI.org (Crossref)",
+		"title": "Image classification using regularized convolutional neural network design with dimensionality reduction modules: RCNN–DRM",
+		"title-short": "Image classification using regularized convolutional neural network design with dimensionality reduction modules",
+		"URL": "https://link.springer.com/10.1007/s12652-020-02663-y",
+		"volume": "12",
+		"author": [
+			{
+				"family": "Sajja",
+				"given": "Tulasi Krishna"
+			},
+			{
+				"family": "Kalluri",
+				"given": "Hemantha Kumar"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "he2018",
+		"type": "article",
+		"abstract": "This paper proposed a Soft Filter Pruning (SFP) method to accelerate the inference procedure of deep Convolutional Neural Networks (CNNs). Specifically, the proposed SFP enables the pruned filters to be updated when training the model after pruning. SFP has two advantages over previous works: (1) Larger model capacity. Updating previously pruned filters provides our approach with larger optimization space than fixing the filters to zero. Therefore, the network trained by our method has a larger model capacity to learn from the training data. (2) Less dependence on the pre-trained model. Large capacity enables SFP to train from scratch and prune the model simultaneously. In contrast, previous filter pruning methods should be conducted on the basis of the pre-trained model to guarantee their performance. Empirically, SFP from scratch outperforms the previous filter pruning methods. Moreover, our approach has been demonstrated effective for many advanced CNN architectures. Notably, on ILSCRC-2012, SFP reduces more than 42% FLOPs on ResNet-101 with even 0.2% top-5 accuracy improvement, which has advanced the state-of-the-art. Code is publicly available on GitHub: https://github.com/he-y/soft-filter-pruning",
+		"language": "en",
+		"note": "arXiv:1808.06866 [cs]",
+		"number": "arXiv:1808.06866",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Soft Filter Pruning for Accelerating Deep Convolutional Neural Networks",
+		"URL": "http://arxiv.org/abs/1808.06866",
+		"author": [
+			{
+				"family": "He",
+				"given": "Yang"
+			},
+			{
+				"family": "Kang",
+				"given": "Guoliang"
+			},
+			{
+				"family": "Dong",
+				"given": "Xuanyi"
+			},
+			{
+				"family": "Fu",
+				"given": "Yanwei"
+			},
+			{
+				"family": "Yang",
+				"given": "Yi"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2018",
+					8,
+					21
 				]
 			]
 		}
