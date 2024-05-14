@@ -367,14 +367,20 @@ width="1200" height="900" style="border: none;"></iframe>
 
 Sur des données échantillonnées aléatoirement :
 
-| Simulation | Modèle | Optimiseur | Fonction de coût | Taux d'apprentissage | Taille de batch | Epoques | Echantillon d'apprentissage | Echantillon de validation | Echantillon de test |
-|:-----:|------------------|------|------------------------|:------:|:--:|:---:|:--------------:|:------------:|:------------:|
-| **A** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **B** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **C** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **D** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **E** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
-| **F** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |
+| Simulation | Modèle | Optimiseur | Fonction de coût | Taux d'apprentissage | Taille de batch | Epoques | Echantillon d'apprentissage | Echantillon de validation | Echantillon de test | Commentaire |
+|:-----:|------------------|------|------------------------|:------:|:--:|:---:|:--------------:|:------------:|:------------:|-------------|
+| **A** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **B** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **C** | **S-CNN-All**    | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **D** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **E** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **F** | **S-CNN-RGB**    | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **G** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **H** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **I** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) |             |
+| **J** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.0001 | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) | Fine-tuned  |
+| **K** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.001  | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) | Fine-tuned  |
+| **L** | **InceptionV2**  | Adam | Cross-entropy sigmoïde | 0.01   | 64 | 100 | **5%** (26969) | 25% (123723) | 25% (125866) | Fine-tuned  |
 
 #### Caractéristiques computationnelles
 
@@ -461,6 +467,10 @@ width="1000" height="500" style="border: none;"></iframe>
 
 Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-RGB (D1-E1-F1) :
 <iframe src="../bigearthnet/training_losses_S-CNN-RGB_epochs_val_s1_compar.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle InceptionV2 (I) :
+<iframe src="../bigearthnet/training_losses_InceptionV2_epochs_val_lr2.html"
 width="1000" height="500" style="border: none;"></iframe>
 
 
