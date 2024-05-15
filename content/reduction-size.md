@@ -35,7 +35,7 @@ Hard filter pruning : on coupe des filtres du réseau de manière récursive à 
   $\mathcal{l}_1$-norm est utilisée pour sélectionner les filtres à _prune_
 * Problème : {{<cite "he2018">}} cite le problème de 
 
-
+<!--
 [Han et al., 2015a] Song Han, Huizi Mao, and William J Dally. Deep compression: Compressing deep neural networks with pruning, trained quantization and huffman coding. In ICLR, 2015. 
 [Han et al., 2015b] Song Han, Jeff Pool, John Tran, and William Dally. Learning both weights and connections for efficient neural network. In NIPS, 2015. 
 [He et al., 2016a] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In CVPR, 2016. 
@@ -57,9 +57,13 @@ Décompostion de la matrice de poids afin de diminuer la complexité de l'algori
 [Zhang et al., 2016] Xiangyu Zhang, Jianhua Zou, Kaiming He, and Jian Sun. Accelerating very deep convolutional networks for classification and detection. IEEE T-PAMI, 2016.
 Generalized Singular Value Decomposition (GSVD) 
 
-<!--
-[Tai et al., 2016] 
--->
+
+[Tai et al., 2016] Cheng Tai, Tong Xiao, Yi Zhang, Xiaogang Wang, et al. Convolutional neural networks with low-rank regularization. In ICLR, 2016.
+La décomposition de tenseurs permet une diminution de la redondance au sein du réseau
+retour sur Jaderberg, décomposition en deux matrices horizontales et verticales
+Problème d'augmentation de la profondeur du réseau, pouvant entraîner un phénomène de disparition du gradient
+_Batch normalization_ : Ioffe, Sergey and Szegedy, Christian. Batch normalization: Accelerating deep network training by reducing internal covariate shift. arXiv preprint arXiv:1502.03167, 2015.
+On normalise l'input au niveau du sous-réseau, c''est à dire nous fixons la distribution en entrée d'une convolution, le but étant de réduire le _covariate shift_, mais aussi la disparition du gradient.
 
 ## low-precision weights
 <!--
