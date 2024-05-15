@@ -703,5 +703,914 @@
 				]
 			]
 		}
+	},{
+		"id": "kuwahara2019",
+		"type": "paper-conference",
+		"abstract": "With the increase of the Internet of Things (IoT) business, the number of edge computing systems are rapidly increasing. Reducing the power consumption of these computing systems has become a social issue. For that purpose, we propose and demonstrated the power consumption reduction method by the optimal task assignment technology. Specifically, for sequential real-time jobs, we proposed a workload allocation optimizer (WAO) to minimize the power consumption of computing systems. This assignment algorithm achieved a 13% power reduction compared to the worst job assignment.",
+		"container-title": "2019 IEEE 12TH INTERNATIONAL CONFERENCE ON CLOUD COMPUTING (IEEE CLOUD 2019)",
+		"DOI": "10.1109/CLOUD.2019.00040",
+		"event-place": "New York",
+		"event-title": "12th IEEE International Conference on Cloud Computing (IEEE CLOUD) Held as Part of IEEE World Congress on Services (IEEE SERVICES)",
+		"ISBN": "978-1-72812-705-7",
+		"language": "English",
+		"note": "ISSN: 2159-6182\nnumber-of-pages: 3\ncollection-title: IEEE International Conference on Cloud Computing\nWeb of Science ID: WOS:000556208000027",
+		"page": "190-192",
+		"publisher": "IEEE",
+		"publisher-place": "New York",
+		"source": "Clarivate Analytics Web of Science",
+		"title": "Real-time workload allocation optimizer for computing systems by using deep learning",
+		"URL": "https://www.webofscience.com/wos/woscc/full-record/WOS:000556208000027",
+		"author": [
+			{
+				"family": "Kuwahara",
+				"given": "Hayato"
+			},
+			{
+				"family": "Hsu",
+				"given": "Ying-Feng"
+			},
+			{
+				"family": "Matsuda",
+				"given": "Kazuhiro"
+			},
+			{
+				"family": "Matsuoka",
+				"given": "Morito"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "rehman2024",
+		"type": "article-journal",
+		"abstract": "The rapid rise in power usage by GPUs due to advances in machine and deep learning has led to an increase in power consumption of GPUs in Deep Learning workloads. To address this issue, a novel research project focuses on integrating Particle Swarm Optimization into a model training optimization framework to effectively reduce GPU power consumption during machine learning and deep learning training workloads. By utilizing the Particle Swarm Optimization (PSO)[1] algorithm within the proposed framework, we show the effectiveness of PSO in creating a more efficient power management strategy while also maintaining the performance. Upon evaluation of the proposed framework, it shows a reduction of 15.8% to 75.8% in power consumption across multiple workloads, with little to no performance loss.",
+		"container-title": "COMPUTER SCIENCE JOURNAL OF MOLDOVA",
+		"DOI": "10.56415/csjm.v32.08",
+		"ISSN": "1561-4042",
+		"issue": "1",
+		"journalAbbreviation": "Comput. Sci. J. Mold.",
+		"language": "English",
+		"note": "number-of-pages: 21\npublisher-place: Kishinev\npublisher: Inst Mathematics & Computer Science Acad\nWeb of Science ID: WOS:001203490000003",
+		"page": "132-152",
+		"source": "Clarivate Analytics Web of Science",
+		"title": "Efficient GPU Power Management through Advanced Framework Utilizing Optimization Algorithms",
+		"URL": "https://www.webofscience.com/wos/woscc/full-record/WOS:001203490000003",
+		"volume": "32",
+		"author": [
+			{
+				"family": "Rehman",
+				"given": "Ramesha"
+			},
+			{
+				"family": "Chishti",
+				"given": "Mashood Ul Haq"
+			},
+			{
+				"family": "Yamin",
+				"given": "Hamza"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024"
+				]
+			]
+		}
+	},
+	{
+		"id": "musa2022",
+		"type": "article-journal",
+		"abstract": "Recent advances in computing allows researchers to propose the automation of hydroponic systems to boost efficiency and reduce manpower demands, hence increasing agricultural produce and profit. A completely automated hydroponic system should be equipped with tools capable of detecting plant diseases in real-time. Despite the availability of deep-learning-based plant disease detection models, the existing models are not designed for an embedded system environment, and the models cannot realistically be deployed on resource-constrained IoT devices such as raspberry pi or a smartphone. Some of the drawbacks of the existing models are the following: high computational resource requirements, high power consumption, dissipates energy rapidly, and occupies large storage space due to large complex structure. Therefore, in this paper, we proposed a low-power deep learning model for plant disease detection using knowledge distillation techniques. The proposed low-power model has a simple network structure of a shallow neural network. The parameters of the model were also reduced by more than 90%. This reduces its computational requirements as well as its power consumption. The proposed low-power model has a maximum power consumption of 6.22 w, which is significantly lower compared to the existing models, and achieved a detection accuracy of 99.4%.",
+		"container-title": "JOURNAL OF LOW POWER ELECTRONICS AND APPLICATIONS",
+		"DOI": "10.3390/jlpea12020024",
+		"ISSN": "2079-9268",
+		"issue": "2",
+		"journalAbbreviation": "J. Low Power Electron. Appl.",
+		"language": "English",
+		"note": "number-of-pages: 20\npublisher-place: Basel\npublisher: MDPI\nWeb of Science ID: WOS:000817406700001",
+		"page": "24",
+		"source": "Clarivate Analytics Web of Science",
+		"title": "Low-Power Deep Learning Model for Plant Disease Detection for Smart-Hydroponics Using Knowledge Distillation Techniques",
+		"URL": "https://www.webofscience.com/wos/woscc/full-record/WOS:000817406700001",
+		"volume": "12",
+		"author": [
+			{
+				"family": "Musa",
+				"given": "Aminu"
+			},
+			{
+				"family": "Hassan",
+				"given": "Mohammed"
+			},
+			{
+				"family": "Hamada",
+				"given": "Mohamed"
+			},
+			{
+				"family": "Aliyu",
+				"given": "Farouq"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					6
+				]
+			]
+		}
+	},
+	{
+		"id": "nalepa2020",
+		"type": "article-journal",
+		"abstract": "Hyperspectral image analysis has been gaining research attention thanks to the current advances in sensor design which have made acquiring such imagery much more affordable. Although there exist various approaches for segmenting hyperspectral images, deep learning has become the mainstream. However, such large-capacity learners are characterized by significant memory footprints. This is a serious obstacle in employing deep neural networks on board a satellite for Earth observation. In this paper, we introduce resource-frugal quantized convolutional neural networks, and greatly reduce their size without adversely affecting the classification capability. Our experiments performed over two hyperspectral benchmarks showed that the quantization process can be seamlessly applied during the training, and it leads to much smaller and still well-generalizing deep models.",
+		"container-title": "Microprocessors and Microsystems",
+		"DOI": "10.1016/j.micpro.2020.102994",
+		"journalAbbreviation": "Microprocessors and Microsystems",
+		"page": "102994",
+		"source": "ResearchGate",
+		"title": "Towards resource-frugal deep convolutional neural networks for hyperspectral image segmentation",
+		"volume": "73",
+		"author": [
+			{
+				"family": "Nalepa",
+				"given": "Jakub"
+			},
+			{
+				"family": "Antoniak",
+				"given": "Marek"
+			},
+			{
+				"family": "Myller",
+				"given": "Michał"
+			},
+			{
+				"family": "Ribalta Lorenzo",
+				"given": "Pablo"
+			},
+			{
+				"family": "Marcinkiewicz",
+				"given": "Michał"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3,
+					1
+				]
+			]
+		}
+	},{
+		"id": "li2017",
+		"type": "paper-conference",
+		"abstract": "By stacking layers of convolution and nonlinearity, convolutional networks (ConvNets) effectively learn from lowlevel to high-level features and discriminative representations. Since the end goal of large-scale recognition is to delineate complex boundaries of thousands of classes, adequate exploration of feature distributions is important for realizing full potentials of ConvNets. However, state-of-theart works concentrate only on deeper or wider architecture design, while rarely exploring feature statistics higher than ﬁrst-order. We take a step towards addressing this problem. Our method consists in covariance pooling, instead of the most commonly used ﬁrst-order pooling, of highlevel convolutional features. The main challenges involved are robust covariance estimation given a small sample of large-dimensional features and usage of the manifold structure of covariance matrices. To address these challenges, we present a Matrix Power Normalized Covariance (MPNCOV) method. We develop forward and backward propagation formulas regarding the nonlinear matrix functions such that MPN-COV can be trained end-to-end. In addition, we analyze both qualitatively and quantitatively its advantage over the well-known Log-Euclidean metric. On the ImageNet 2012 validation set, by combining MPN-COV we achieve over 4%, 3% and 2.5% gains for AlexNet, VGG-M and VGG-16, respectively; integration of MPN-COV into 50-layer ResNet outperforms ResNet-101 and is comparable to ResNet-152. The source code will be available on the project page: http://www.peihuali.org/MPN-COV.",
+		"container-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+		"DOI": "10.1109/ICCV.2017.228",
+		"event-place": "Venice",
+		"event-title": "2017 IEEE International Conference on Computer Vision (ICCV)",
+		"ISBN": "978-1-5386-1032-9",
+		"language": "en",
+		"page": "2089-2097",
+		"publisher": "IEEE",
+		"publisher-place": "Venice",
+		"source": "DOI.org (Crossref)",
+		"title": "Is Second-Order Information Helpful for Large-Scale Visual Recognition?",
+		"URL": "http://ieeexplore.ieee.org/document/8237490/",
+		"author": [
+			{
+				"family": "Li",
+				"given": "Peihua"
+			},
+			{
+				"family": "Xie",
+				"given": "Jiangtao"
+			},
+			{
+				"family": "Wang",
+				"given": "Qilong"
+			},
+			{
+				"family": "Zuo",
+				"given": "Wangmeng"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "boumal2023",
+		"type": "book",
+		"abstract": "Optimization on Riemannian manifolds-the result of smooth geometry and optimization merging into one elegant modern framework-spans many areas of science and engineering, including machine learning, computer vision, signal processing, dynamical systems and scientific computing. This text introduces the differential geometry and Riemannian geometry concepts that will help students and researchers in applied mathematics, computer science and engineering gain a firm mathematical grounding to use these tools confidently in their research. Its charts-last approach will prove more intuitive from an optimizer's viewpoint, and all definitions and theorems are motivated to build time-tested optimization algorithms. Starting from first principles, the text goes on to cover current research on topics including worst-case complexity and geodesic convexity. Readers will appreciate the tricks of the trade for conducting research and for numerical implementations sprinkled throughout the book.",
+		"edition": "1",
+		"ISBN": "978-1-00-916616-4",
+		"language": "en",
+		"license": "https://www.cambridge.org/core/terms",
+		"note": "DOI: 10.1017/9781009166164",
+		"publisher": "Cambridge University Press",
+		"source": "DOI.org (Crossref)",
+		"title": "An Introduction to Optimization on Smooth Manifolds",
+		"URL": "https://www.cambridge.org/core/product/identifier/9781009166164/type/book",
+		"author": [
+			{
+				"family": "Boumal",
+				"given": "Nicolas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					24
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					16
+				]
+			]
+		}
+	},
+	{
+		"id": "ionescu2016",
+		"type": "article",
+		"abstract": "Deep neural network architectures have recently produced excellent results in a variety of areas in artiﬁcial intelligence and visual recognition, well surpassing traditional shallow architectures trained using hand-designed features. The power of deep networks stems both from their ability to perform local computations followed by pointwise non-linearities over increasingly larger receptive ﬁelds, and from the simplicity and scalability of the gradient-descent training procedure based on backpropagation. An open problem is the inclusion of layers that perform global, structured matrix computations like segmentation (e.g. normalized cuts) or higher-order pooling (e.g. log-tangent space metrics deﬁned over the manifold of symmetric positive deﬁnite matrices) while preserving the validity and efﬁciency of an end-to-end deep training framework. In this paper we propose a sound mathematical apparatus to formally integrate global structured computation into deep computation architectures. At the heart of our methodology is the development of the theory and practice of backpropagation that generalizes to the calculus of adjoint matrix variations. The proposed matrix backpropagation methodology applies broadly to a variety of problems in machine learning or computational perception. Here we illustrate it by performing visual segmentation experiments using the BSDS and MSCOCO benchmarks, where we show that deep networks relying on second-order pooling and normalized cuts layers, trained end-to-end using matrix backpropagation, outperform counterparts that do not take advantage of such global layers.",
+		"language": "en",
+		"note": "arXiv:1509.07838 [cs]",
+		"number": "arXiv:1509.07838",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Training Deep Networks with Structured Layers by Matrix Backpropagation",
+		"URL": "http://arxiv.org/abs/1509.07838",
+		"author": [
+			{
+				"family": "Ionescu",
+				"given": "Catalin"
+			},
+			{
+				"family": "Vantzos",
+				"given": "Orestis"
+			},
+			{
+				"family": "Sminchisescu",
+				"given": "Cristian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					4,
+					26
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					4,
+					14
+				]
+			]
+		}
+	},{
+		"id": "li2017",
+		"type": "article",
+		"abstract": "The success of CNNs in various applications is accompanied by a significant increase in the computation and parameter storage costs. Recent efforts toward reducing these overheads involve pruning and compressing the weights of various layers without hurting original accuracy. However, magnitude-based pruning of weights reduces a significant number of parameters from the fully connected layers and may not adequately reduce the computation costs in the convolutional layers due to irregular sparsity in the pruned networks. We present an acceleration method for CNNs, where we prune filters from CNNs that are identified as having a small effect on the output accuracy. By removing whole filters in the network together with their connecting feature maps, the computation costs are reduced significantly. In contrast to pruning weights, this approach does not result in sparse connectivity patterns. Hence, it does not need the support of sparse convolution libraries and can work with existing efficient BLAS libraries for dense matrix multiplications. We show that even simple filter pruning techniques can reduce inference costs for VGG-16 by up to 34% and ResNet-110 by up to 38% on CIFAR10 while regaining close to the original accuracy by retraining the networks.",
+		"DOI": "10.48550/arXiv.1608.08710",
+		"note": "arXiv:1608.08710 [cs]",
+		"number": "arXiv:1608.08710",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Pruning Filters for Efficient ConvNets",
+		"URL": "http://arxiv.org/abs/1608.08710",
+		"author": [
+			{
+				"family": "Li",
+				"given": "Hao"
+			},
+			{
+				"family": "Kadav",
+				"given": "Asim"
+			},
+			{
+				"family": "Durdanovic",
+				"given": "Igor"
+			},
+			{
+				"family": "Samet",
+				"given": "Hanan"
+			},
+			{
+				"family": "Graf",
+				"given": "Hans Peter"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					3,
+					10
+				]
+			]
+		}
+	},
+	{
+		"id": "liu2017",
+		"type": "article",
+		"abstract": "The deployment of deep convolutional neural networks (CNNs) in many real world applications is largely hindered by their high computational cost. In this paper, we propose a novel learning scheme for CNNs to simultaneously 1) reduce the model size; 2) decrease the run-time memory footprint; and 3) lower the number of computing operations, without compromising accuracy. This is achieved by enforcing channel-level sparsity in the network in a simple but effective way. Different from many existing approaches, the proposed method directly applies to modern CNN architectures, introduces minimum overhead to the training process, and requires no special software/hardware accelerators for the resulting models. We call our approach network slimming, which takes wide and large networks as input models, but during training insignificant channels are automatically identified and pruned afterwards, yielding thin and compact models with comparable accuracy. We empirically demonstrate the effectiveness of our approach with several state-of-the-art CNN models, including VGGNet, ResNet and DenseNet, on various image classification datasets. For VGGNet, a multi-pass version of network slimming gives a 20x reduction in model size and a 5x reduction in computing operations.",
+		"DOI": "10.48550/arXiv.1708.06519",
+		"note": "arXiv:1708.06519 [cs]",
+		"number": "arXiv:1708.06519",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Learning Efficient Convolutional Networks through Network Slimming",
+		"URL": "http://arxiv.org/abs/1708.06519",
+		"author": [
+			{
+				"family": "Liu",
+				"given": "Zhuang"
+			},
+			{
+				"family": "Li",
+				"given": "Jianguo"
+			},
+			{
+				"family": "Shen",
+				"given": "Zhiqiang"
+			},
+			{
+				"family": "Huang",
+				"given": "Gao"
+			},
+			{
+				"family": "Yan",
+				"given": "Shoumeng"
+			},
+			{
+				"family": "Zhang",
+				"given": "Changshui"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2017",
+					8,
+					22
+				]
+			]
+		}
+	},
+	{
+		"id": "tulasi2021",
+		"type": "article-journal",
+		"abstract": "Deep Learning is one of the machine learning area, which is widely used in recent research fields. In this, the work exhibits about working of the Convolutional Neural Networks (CNNs) for image classification. Deep learning approaches are better than the traditional learning algorithms when the data size is large because every day, a vast volume of data is accumulated everywhere. In deep learning, Convolutional Neural Network is one of the leading architecture. Convolutional Neural Network contains pre-trained models to transfer knowledge for learning the features, and such models are LeNet, AlexNet, GoogleNet, VGG16, VGG19, Resnet50, etc. These architectures are trained with a large ImageNet dataset, which contains millions of images. Moreover, these trained networks are also used to do new tasks. Among these pre-trained models, GoogleNet has less number of parameters, and this causes to reduce the computation complexity. We propose a deep network with Dimensionality Reduction Module (DRM), which works on less training data, and produce more accurate classification with minimum processing time and also a minimum number of parameters with regularization. The performance of classification, as well as training time and classification time of the proposed architecture, is measured with popular datasets such as ORL, Adience face dataset, Caltech101, and CIFAR10. The proposed architecture achieves better performance with less time when compared with the state of the work.",
+		"container-title": "Journal of Ambient Intelligence and Humanized Computing",
+		"DOI": "10.1007/s12652-020-02663-y",
+		"journalAbbreviation": "Journal of Ambient Intelligence and Humanized Computing",
+		"page": "1-12",
+		"source": "ResearchGate",
+		"title": "Image classification using regularized convolutional neural network design with dimensionality reduction modules: RCNN–DRM",
+		"title-short": "Image classification using regularized convolutional neural network design with dimensionality reduction modules",
+		"volume": "12",
+		"author": [
+			{
+				"family": "Tulasi Krishna",
+				"given": "Sajja"
+			},
+			{
+				"family": "Kalluri",
+				"given": "Hemantha",
+				"dropping-particle": "kumar"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					10,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "jaderberg2014",
+		"type": "article",
+		"abstract": "The focus of this paper is speeding up the evaluation of convolutional neural networks. While delivering impressive results across a range of computer vision and machine learning tasks, these networks are computationally demanding, limiting their deployability. Convolutional layers generally consume the bulk of the processing time, and so in this work we present two simple schemes for drastically speeding up these layers. This is achieved by exploiting cross-channel or filter redundancy to construct a low rank basis of filters that are rank-1 in the spatial domain. Our methods are architecture agnostic, and can be easily applied to existing CPU and GPU convolutional frameworks for tuneable speedup performance. We demonstrate this with a real world network designed for scene text character recognition, showing a possible 2.5x speedup with no loss in accuracy, and 4.5x speedup with less than 1% drop in accuracy, still achieving state-of-the-art on standard benchmarks.",
+		"DOI": "10.48550/arXiv.1405.3866",
+		"note": "arXiv:1405.3866 [cs]",
+		"number": "arXiv:1405.3866",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Speeding up Convolutional Neural Networks with Low Rank Expansions",
+		"URL": "http://arxiv.org/abs/1405.3866",
+		"author": [
+			{
+				"family": "Jaderberg",
+				"given": "Max"
+			},
+			{
+				"family": "Vedaldi",
+				"given": "Andrea"
+			},
+			{
+				"family": "Zisserman",
+				"given": "Andrew"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2014",
+					5,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "zhang2015",
+		"type": "article",
+		"abstract": "This paper aims to accelerate the test-time computation of convolutional neural networks (CNNs), especially very deep CNNs [1] that have substantially impacted the computer vision community. Unlike previous methods that are designed for approximating linear ﬁlters or linear responses, our method takes the nonlinear units into account. We develop an effective solution to the resulting nonlinear optimization problem without the need of stochastic gradient descent (SGD). More importantly, while previous methods mainly focus on optimizing one or two layers, our nonlinear method enables an asymmetric reconstruction that reduces the rapidly accumulated error when multiple (e.g., ≥10) layers are approximated. For the widely used very deep VGG-16 model [1], our method achieves a whole-model speedup of 4× with merely a 0.3% increase of top-5 error in ImageNet classiﬁcation. Our 4× accelerated VGG-16 model also shows a graceful accuracy degradation for object detection when plugged into the Fast R-CNN detector [2].",
+		"language": "en",
+		"note": "arXiv:1505.06798 [cs]",
+		"number": "arXiv:1505.06798",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Accelerating Very Deep Convolutional Networks for Classification and Detection",
+		"URL": "http://arxiv.org/abs/1505.06798",
+		"author": [
+			{
+				"family": "Zhang",
+				"given": "Xiangyu"
+			},
+			{
+				"family": "Zou",
+				"given": "Jianhua"
+			},
+			{
+				"family": "He",
+				"given": "Kaiming"
+			},
+			{
+				"family": "Sun",
+				"given": "Jian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					14
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					11,
+					18
+				]
+			]
+		}
+	},
+	{
+		"id": "tai2016",
+		"type": "article",
+		"abstract": "Large CNNs have delivered impressive performance in various computer vision applications. But the storage and computation requirements make it problematic for deploying these models on mobile devices. Recently, tensor decompositions have been used for speeding up CNNs. In this paper, we further develop the tensor decomposition technique. We propose a new algorithm for computing the low-rank tensor decomposition for removing the redundancy in the convolution kernels. The algorithm finds the exact global optimizer of the decomposition and is more effective than iterative methods. Based on the decomposition, we further propose a new method for training low-rank constrained CNNs from scratch. Interestingly, while achieving a significant speedup, sometimes the low-rank constrained CNNs delivers significantly better performance than their non-constrained counterparts. On the CIFAR-10 dataset, the proposed low-rank NIN model achieves $91.31\\%$ accuracy (without data augmentation), which also improves upon state-of-the-art result. We evaluated the proposed method on CIFAR-10 and ILSVRC12 datasets for a variety of modern CNNs, including AlexNet, NIN, VGG and GoogleNet with success. For example, the forward time of VGG-16 is reduced by half while the performance is still comparable. Empirical success suggests that low-rank tensor decompositions can be a very useful tool for speeding up large CNNs.",
+		"DOI": "10.48550/arXiv.1511.06067",
+		"note": "arXiv:1511.06067 [cs, stat]",
+		"number": "arXiv:1511.06067",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Convolutional neural networks with low-rank regularization",
+		"URL": "http://arxiv.org/abs/1511.06067",
+		"author": [
+			{
+				"family": "Tai",
+				"given": "Cheng"
+			},
+			{
+				"family": "Xiao",
+				"given": "Tong"
+			},
+			{
+				"family": "Zhang",
+				"given": "Yi"
+			},
+			{
+				"family": "Wang",
+				"given": "Xiaogang"
+			},
+			{
+				"family": "E",
+				"given": "Weinan"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					2,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "ioffe2015",
+		"type": "article",
+		"abstract": "Training Deep Neural Networks is complicated by the fact that the distribution of each layer's inputs changes during training, as the parameters of the previous layers change. This slows down the training by requiring lower learning rates and careful parameter initialization, and makes it notoriously hard to train models with saturating nonlinearities. We refer to this phenomenon as internal covariate shift, and address the problem by normalizing layer inputs. Our method draws its strength from making normalization a part of the model architecture and performing the normalization for each training mini-batch. Batch Normalization allows us to use much higher learning rates and be less careful about initialization. It also acts as a regularizer, in some cases eliminating the need for Dropout. Applied to a state-of-the-art image classification model, Batch Normalization achieves the same accuracy with 14 times fewer training steps, and beats the original model by a significant margin. Using an ensemble of batch-normalized networks, we improve upon the best published result on ImageNet classification: reaching 4.9% top-5 validation error (and 4.8% test error), exceeding the accuracy of human raters.",
+		"DOI": "10.48550/arXiv.1502.03167",
+		"note": "arXiv:1502.03167 [cs]",
+		"number": "arXiv:1502.03167",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+		"title-short": "Batch Normalization",
+		"URL": "http://arxiv.org/abs/1502.03167",
+		"author": [
+			{
+				"family": "Ioffe",
+				"given": "Sergey"
+			},
+			{
+				"family": "Szegedy",
+				"given": "Christian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					3,
+					2
+				]
+			]
+		}
+	},
+	{
+		"id": "xia2022",
+		"type": "article-journal",
+		"abstract": "Dense matching plays a crucial role in computer vision and remote sensing, to rapidly provide stereo products using inexpensive hardware. Along with the development of deep learning, the Guided Aggregation Network (GA-Net) achieves state-of-the-art performance via the proposed Semi-Global Guided Aggregation layers and reduces the use of costly 3D convolutional layers. To solve the problem of GA-Net requiring large GPU memory consumption, we design a pyramid architecture to modify the model. Starting from a downsampled stereo input, the disparity is estimated and continuously refined through the pyramid levels. Thus, the disparity search is only applied for a small size of stereo pair and then confined within a short residual range for minor correction, leading to highly reduced memory usage and runtime. Tests on close-range, aerial, and satellite data demonstrate that the proposed algorithm achieves significantly higher efficiency (around eight times faster consuming only 20-40% GPU memory) and comparable results with GA-Net on remote sensing data. Thanks to this coarse-to-fine estimation, we successfully process remote sensing datasets with very large disparity ranges, which could not be processed with GA-Net due to GPU memory limitations.",
+		"container-title": "REMOTE SENSING",
+		"DOI": "10.3390/rs14081942",
+		"ISSN": "2072-4292",
+		"issue": "8",
+		"journalAbbreviation": "Remote Sens.",
+		"language": "English",
+		"note": "number-of-pages: 24\npublisher-place: Basel\npublisher: MDPI\nWeb of Science ID: WOS:000787400000001",
+		"page": "1942",
+		"source": "Clarivate Analytics Web of Science",
+		"title": "GA-Net-Pyramid: An Efficient End-to-End Network for Dense Matching",
+		"title-short": "GA-Net-Pyramid",
+		"URL": "https://www.webofscience.com/wos/woscc/full-record/WOS:000787400000001",
+		"volume": "14",
+		"author": [
+			{
+				"family": "Xia",
+				"given": "Yuanxin"
+			},
+			{
+				"family": "Angelo",
+				"given": "Pablo",
+				"non-dropping-particle": "d'"
+			},
+			{
+				"family": "Fraundorfer",
+				"given": "Friedrich"
+			},
+			{
+				"family": "Tian",
+				"given": "Jiaojiao"
+			},
+			{
+				"family": "Fuentes Reyes",
+				"given": "Mario"
+			},
+			{
+				"family": "Reinartz",
+				"given": "Peter"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "huyan2021",
+		"type": "article-journal",
+		"abstract": "Onboard real-time object detection in remote sensing images is a crucial but challenging task in this computation-constrained scenario. This task not only requires the algorithm to yield excellent performance but also requests limited time and space complexity of the algorithm. However, previous convolutional neural networks (CNN) based object detectors for remote sensing images suffer from heavy computational cost, which hinders them from being deployed on satellites. Moreover, an onboard detector is desired to detect objects at vastly different scales. To address these issues, we proposed a lightweight one-stage multi-scale feature fusion detector called MSF-SNET for onboard real-time object detection of remote sensing images. Using lightweight SNET as the backbone network reduces the number of parameters and computational complexity. To strengthen the detection performance of small objects, three low-level features are extracted from the three stages of SNET respectively. In the detection part, another three convolutional layers are designed to further extract deep features with rich semantic information for large-scale object detection. To improve detection accuracy, the deep features and low-level features are fused to enhance the feature representation. Extensive experiments and comprehensive evaluations on the openly available NWPU VHR-10 dataset and DIOR dataset are conducted to evaluate the proposed method. Compared with other state-of-art detectors, the proposed detection framework has fewer parameters and calculations, while maintaining consistent accuracy.",
+		"container-title": "Remote Sensing",
+		"DOI": "10.3390/rs13040683",
+		"journalAbbreviation": "Remote Sensing",
+		"page": "683",
+		"source": "ResearchGate",
+		"title": "A Lightweight Object Detection Framework for Remote Sensing Images",
+		"volume": "13",
+		"author": [
+			{
+				"family": "Huyan",
+				"given": "Lang"
+			},
+			{
+				"family": "Bai",
+				"given": "Cloud"
+			},
+			{
+				"family": "Li",
+				"given": "Ying"
+			},
+			{
+				"family": "Jiang",
+				"given": "Dongmei"
+			},
+			{
+				"family": "Zhang",
+				"given": "Yanning"
+			},
+			{
+				"family": "Zhou",
+				"given": "Quan"
+			},
+			{
+				"family": "Wei",
+				"given": "Jiayuan"
+			},
+			{
+				"family": "Liu",
+				"given": "Juanni"
+			},
+			{
+				"family": "Zhang",
+				"given": "Yi"
+			},
+			{
+				"family": "Cui",
+				"given": "Tao"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					2,
+					13
+				]
+			]
+		}
+	},
+	{
+		"id": "he2022",
+		"type": "article-journal",
+		"abstract": "Deep learning has been applied in various fields for its effective and accurate feature learning capabilities in recent years. Currently, information extracted from remote sensing images with the learning methods has become the most relevant research area for its developed precision. In terms of developing segmentation precision and reducing calculation power consumption, the improved deep learning methods have received more attention, and the improvement of semantic segmentation architectures has been a popular solution. This research presents a learning method named D-DenseNet with a new structure for road extraction. The methods for the improvement are divided into two stages: (1) alternate the consecutive dilated convolutions number in the structure of the network (2) the stem block is arranged as the initial block. So, dilated convolution can obtain more global context information through the whole network. Further, the D-DenseNet restructures D-LinkNet by taking DenseNet as its backbone instead of ResNet, which can expand the receptive field and accept more feature information. The D-DenseNet is effective because of its 119 M model size and 57.96% IoU on the processing test data and 99.3 M modes size and 66.26% on the public dataset, which achieved the research objective for reducing model size and developing segmentation precision-IoU. The experiment indicates that the D-Dense block and the stem block are effective for developing road extraction, and the appropriate number of convolution layers is also essential for model evaluation.",
+		"container-title": "APPLIED SCIENCES-BASEL",
+		"DOI": "10.3390/app122110800",
+		"ISSN": "2076-3417",
+		"issue": "21",
+		"journalAbbreviation": "Appl. Sci.-Basel",
+		"language": "English",
+		"note": "number-of-pages: 12\npublisher-place: Basel\npublisher: MDPI\nWeb of Science ID: WOS:000882660400001",
+		"page": "10800",
+		"source": "Clarivate Analytics Web of Science",
+		"title": "Road Extraction Based on Improved Convolutional Neural Networks with Satellite Images",
+		"URL": "https://www.webofscience.com/wos/woscc/full-record/WOS:000882660400001",
+		"volume": "12",
+		"author": [
+			{
+				"family": "He",
+				"given": "Lei"
+			},
+			{
+				"family": "Peng",
+				"given": "Bo"
+			},
+			{
+				"family": "Tang",
+				"given": "Dan"
+			},
+			{
+				"family": "Li",
+				"given": "Yuxia"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					11
+				]
+			]
+		}
+	},{
+		"id": "vanhoucke2011",
+		"type": "article-journal",
+		"abstract": "Recent advances in deep learning have made the use of large, deep neural networks with tens of millions of parameters suitable for a number of applications that require real-time processing. The sheer size of these networks can represent a challenging computational burden, even for modern CPUs. For this reason, GPUs are routinely used instead to train and run such networks. This paper is a tutorial for students and researchers on some of the techniques that can be used to reduce this computational cost considerably on modern x86 CPUs. We emphasize data layout, batching of the computation, the use of SSE2 instructions, and particularly leverage SSSE3 and SSE4 ﬁxed-point instructions which provide a 3× improvement over an optimized ﬂoating-point baseline. We use speech recognition as an example task, and show that a real-time hybrid hidden Markov model / neural network (HMM/NN) large vocabulary system can be built with a 10× speedup over an unoptimized baseline and a 4× speedup over an aggressively optimized ﬂoating-point baseline at no cost in accuracy. The techniques described extend readily to neural network training and provide an effective alternative to the use of specialized hardware.",
+		"language": "en",
+		"source": "Zotero",
+		"title": "Improving the speed of neural networks on CPUs",
+		"author": [
+			{
+				"family": "Vanhoucke",
+				"given": "Vincent"
+			},
+			{
+				"family": "Senior",
+				"given": "Andrew"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2011",
+					1
+				]
+			]
+		}
+	},{
+		"id": "han2015",
+		"type": "article",
+		"abstract": "Neural networks are both computationally intensive and memory intensive, making them difficult to deploy on embedded systems. Also, conventional networks fix the architecture before training starts; as a result, training cannot improve the architecture. To address these limitations, we describe a method to reduce the storage and computation required by neural networks by an order of magnitude without affecting their accuracy by learning only the important connections. Our method prunes redundant connections using a three-step method. First, we train the network to learn which connections are important. Next, we prune the unimportant connections. Finally, we retrain the network to fine tune the weights of the remaining connections. On the ImageNet dataset, our method reduced the number of parameters of AlexNet by a factor of 9x, from 61 million to 6.7 million, without incurring accuracy loss. Similar experiments with VGG-16 found that the number of parameters can be reduced by 13x, from 138 million to 10.3 million, again with no loss of accuracy.",
+		"DOI": "10.48550/arXiv.1506.02626",
+		"note": "arXiv:1506.02626 [cs]",
+		"number": "arXiv:1506.02626",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Learning both Weights and Connections for Efficient Neural Networks",
+		"URL": "http://arxiv.org/abs/1506.02626",
+		"author": [
+			{
+				"family": "Han",
+				"given": "Song"
+			},
+			{
+				"family": "Pool",
+				"given": "Jeff"
+			},
+			{
+				"family": "Tran",
+				"given": "John"
+			},
+			{
+				"family": "Dally",
+				"given": "William J."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					15
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2015",
+					10,
+					30
+				]
+			]
+		}
 	}
 ]
