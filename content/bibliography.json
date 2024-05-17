@@ -609,7 +609,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "sajja2021",
 		"type": "article-journal",
 		"container-title": "Journal of Ambient Intelligence and Humanized Computing",
@@ -703,7 +704,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "kuwahara2019",
 		"type": "paper-conference",
 		"abstract": "With the increase of the Internet of Things (IoT) business, the number of edge computing systems are rapidly increasing. Reducing the power consumption of these computing systems has become a social issue. For that purpose, we propose and demonstrated the power consumption reduction method by the optimal task assignment technology. Specifically, for sequential real-time jobs, we proposed a workload allocation optimizer (WAO) to minimize the power consumption of computing systems. This assignment algorithm achieved a 13% power reduction compared to the worst job assignment.",
@@ -896,7 +898,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "li2017",
 		"type": "paper-conference",
 		"abstract": "By stacking layers of convolution and nonlinearity, convolutional networks (ConvNets) effectively learn from lowlevel to high-level features and discriminative representations. Since the end goal of large-scale recognition is to delineate complex boundaries of thousands of classes, adequate exploration of feature distributions is important for realizing full potentials of ConvNets. However, state-of-theart works concentrate only on deeper or wider architecture design, while rarely exploring feature statistics higher than ﬁrst-order. We take a step towards addressing this problem. Our method consists in covariance pooling, instead of the most commonly used ﬁrst-order pooling, of highlevel convolutional features. The main challenges involved are robust covariance estimation given a small sample of large-dimensional features and usage of the manifold structure of covariance matrices. To address these challenges, we present a Matrix Power Normalized Covariance (MPNCOV) method. We develop forward and backward propagation formulas regarding the nonlinear matrix functions such that MPN-COV can be trained end-to-end. In addition, we analyze both qualitatively and quantitatively its advantage over the well-known Log-Euclidean metric. On the ImageNet 2012 validation set, by combining MPN-COV we achieve over 4%, 3% and 2.5% gains for AlexNet, VGG-M and VGG-16, respectively; integration of MPN-COV into 50-layer ResNet outperforms ResNet-101 and is comparable to ResNet-152. The source code will be available on the project page: http://www.peihuali.org/MPN-COV.",
@@ -1029,7 +1032,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "li2017",
 		"type": "article",
 		"abstract": "The success of CNNs in various applications is accompanied by a significant increase in the computation and parameter storage costs. Recent efforts toward reducing these overheads involve pruning and compressing the weights of various layers without hurting original accuracy. However, magnitude-based pruning of weights reduces a significant number of parameters from the fully connected layers and may not adequately reduce the computation costs in the convolutional layers due to irregular sparsity in the pruned networks. We present an acceleration method for CNNs, where we prune filters from CNNs that are identified as having a small effect on the output accuracy. By removing whole filters in the network together with their connecting feature maps, the computation costs are reduced significantly. In contrast to pruning weights, this approach does not result in sparse connectivity patterns. Hence, it does not need the support of sparse convolution libraries and can work with existing efficient BLAS libraries for dense matrix multiplications. We show that even simple filter pruning techniques can reduce inference costs for VGG-16 by up to 34% and ResNet-110 by up to 38% on CIFAR10 while regaining close to the original accuracy by retraining the networks.",
@@ -1531,7 +1535,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "vanhoucke2011",
 		"type": "article-journal",
 		"abstract": "Recent advances in deep learning have made the use of large, deep neural networks with tens of millions of parameters suitable for a number of applications that require real-time processing. The sheer size of these networks can represent a challenging computational burden, even for modern CPUs. For this reason, GPUs are routinely used instead to train and run such networks. This paper is a tutorial for students and researchers on some of the techniques that can be used to reduce this computational cost considerably on modern x86 CPUs. We emphasize data layout, batching of the computation, the use of SSE2 instructions, and particularly leverage SSSE3 and SSE4 ﬁxed-point instructions which provide a 3× improvement over an optimized ﬂoating-point baseline. We use speech recognition as an example task, and show that a real-time hybrid hidden Markov model / neural network (HMM/NN) large vocabulary system can be built with a 10× speedup over an unoptimized baseline and a 4× speedup over an aggressively optimized ﬂoating-point baseline at no cost in accuracy. The techniques described extend readily to neural network training and provide an effective alternative to the use of specialized hardware.",
@@ -1565,7 +1570,8 @@
 				]
 			]
 		}
-	},{
+	},
+	{
 		"id": "han2015",
 		"type": "article",
 		"abstract": "Neural networks are both computationally intensive and memory intensive, making them difficult to deploy on embedded systems. Also, conventional networks fix the architecture before training starts; as a result, training cannot improve the architecture. To address these limitations, we describe a method to reduce the storage and computation required by neural networks by an order of magnitude without affecting their accuracy by learning only the important connections. Our method prunes redundant connections using a three-step method. First, we train the network to learn which connections are important. Next, we prune the unimportant connections. Finally, we retrain the network to fine tune the weights of the remaining connections. On the ImageNet dataset, our method reduced the number of parameters of AlexNet by a factor of 9x, from 61 million to 6.7 million, without incurring accuracy loss. Similar experiments with VGG-16 found that the number of parameters can be reduced by 13x, from 138 million to 10.3 million, again with no loss of accuracy.",
@@ -1609,6 +1615,469 @@
 					"2015",
 					10,
 					30
+				]
+			]
+		}
+	},
+	{
+		"id": "nalepa2020",
+		"type": "article-journal",
+		"abstract": "Hyperspectral image analysis has been gaining research attention thanks to the current advances in sensor design which have made acquiring such imagery much more affordable. Although there exist various approaches for segmenting hyperspectral images, deep learning has become the mainstream. However, such large-capacity learners are characterized by significant memory footprints. This is a serious obstacle in employing deep neural networks on board a satellite for Earth observation. In this paper, we introduce resource-frugal quantized convolutional neural networks, and greatly reduce their size without adversely affecting the classification capability. Our experiments performed over two hyperspectral benchmarks showed that the quantization process can be seamlessly applied during the training, and it leads to much smaller and still well-generalizing deep models.",
+		"container-title": "Microprocessors and Microsystems",
+		"DOI": "10.1016/j.micpro.2020.102994",
+		"journalAbbreviation": "Microprocessors and Microsystems",
+		"page": "102994",
+		"source": "ResearchGate",
+		"title": "Towards resource-frugal deep convolutional neural networks for hyperspectral image segmentation",
+		"volume": "73",
+		"author": [
+			{
+				"family": "Nalepa",
+				"given": "Jakub"
+			},
+			{
+				"family": "Antoniak",
+				"given": "Marek"
+			},
+			{
+				"family": "Myller",
+				"given": "Michał"
+			},
+			{
+				"family": "Ribalta Lorenzo",
+				"given": "Pablo"
+			},
+			{
+				"family": "Marcinkiewicz",
+				"given": "Michał"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2020",
+					3,
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "desislavov2023",
+		"type": "article-journal",
+		"abstract": "The progress of some AI paradigms such as deep learning is said to be linked to an exponential growth in the number of parameters. There are many studies corroborating these trends, but does this translate into an exponential increase in energy consumption? In order to answer this question we focus on inference costs rather than training costs, as the former account for most of the computing effort, solely because of the multiplicative factors. Also, apart from algorithmic innovations, we account for more specific and powerful hardware (leading to higher FLOPS) that is usually accompanied with important energy efficiency optimisations. We also move the focus from the first implementation of a breakthrough paper towards the consolidated version of the techniques one or two year later. Under this distinctive and comprehensive perspective, we study relevant models in the areas of computer vision and natural language processing: for a sustained increase in performance we see a much softer growth in energy consumption than previously anticipated. The only caveat is, yet again, the multiplicative factor, as future AI increases penetration and becomes more pervasive.",
+		"container-title": "Sustainable Computing: Informatics and Systems",
+		"DOI": "10.1016/j.suscom.2023.100857",
+		"ISSN": "22105379",
+		"journalAbbreviation": "Sustainable Computing: Informatics and Systems",
+		"note": "arXiv:2109.05472 [cs]",
+		"page": "100857",
+		"source": "arXiv.org",
+		"title": "Compute and Energy Consumption Trends in Deep Learning Inference",
+		"URL": "http://arxiv.org/abs/2109.05472",
+		"volume": "38",
+		"author": [
+			{
+				"family": "Desislavov",
+				"given": "Radosvet"
+			},
+			{
+				"family": "Martínez-Plumed",
+				"given": "Fernando"
+			},
+			{
+				"family": "Hernández-Orallo",
+				"given": "José"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2023",
+					4
+				]
+			]
+		}
+	},
+	{
+		"id": "gholami2024",
+		"type": "article",
+		"abstract": "The availability of unprecedented unsupervised training data, along with neural scaling laws, has resulted in an unprecedented surge in model size and compute requirements for serving/training LLMs. However, the main performance bottleneck is increasingly shifting to memory bandwidth. Over the past 20 years, peak server hardware FLOPS has been scaling at 3.0x/2yrs, outpacing the growth of DRAM and interconnect bandwidth, which have only scaled at 1.6 and 1.4 times every 2 years, respectively. This disparity has made memory, rather than compute, the primary bottleneck in AI applications, particularly in serving. Here, we analyze encoder and decoder Transformer models and show how memory bandwidth can become the dominant bottleneck for decoder models. We argue for a redesign in model architecture, training, and deployment strategies to overcome this memory limitation.",
+		"DOI": "10.48550/arXiv.2403.14123",
+		"note": "arXiv:2403.14123 [cs]",
+		"number": "arXiv:2403.14123",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "AI and Memory Wall",
+		"URL": "http://arxiv.org/abs/2403.14123",
+		"author": [
+			{
+				"family": "Gholami",
+				"given": "Amir"
+			},
+			{
+				"family": "Yao",
+				"given": "Zhewei"
+			},
+			{
+				"family": "Kim",
+				"given": "Sehoon"
+			},
+			{
+				"family": "Hooper",
+				"given": "Coleman"
+			},
+			{
+				"family": "Mahoney",
+				"given": "Michael W."
+			},
+			{
+				"family": "Keutzer",
+				"given": "Kurt"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2024",
+					3,
+					21
+				]
+			]
+		}
+	},
+	{
+		"id": "patterson2021",
+		"type": "article",
+		"abstract": "The computation demand for machine learning (ML) has grown rapidly recently, which comes with a number of costs. Estimating the energy cost helps measure its environmental impact and finding greener strategies, yet it is challenging without detailed information. We calculate the energy use and carbon footprint of several recent large models-T5, Meena, GShard, Switch Transformer, and GPT-3-and refine earlier estimates for the neural architecture search that found Evolved Transformer. We highlight the following opportunities to improve energy efficiency and CO2 equivalent emissions (CO2e): Large but sparsely activated DNNs can consume <1/10th the energy of large, dense DNNs without sacrificing accuracy despite using as many or even more parameters. Geographic location matters for ML workload scheduling since the fraction of carbon-free energy and resulting CO2e vary ~5X-10X, even within the same country and the same organization. We are now optimizing where and when large models are trained. Specific datacenter infrastructure matters, as Cloud datacenters can be ~1.4-2X more energy efficient than typical datacenters, and the ML-oriented accelerators inside them can be ~2-5X more effective than off-the-shelf systems. Remarkably, the choice of DNN, datacenter, and processor can reduce the carbon footprint up to ~100-1000X. These large factors also make retroactive estimates of energy cost difficult. To avoid miscalculations, we believe ML papers requiring large computational resources should make energy consumption and CO2e explicit when practical. We are working to be more transparent about energy use and CO2e in our future research. To help reduce the carbon footprint of ML, we believe energy usage and CO2e should be a key metric in evaluating models, and we are collaborating with MLPerf developers to include energy usage during training and inference in this industry standard benchmark.",
+		"DOI": "10.48550/arXiv.2104.10350",
+		"note": "arXiv:2104.10350 [cs]",
+		"number": "arXiv:2104.10350",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Carbon Emissions and Large Neural Network Training",
+		"URL": "http://arxiv.org/abs/2104.10350",
+		"author": [
+			{
+				"family": "Patterson",
+				"given": "David"
+			},
+			{
+				"family": "Gonzalez",
+				"given": "Joseph"
+			},
+			{
+				"family": "Le",
+				"given": "Quoc"
+			},
+			{
+				"family": "Liang",
+				"given": "Chen"
+			},
+			{
+				"family": "Munguia",
+				"given": "Lluis-Miquel"
+			},
+			{
+				"family": "Rothchild",
+				"given": "Daniel"
+			},
+			{
+				"family": "So",
+				"given": "David"
+			},
+			{
+				"family": "Texier",
+				"given": "Maud"
+			},
+			{
+				"family": "Dean",
+				"given": "Jeff"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					4,
+					23
+				]
+			]
+		}
+	},
+	{
+		"id": "thompson2022",
+		"type": "article",
+		"abstract": "Deep learning's recent history has been one of achievement: from triumphing over humans in the game of Go to world-leading performance in image classification, voice recognition, translation, and other tasks. But this progress has come with a voracious appetite for computing power. This article catalogs the extent of this dependency, showing that progress across a wide variety of applications is strongly reliant on increases in computing power. Extrapolating forward this reliance reveals that progress along current lines is rapidly becoming economically, technically, and environmentally unsustainable. Thus, continued progress in these applications will require dramatically more computationally-efficient methods, which will either have to come from changes to deep learning or from moving to other machine learning methods.",
+		"DOI": "10.48550/arXiv.2007.05558",
+		"note": "arXiv:2007.05558 [cs, stat]",
+		"number": "arXiv:2007.05558",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "The Computational Limits of Deep Learning",
+		"URL": "http://arxiv.org/abs/2007.05558",
+		"author": [
+			{
+				"family": "Thompson",
+				"given": "Neil C."
+			},
+			{
+				"family": "Greenewald",
+				"given": "Kristjan"
+			},
+			{
+				"family": "Lee",
+				"given": "Keeheon"
+			},
+			{
+				"family": "Manso",
+				"given": "Gabriel F."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					7,
+					27
+				]
+			]
+		}
+	},
+	{
+		"id": "haut2019",
+		"type": "article-journal",
+		"abstract": "Convolutional neural networks have emerged as an excellent tool for remotely sensed hyperspectral image (HSI) classification. Nonetheless, the high computational complexity and energy requirements of these models typically limit their application in on-board remote sensing scenarios. In this context, low-power consumption architectures are promising platforms that may provide acceptable on-board computing capabilities to achieve satisfactory classification results with reduced energy demand. For instance, the new NVIDIA Jetson Tegra TX2 device is an efficient solution for on-board processing applications using deep-learning (DL) approaches. So far, very few efforts have been devoted to exploiting this or other similar computing platforms in on-board remote sensing procedures. This letter explores the use of low-power consumption architectures and DL algorithms for HSI classification. The conducted experimental study reveals that the NVIDIA Jetson Tegra TX2 device offers a good choice in terms of performance, cost, and energy consumption for on-board HSI classification tasks.",
+		"container-title": "IEEE Geoscience and Remote Sensing Letters",
+		"DOI": "10.1109/LGRS.2018.2881045",
+		"ISSN": "1558-0571",
+		"issue": "5",
+		"note": "event-title: IEEE Geoscience and Remote Sensing Letters",
+		"page": "776-780",
+		"source": "IEEE Xplore",
+		"title": "Low–High-Power Consumption Architectures for Deep-Learning Models Applied to Hyperspectral Image Classification",
+		"URL": "https://ieeexplore.ieee.org/abstract/document/8554064",
+		"volume": "16",
+		"author": [
+			{
+				"family": "Haut",
+				"given": "Juan M."
+			},
+			{
+				"family": "Bernabé",
+				"given": "Sergio"
+			},
+			{
+				"family": "Paoletti",
+				"given": "Mercedes E."
+			},
+			{
+				"family": "Fernandez-Beltran",
+				"given": "Ruben"
+			},
+			{
+				"family": "Plaza",
+				"given": "Antonio"
+			},
+			{
+				"family": "Plaza",
+				"given": "Javier"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2019",
+					5
+				]
+			]
+		}
+	},
+	{
+		"id": "lohn2022",
+		"type": "report",
+		"abstract": "Between 2012 and 2018, the amount of computing power used by record-breaking artificial intelligence models doubled every 3.4 months. Even with money pouring into the AI field, this trendline is unsustainable. Because of cost, hardware availability and engineering difficulties, the next decade of AI can't rely exclusively on applying more and more computing power to drive further progress.",
+		"note": "DOI: 10.51593/2021CA009",
+		"publisher": "Center for Security and Emerging Technology",
+		"source": "DOI.org (Crossref)",
+		"title": "AI and Compute: How Much Longer Can Computing Power Drive Artificial Intelligence Progress?",
+		"title-short": "AI and Compute",
+		"URL": "https://cset.georgetown.edu/publication/ai-and-compute/",
+		"author": [
+			{
+				"family": "Lohn",
+				"given": "Andrew"
+			},
+			{
+				"family": "Musser",
+				"given": "Micah"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					16
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					1
+				]
+			]
+		}
+	},
+	{
+		"id": "courbariaux2016",
+		"type": "article",
+		"abstract": "We introduce a method to train Binarized Neural Networks (BNNs) - neural networks with binary weights and activations at run-time. At training-time the binary weights and activations are used for computing the parameters gradients. During the forward pass, BNNs drastically reduce memory size and accesses, and replace most arithmetic operations with bit-wise operations, which is expected to substantially improve power-efficiency. To validate the effectiveness of BNNs we conduct two sets of experiments on the Torch7 and Theano frameworks. On both, BNNs achieved nearly state-of-the-art results over the MNIST, CIFAR-10 and SVHN datasets. Last but not least, we wrote a binary matrix multiplication GPU kernel with which it is possible to run our MNIST BNN 7 times faster than with an unoptimized GPU kernel, without suffering any loss in classification accuracy. The code for training and running our BNNs is available on-line.",
+		"DOI": "10.48550/arXiv.1602.02830",
+		"note": "arXiv:1602.02830 [cs]",
+		"number": "arXiv:1602.02830",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Binarized Neural Networks: Training Deep Neural Networks with Weights and Activations Constrained to +1 or -1",
+		"title-short": "Binarized Neural Networks",
+		"URL": "http://arxiv.org/abs/1602.02830",
+		"author": [
+			{
+				"family": "Courbariaux",
+				"given": "Matthieu"
+			},
+			{
+				"family": "Hubara",
+				"given": "Itay"
+			},
+			{
+				"family": "Soudry",
+				"given": "Daniel"
+			},
+			{
+				"family": "El-Yaniv",
+				"given": "Ran"
+			},
+			{
+				"family": "Bengio",
+				"given": "Yoshua"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					3,
+					17
+				]
+			]
+		}
+	},
+	{
+		"id": "liang2021",
+		"type": "article",
+		"abstract": "Deep neural networks have been applied in many applications exhibiting extraordinary abilities in the ﬁeld of computer vision. However, complex network architectures challenge eﬃcient real-time deployment and require signiﬁcant computation resources and energy costs. These challenges can be overcome through optimizations such as network compression. Network compression can often be realized with little loss of accuracy. In some cases accuracy may even improve. This paper provides a survey on two types of network compression: pruning and quantization. Pruning can be categorized as static if it is performed oﬄine or dynamic if it is performed at run-time. We compare pruning techniques and describe criteria used to remove redundant computations. We discuss trade-oﬀs in element-wise, channel-wise, shape-wise, ﬁlter-wise, layer-wise and even network-wise pruning. Quantization reduces computations by reducing the precision of the datatype. Weights, biases, and activations may be quantized typically to 8-bit integers although lower bit width implementations are also discussed including binary neural networks. Both pruning and quantization can be used independently or combined. We compare current techniques, analyze their strengths and weaknesses, present compressed network accuracy results on a number of frameworks, and provide practical guidance for compressing networks.",
+		"language": "en",
+		"note": "arXiv:2101.09671 [cs]",
+		"number": "arXiv:2101.09671",
+		"publisher": "arXiv",
+		"source": "arXiv.org",
+		"title": "Pruning and Quantization for Deep Neural Network Acceleration: A Survey",
+		"title-short": "Pruning and Quantization for Deep Neural Network Acceleration",
+		"URL": "http://arxiv.org/abs/2101.09671",
+		"author": [
+			{
+				"family": "Liang",
+				"given": "Tailin"
+			},
+			{
+				"family": "Glossner",
+				"given": "John"
+			},
+			{
+				"family": "Wang",
+				"given": "Lei"
+			},
+			{
+				"family": "Shi",
+				"given": "Shaobo"
+			},
+			{
+				"family": "Zhang",
+				"given": "Xiaotong"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					17
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2021",
+					6,
+					15
 				]
 			]
 		}
