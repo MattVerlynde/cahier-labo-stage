@@ -441,6 +441,8 @@ Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur **l'ensembl
 | **S-CNN-RGB**        | 65.06         | 75.57      | 0.6759 | 0.7139 |
 | **S-CNN-All**        | 69.93         | 77.10      | 0.7098 | 0.7384 |
 
+
+<!--
 Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-All (3) :
 <iframe src="../bigearthnet/training_losses_S-CNN-All_epochs.html"
 width="1000" height="500" style="border: none;"></iframe>
@@ -472,6 +474,36 @@ width="1000" height="500" style="border: none;"></iframe>
 Evolution de la fonction de coût au cours de l'entraînement pour le modèle InceptionV2 (I) :
 <iframe src="../bigearthnet/training_losses_InceptionV2_epochs_val_lr2.html"
 width="1000" height="500" style="border: none;"></iframe>
+-->
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle InceptionV2 (H) :
+<iframe src="../bigearthnet/training_losses_InceptionV2_epochs_val_lr3_compar_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle InceptionV2 (K) :
+<iframe src="../bigearthnet/training_losses_InceptionV2_epochs_val_lr3_compar_ft_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle InceptionV2 (H-K) :
+<iframe src="../bigearthnet/training_losses_InceptionV2_epochs_val_lr3_compar_stat_ft_nft.html"
+width="1100" height="600" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-All (B) :
+<iframe src="../bigearthnet/training_losses_S-CNN-All_epochs_val_lr3_compar_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-All (A) :
+<iframe src="../bigearthnet/training_losses_S-CNN-All_epochs_val_lr4_compar_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-RGB (E) :
+<iframe src="../bigearthnet/training_losses_S-CNN-RGB_epochs_val_lr3_compar_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
+Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-CNN-RGB (F) :
+<iframe src="../bigearthnet/training_losses_S-CNN-RGB_epochs_val_lr2_compar_stat.html"
+width="1000" height="500" style="border: none;"></iframe>
+
 
 
 ## Application de notre méthode de classification

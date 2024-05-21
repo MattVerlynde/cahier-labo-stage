@@ -6,6 +6,7 @@ menu:
     weight: 6
 bibFile: content/bibliography.json
 toc: True
+mermaid: True
 ---
 
 Notes de lectures de bibliographie sur les méthodes de réduction de dimension ou de taille d'architecture autres que par l'utilisation de _covariance pooling_.
@@ -90,6 +91,31 @@ Chaque interval (nombre d'époques), on calcule l'importance ($\mathcal{l}_2$-no
 <!--
 [Guo et al., 2016] Yiwen Guo, Anbang Yao, and Yurong Chen. Dynamic network surgery for efficient DNNs. In NIPS, 2016.
 -->
+structure du réseau de neurones, l’optimisation du réseau, et le traitement
+du hardware utilisé
 
 
+{{<mermaid>}}
+flowchart TB
+    a[<b>Accélération du CNN</b>] --> b1[<b>Structure du réseau</b>
+    Blocs spécifiques
+    Apprentissage par renforcement
+    ...]
+    a --> b2[<b>Optimisation du réseau</b>
+    Optimisation de convolution
+    Décomposition de matrice
+    Pruning
+    Quantization
+    ...]
+    a --> b3[<b>Hardware utilisé</b>]
+    b3 --> c1[<b>Plateforme de calcul</b>
+    CPU
+    GPU
+    ...]
+    b3 --> c2[<b>Optimisation</b>
+    Réutilisation de calcul
+    Optimisation de mémoire
+    ...]
+    
+{{</mermaid>}}
 
