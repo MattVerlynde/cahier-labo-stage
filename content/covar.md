@@ -6,6 +6,7 @@ menu:
     weight: 6
 bibFile: content/bibliography.json
 toc: True
+mermaid: True
 ---
 
 Notes de lectures de bibliographie sur les méthodes de _covariance pooling_ et d'optimisation.
@@ -99,20 +100,33 @@ Sur l'article de {{<cite "li2017">}} :
 
 Sur l'article de {{<cite "huang2016">}} :
 
+Problème posé : traitement de matrices positives-symmétriques de plus en plus utilisé en traitement d'image, mais leur structure non euclidienne entraîne une baisse de performance lorsqu'on applique des méthodes basées sur la géométrie euclidienne 
+<!--
+[Pennec, Fillard, and Ayache 2006] Pennec, X.; Fillard, P.; and Ayache, N. 2006. A Riemannian framework for tensor computing. IJCV 66(1):41–66.
+-->
+Objectif : proposer une architecture de réseau de neurones qui respecte la géométrie Riemannienne
 
-* Quelles sont les questions scientifiques abordés par le papier et comment le papier y réponds-il ?
 
+Architecture proposée : 
 
+{{<mermaid>}}
+flowchart LR
+    a[SPD Matrix] --> b[couche BiMap]
+    b --> c[couche ReEig]
+    c --> d[...]
+    d --> e[couche LogEig]
+    e --> f[couche de 
+    sortie]
+{{</mermaid>}}
+
+<!--
+* Quelles sont les questions scientifiques abordés par le papier et comment le papier y répond-il ?
 
 * Quels sont les outils théoriques qu’ils ont besoin d’utiliser et pourquoi ils vont par là plutôt que d’utiliser d’autres méthodes ?
 
-
-
 * Quelles sont les résultats obtenus et avec quelle démarche méthodologique ?
 
-
-
 * Qu’est ce qu’on peut critiquer/améliorer sur la démarche du papier ?
-
+-->
 
 
