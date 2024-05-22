@@ -504,6 +504,13 @@ Evolution de la fonction de coût au cours de l'entraînement pour le modèle S-
 <iframe src="../bigearthnet/training_losses_S-CNN-RGB_epochs_val_lr2_compar_stat.html"
 width="1000" height="500" style="border: none;"></iframe>
 
+Résultats de la littérature {{<cite "sumbul2019">}}, réalisé sur **l'ensemble de la base de données BigEarthNet** :
+
+| Méthode              | Précision (%) | Rappel (%) | F1     | F2     |
+|----------------------|:-------------:|:----------:|:------:|:------:|
+| **Inception-v2**     | $59.23 \pm0.04$ | $68.05 \pm0.09$ | $0.6945 \pm0.0004$ | $0.6806 \pm0.0007$ |
+| **S-CNN-RGB**        | 65.06         | 75.57      | 0.6759 | 0.7139 |
+| **S-CNN-All**        | 69.93         | 77.10      | 0.7098 | 0.7384 |
 
 
 ## Application de notre méthode de classification

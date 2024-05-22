@@ -22,7 +22,7 @@ Sur l'article de {{<cite "li2017">}} :
 
 * Quelles sont les questions scientifiques abordés par le papier et comment le papier y réponds-il ?
 
-  **Objectif** : augmenter la précision des modèles d'apprentissage profond, en se concentrant sur les statistiques utilisées plutôt que sur la tailled es réseaux de neurones, et proposer un modèle adapté au traitement de grandes masses de données (là où les modèles basés sur des statistques d'ordres 1sont performants sur des données de taille moyenne, moins sur des grandes).
+  **Objectif** : augmenter la précision des modèles d'apprentissage profond, en se concentrant sur les statistiques utilisées plutôt que sur la taille des réseaux de neurones, et proposer un modèle adapté au traitement de grandes masses de données (là où les modèles basés sur des statistques d'ordres 1sont performants sur des données de taille moyenne, moins sur des grandes).
 
   **Réponse proposée** : utiliser des statistiques d'ordre 2 (covariance) pour améliorer la précision des modèles d'apprentissage profond, et donc proposer une estimation robuste de la matrice de covariance normalisée pour représenter les features (en comparaison avec des méthodes existances basées sur la covariance). La méthode MPN-COV (_Matrix Power Normalized Covariance_) est proposée pour répondre à ces objectifs, ainsi qu'une méthode de rétropopagation du gradient associée.
 
@@ -98,6 +98,21 @@ Sur l'article de {{<cite "li2017">}} :
 ### A Riemannian Network for SPD Matrix Learning
 
 Sur l'article de {{<cite "huang2016">}} :
+
+
+* Quelles sont les questions scientifiques abordés par le papier et comment le papier y réponds-il ?
+
+
+
+* Quels sont les outils théoriques qu’ils ont besoin d’utiliser et pourquoi ils vont par là plutôt que d’utiliser d’autres méthodes ?
+
+
+
+* Quelles sont les résultats obtenus et avec quelle démarche méthodologique ?
+
+
+
+* Qu’est ce qu’on peut critiquer/améliorer sur la démarche du papier ?
 
 
 
