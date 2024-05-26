@@ -1,6 +1,6 @@
 ---
 layout: page
-title: . Présentation et rapport intermédiaire
+title: . Présentation et rapport de stage
 menu:
   main:
     weight: 10
@@ -15,11 +15,12 @@ Cette section présente les éléments choisis ainsi que l'organisation du __rap
 
 ## Consignes
 
+{{<unroll-block "Présentation intermédiaire">}}
 Une __soutenance intermédiaire__ se déroule en juin devant un jury composé, au minimum, du maître de stage ou de son représentant et d'au moins deux enseignants de la DA IODAA. Les élèves remettent à cette occasion un rapport écrit (d'environ __15 pages__) et font une présentation orale de leur travail. Ce rapport et cette présentation sont notés sur la forme et permettent au jury d'apprécier le travail fait et à faire, d'orienter les élèves, au besoin de les réorienter.
 
-Une __soutenance finale__ se déroulant normalement durant le mois de septembre, devant un jury composé au minimum de deux enseignants de la DA IODAA. Les élèves doivent remettre un rapport écrit (d'environ 20 à 40 pages) et font une présentation orale démarrant par une partie introductive en anglais. L'ensemble est alors jugé sur le fond et sur la forme. Une appréciation du travail réalisé et des qualités du stagiaire est demandée au maître de stage, oralement s'il est présent lors de la soutenance finale, par écrit sinon.
+La __soutenance orale dure 35mn__, dont __15mn__ pour l’exposé du sujet, du travail réalisé et des perspectives, et __20mn__ pour les questions et la discussion avec l’encadrant en entreprise. 
 
-### Le rapport intermédiaire
+* __Le rapport intermédiaire__
 
 Ce rapport sera évalué essentiellement sur la qualité de la définition de l'objectif du travail projeté, ses enjeux, ses limites, et sa position par rapport à l'état de l'art et par rapport aux compétences de l'organisme d'accueil. Le rapport intermédiaire doit permettre au jury d'aider l'élève à progresser correctement dans son travail. Le rapport doit indiquer l'état d'avancement des travaux, le plan et l'échéancier de la suite des travaux de manière détaillée de même que le travail accompli par le stagiaire en suivant la structure du rapport final (voir section suivante). Le corps du rapport intermédiaire pourra en effet (après corrections éventuelles à partir des remarques du jury) constituer une partie du rapport final.
 
@@ -50,8 +51,32 @@ Couverture et page de titre normalisée.
 
 * En annexe, travail déjà effectué, fiches de lectures...
 
+{{</unroll-block>}}
 
-## Plan détaillé du rapport intermédiaire
+{{<unroll-block "Présentation finale">}}
+
+Une __soutenance finale__ se déroulant normalement durant le mois de septembre, devant un jury composé au minimum de deux enseignants de la DA IODAA. Les élèves doivent remettre un rapport écrit (d'environ 20 à 40 pages) et font une présentation orale démarrant par une partie introductive en anglais. L'ensemble est alors jugé sur le fond et sur la forme. Une appréciation du travail réalisé et des qualités du stagiaire est demandée au maître de stage, oralement s'il est présent lors de la soutenance finale, par écrit sinon.
+
+Le __rapport final__ doit comporter :
+
+* Une Page de remerciements indiquant clairement dans quelles conditions le travail a été effectué (établissement, laboratoire, directeur du laboratoire, directeur du stage, autres auteurs du mémoire, partie originale personnelle...).
+* Un résumé en anglais (« abstract »).
+* Un Résumé: il doit, en 2 pages maximum, contenir les indications suivantes :
+    * Objet et limite du travail,
+    * Méthodes choisies,
+    * Apport scientifique et technique compte tenu de l'état antérieur des connaissances sur le sujet,
+    * Résultats obtenus et développements ultérieurs possibles,
+    * Applications dans l'entreprise,
+    * Principales sources bibliographiques.
+* une Table des matières.
+
+Quant au contenu, le rapport final doit permettre au lecteur de se faire une opinion personnelle sur la validité du travail de développement, recherche et conduite de projet effectué et des conclusions auxquelles l'élève est parvenu. C'est pourquoi il doit être bref, précis, de présentation claire et dégager ce qui est original de ce qui vient de l’état de l’art existant. Destiné principalement à être lu par le jury de soutenance, et éventuellement par d'autres professionnels sous réserve qu'il n'y ait pas de clause de confidentialité, il pourra servir également dans la carrière de l'élève en démontrant ses qualités d'ingénieur.
+
+{{</unroll-block>}}
+
+## Présentation intermédiaire
+
+{{<unroll-block "Plan détaillé du rapport intermédiaire">}}
 
 * __Résumé__
 
@@ -154,3 +179,49 @@ flowchart LR
     style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
     
 {{</mermaid>}}
+
+{{</unroll-block>}}
+
+{{<unroll-block "Plan détaillé de la présentation intermédiaire">}}
+
+* __Résumé__ 
+
+* __Introduction__
+
+    * __A. Laboratoire d'Informatique, Système et Traitement de l'Information et de la Connaissance__
+
+        Présentation du laboratoire, organisation, thématiques ReGaRD et AFUTÉ
+
+    * __B. La télédétection : gestion de l'environnement aux coûts écologiques croissants__
+
+    Présentation courte des enjeux de la télédétection (domaines d'application, en lien avec les thèmes abordés en AFUTÉ), présentation de l'imagerie SAR, et du constat d'augmentation de la consommation énergétique dans le domaine
+
+* __I. Optimiser les algorithmes de traitement d'images satellites__
+
+    * __A. Des méthodes d'optimisations variées__
+
+    Bibliographie sur les méthodes de réduction de consommation énergétique et computationnelle de réseaux de neurones : pruning, 
+
+    * __B. Métriques d'évaluation__
+
+    Méthodes de calcul d'efficience computationnelle, de compléxité d'algorithme, et d'efficience énergétique
+
+* __II. Travaux effectués__
+
+    * __Enregistrement de données d'efficience computationnelle__
+        
+        Présentation de l'architecture Telegraf-InfluxDB-Grafana et de la connection Z-Wave-HomeAssistant (et MQTT ?), visualisation des consommations électriques
+
+    * __Cas d'étude sur la base de données BigEarthNet__
+
+        Présentation de la base de données, des architectures testées pour créer la baseline et des tests réalisés, résultats intermédiaires
+
+* __III. Organisation de la suite du stage__
+
+Implémentation du covariance pooling, tests de performances électriques sur la base BigEarthNet, fusion d'inforamtion et choix d'une métrique de performance comprenant les performances calculatoires de la méthode et l'efficience énergétique.
+
+* __Conclusion__
+
+Démarche de projet construite, mise en situation sur des vraies données de consommation, prise en main de l'enjeu l'efficience énergétique (peu abordé au cours de la formation de 3e année, complémentarité avec la dominante Gestion et ingénierie de l'environnement en 2e année), intégration dans des dynamiques de laboratoire (séminaires, AG, recherches de financement)
+
+{{</unroll-block>}}

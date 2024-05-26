@@ -50,8 +50,7 @@ Ce réseau comporte 3 couches de convolution avec 32, 32 et 64 filtres, de taill
 
 ![Architecture de K-BranchCNN](/bigearthnet/K-BranchCNN.png)
 
-{{<proof "Structure">}}
-Structure:
+{{<unroll-block "Structure">}}
 
 * Branch 10m :
   * Conv2d 5x5 32 stride 1 padding same
@@ -100,7 +99,7 @@ Structure:
 * Fully connected 43
 * Sigmoïde
 * Seuillage
-{{</proof>}}
+{{</unroll-block>}}
 
 
 #### Inception-V2
@@ -109,8 +108,8 @@ Les poids de ce réseau ont été fixés et une couche de sortie a été ajouté
 
 ![Architecture de Inception V2](/bigearthnet/inceptionv2.png)
 
-{{<proof "Structure">}}
-Structure :
+{{<unroll-block "Structure">}}
+
 * Input 224x224x3
 * Conv2d 7x7 64 stride 2 padding same (112 x 112 x 64)
 * ReLU
@@ -324,7 +323,7 @@ Structure :
   * Dropout 0.2
   * Conv2d 1x1 1024 stride 1 padding valid
   * Softmax
-{{</proof>}}
+{{</unroll-block>}}
 
 #### Prétraitement des données
 
