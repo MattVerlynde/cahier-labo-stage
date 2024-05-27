@@ -18,7 +18,7 @@ Cette section présente les éléments choisis ainsi que l'organisation du __rap
 {{<unroll-block "Présentation intermédiaire">}}
 Une __soutenance intermédiaire__ se déroule en juin devant un jury composé, au minimum, du maître de stage ou de son représentant et d'au moins deux enseignants de la DA IODAA. Les élèves remettent à cette occasion un rapport écrit (d'environ __15 pages__) et font une présentation orale de leur travail. Ce rapport et cette présentation sont notés sur la forme et permettent au jury d'apprécier le travail fait et à faire, d'orienter les élèves, au besoin de les réorienter.
 
-La __soutenance orale dure 35mn__, dont __15mn__ pour l’exposé du sujet, du travail réalisé et des perspectives, et __20mn__ pour les questions et la discussion avec l’encadrant en entreprise. 
+La __soutenance orale dure 35mn__, dont __15 min__ pour l’exposé du sujet, du travail réalisé et des perspectives, et __20 min__ pour les questions et la discussion avec l’encadrant en entreprise. 
 
 * __Le rapport intermédiaire__
 

@@ -21,17 +21,48 @@ Disponible sur Overleaf à l'adresse [lien](https://www.overleaf.com/9154772836s
 
 __Plan proposé__ : 
 * présentation personnelle en lien avec le sujet
-* présenter d'abord le projet, quel est le contexte (télédétection, machine learning), le problème (consommation énergétique croissante, besoin de ), les verrous scientifiques (présenter des métriques d'évaluation incluant les dimensions énergétiques et de réussite de tâche), les apports méthodologiques (plan des trois années de thèse, diagramme de Gantt)
-
-
+* présentation du projet, quel est le contexte (télédétection, machine learning), le problème (consommation énergétique croissante, besoin de métriques d'évaluation et de méthodes de réduction de consommation), les verrous scientifiques (présenter des métriques d'évaluation incluant les dimensions énergétiques et de réussite de tâche), les apports méthodologiques (plan des trois années de thèse, diagramme de Gantt)
 
 __Plan détaillé__ :
-* 
+
+* Contexte du sujet
+    
+    Slide 1 : La télédétection, se base sur des images et données spatialisées dans la gestion de l'environnement
+    --> données lourdes, suivant de grande dimension (nombre de bandes, résolution plus ou moins précise), avec dimension temporelle, mais peu étiquetées
+
+    Slide 2 : Plot augmentation du nombre de paramètres des modèles, plus rapide que l'augmentation des performances des processeurs + inégalités d'accès à ce type de solution
+
+* Verrous scientifiques :  
+
+    Slide 1 : proposer des métriques alliant performances sur la tâche réalisée (classification) | proposer des méthodes de classification à la fois frugales et performantes
+
+* Un parcours professionnel tourné vers l'IA frugale en télédétection
+
+    Slide 1 : Frise chronologique formation et stages, avec expérience en recherche appuyée (enseignement, articles rédigés et en cours)
+
+* Moi dans la thèse :  
+
+    Slide 1 : Diagramme de Gantt : état de l'art sur les métriques d'évaluations et les méthodes de réduction de consommation, 
+    écriture de la thèse
+    + déploiement de la stratégie de mesure sur le laboratoire
+
+    Slide 2 : Diagramme de Gantt : état de l'art sur les métriques d'évaluations et les méthodes de réduction de consommation, 
+    écriture de la thèse
+    + déploiement de la stratégie de mesure sur le laboratoire
+
+{{</unroll-block>}}
 
 
-* Motivation pour le projet
 
-* 
+## Expérience professionnelle du candidat en lien avec le projet doctoral
+
+{{<unroll-block "Texte">}}
+
+Dans le cadre de ma formation à AgroParisTech, j'ai effectué un cursus tourné à la fois vers la gestion de l'environnement et les sciences des données. En effet, j'ai effectué mes deux premières années d'école d'ingénieur en gestion et ingénierie de l'environnement, me fournissant une formation sur l'impact de l'humain et des technologies sur l'environnement en termes de consommation énergétique, et j'ai également été introduit aux technologies de télédétection ainsi qu'à leurs applications. J'ai ensuite réalisé une année de césure me permettant d'effectuer deux stages de recherche en télédétection, avant de rejoindre une dominante en sciences des données et programmation lors de ma troisième année d'école. Au sein de cette dominante, j'ai suivi une formation centrée à la fois sur le cadre théorique formant la base des techniques d'apprentissage automatique, mais aussi sur l'usage pratique du langage Python, bash, et de l'environnement PyTorch. J'ai alors choisi d'axer ma formation autour de la télédétection en suivant une formation en analyse d'images, et en rejoignant un projet d'analyse de territoires basée sur des séries temporelles d'images satellites en télédétection. 
+
+Mon expérience professionnelle est également alignée avec les thématiques abordées dans ce sujet de thèse. Lors de mon année de césure, j'ai réalisé un stage au laboratoire CIRED à Nogent-sur-Marne, où j'ai rejoint un projet de cartographie d'usage des sols basé sur des séries temporelles d'images satellites et de cartographie de stock de carbone dans le sol, me donnant l'opportunité de participer à la rédaction d'une publication scientifique. J'ai également pu assister mon encadrante de stage dans ses missions d'enseignement en encadrant un groupe d'étudiants dans leurs travaux dirigés sur la modélisation de services écosystémiques. A la suite de ce stage, j'ai rejoint l'Université de Twente à Enschede, aux Pays-Bas, pour un second stage de recherche en modélisation d'humidité du sol et d'évolutions d'habitats naturels sur une zone protégée, ceci dans un objectif d'évaluation de projets de restauration d'écosystèmes. Les données utilisées étaient alors également des images stallites multispectrales et hyperspectrales. Enfin, je suis actuellement en stage au sein du LISTIC, à Annecy, où je réalise un travail d'optimisation d'algorithmes de traitement d'images SAR en télédétection, dans un objectif de réduction de consommation énergétique.
+
+Je possède donc une réelle expérience sur les applications des technologies de télédétection, ainsi que sur les mécanismes théoriques et pratiques de mise en place d'apprentissage automatique qui formeront le coeur de ce sujet de thèse. 
 
 {{</unroll-block>}}
 
