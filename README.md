@@ -1,19 +1,8 @@
 # Template pour cahier de laboratoire
 
-<div style="text-align: center">
-    <img src="static/screenshot.png" alt="screenshot" width="75%"/>
-</div>
+Ceci est un projet permettant générer un cahier de laboratoire à partir de mardown. Ce cahier a été créé dans le cadre du satge de fin d'étude de Matthieu Verlynde au LISTIC à Annecy, supervisé par Dr. Ammar Mian. Ce cachier est basé sur un template créé par Dr. Ammar Mian 
 
-Ceci est un projet d'exemple pour générer un cahier de laboratoire à partir de mardown. Une démo en ligne est disponible [ici](https://ammarmian.github.io/template_cahierlabo/).
-
-
-## Utilisation
-
-Un guide pour modifier le template est disponible en compilant ce code. Une dépendence à hugo-cite est donéne sous fore de submodule. Ainsi pour obtenir tout le code, lancer:
-
-```console
-git clone https://github.com/AmmarMian/template_cahierlabo --recurse-submodules
-```
+Une démo en ligne du template est disponible [ici](https://ammarmian.github.io/template_cahierlabo/).
 
 ### Hugo
 
@@ -33,10 +22,20 @@ hugo server --port <numéro de port>
 ```
 où `<numéro de port>` est le port que vous souhaitez utiliser. Le site web sera ainsi disponible à l'adresse `http://localhost:<numéro de port>` et se mettra à jour à chaque changement dans les fichiers source.
 
+## Utilisation du template
+
+Un guide pour modifier le template est disponible en compilant le code sur ce projet [ici](https://github.com/AmmarMian/template_cahierlabo). Une dépendence à hugo-cite est donnée sous forme de submodule. Ainsi pour obtenir tout le code, lancer:
+
+```console
+git clone https://github.com/AmmarMian/template_cahierlabo --recurse-submodules
+```
 
 ## Auteur
 
-Ce template est fortement basé sur la base du template [Hyde](https://github.com/spf13/hyde).
+Matthieu Verlynde
+* mail: [matthieu.verlynde@univ-smb.fr](mailto:matthieu.verlynde@univ-smb.fr)
+
+Le template utilisé est fortement basé sur la base du template [Hyde](https://github.com/spf13/hyde).
 
 Ammar Mian
 * Web: [http://ammarmian.github.io](http://ammarmian.github.io)
