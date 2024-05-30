@@ -225,3 +225,31 @@ Implémentation du covariance pooling, tests de performances électriques sur la
 Démarche de projet construite, mise en situation sur des vraies données de consommation, prise en main de l'enjeu l'efficience énergétique (peu abordé au cours de la formation de 3e année, complémentarité avec la dominante Gestion et ingénierie de l'environnement en 2e année), intégration dans des dynamiques de laboratoire (séminaires, AG, recherches de financement)
 
 {{</unroll-block>}}
+
+{{<mermaid>}}
+mindmap
+  root((Accélération 
+  du CNN))
+    Structure du réseau
+        Blocs spécifiques
+        Apprentissage par renforcement
+        Statistiques utilisées
+        ...
+
+    Optimisation du réseau
+        Décomposition de matrice
+        Pruning
+        Quantization
+        ...
+
+    Hardware
+      Plateforme de calcul
+        CPU
+        GPU
+        ...
+
+      Optimisation
+        Réutilisation de calcul
+        Optimisation de mémoire
+        ...
+{{</mermaid>}}
