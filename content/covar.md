@@ -129,4 +129,9 @@ flowchart LR
 * Qu’est ce qu’on peut critiquer/améliorer sur la démarche du papier ?
 -->
 
+### Classification of GPR Signals via Covariance Pooling on CNN Features within a Riemannian Framework
 
+Sur l'article de {{<cite "gallet2022">}} :
+
+![Illustration des 3 approches en traitement d'espace Riemannien](/covar/riemannian_3approaches.png)
+Illustration des 3 approches en traitement d'espace Riemannien
