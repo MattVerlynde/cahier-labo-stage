@@ -6,3 +6,4 @@ dist
 tmp
 /public
 /ressources
+~$*.pptx

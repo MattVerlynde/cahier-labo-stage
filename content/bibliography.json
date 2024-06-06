@@ -2043,5 +2043,53 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "gallet2022",
+		"type": "paper-conference",
+		"abstract": "We consider the problem of classifying Ground Penetrating Radar (GPR) signals by using covariance matrices descriptors computed on convolutional features obtained from Mo-bileNetV2 Convolutional Neural Network (CNN) first layers. This approach allows to leverage the rich data representation obtained from CNNs and the low-dimensionality of secondorder statistics. Then the Riemannian geometry of covariance matrices is leveraged to improve classification rate. The proposed approach allows then to perform automatic classification of buried objects with few labeled data available. We also consider the scenario of an airbone radar and provide results at different elevations.",
+		"container-title": "International Geoscience and Remote Sensing Symposium",
+		"DOI": "10.1109/IGARSS46834.2022.9884684",
+		"event-place": "Kuala Lampur, Malaysia",
+		"publisher-place": "Kuala Lampur, Malaysia",
+		"source": "HAL Archives Ouvertes",
+		"title": "Classification of GPR Signals via Covariance Pooling on CNN Features within a Riemannian Framework",
+		"URL": "https://hal.science/hal-03726277",
+		"author": [
+			{
+				"family": "Gallet",
+				"given": "Matthieu"
+			},
+			{
+				"family": "Mian",
+				"given": "Ammar"
+			},
+			{
+				"family": "Ginolhac",
+				"given": "Guillaume"
+			},
+			{
+				"family": "Stelzenmuller",
+				"given": "Nickolas"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					5,
+					30
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2022",
+					7
+				]
+			]
+		}
 	}
+
 ]
