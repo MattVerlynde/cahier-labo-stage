@@ -952,44 +952,6 @@
 		}
 	},
 	{
-		"id": "boumal2023",
-		"type": "book",
-		"abstract": "Optimization on Riemannian manifolds-the result of smooth geometry and optimization merging into one elegant modern framework-spans many areas of science and engineering, including machine learning, computer vision, signal processing, dynamical systems and scientific computing. This text introduces the differential geometry and Riemannian geometry concepts that will help students and researchers in applied mathematics, computer science and engineering gain a firm mathematical grounding to use these tools confidently in their research. Its charts-last approach will prove more intuitive from an optimizer's viewpoint, and all definitions and theorems are motivated to build time-tested optimization algorithms. Starting from first principles, the text goes on to cover current research on topics including worst-case complexity and geodesic convexity. Readers will appreciate the tricks of the trade for conducting research and for numerical implementations sprinkled throughout the book.",
-		"edition": "1",
-		"ISBN": "978-1-00-916616-4",
-		"language": "en",
-		"license": "https://www.cambridge.org/core/terms",
-		"note": "DOI: 10.1017/9781009166164",
-		"publisher": "Cambridge University Press",
-		"source": "DOI.org (Crossref)",
-		"title": "An Introduction to Optimization on Smooth Manifolds",
-		"URL": "https://www.cambridge.org/core/product/identifier/9781009166164/type/book",
-		"author": [
-			{
-				"family": "Boumal",
-				"given": "Nicolas"
-			}
-		],
-		"accessed": {
-			"date-parts": [
-				[
-					"2024",
-					4,
-					24
-				]
-			]
-		},
-		"issued": {
-			"date-parts": [
-				[
-					"2023",
-					3,
-					16
-				]
-			]
-		}
-	},
-	{
 		"id": "ionescu2016",
 		"type": "article",
 		"abstract": "Deep neural network architectures have recently produced excellent results in a variety of areas in artiﬁcial intelligence and visual recognition, well surpassing traditional shallow architectures trained using hand-designed features. The power of deep networks stems both from their ability to perform local computations followed by pointwise non-linearities over increasingly larger receptive ﬁelds, and from the simplicity and scalability of the gradient-descent training procedure based on backpropagation. An open problem is the inclusion of layers that perform global, structured matrix computations like segmentation (e.g. normalized cuts) or higher-order pooling (e.g. log-tangent space metrics deﬁned over the manifold of symmetric positive deﬁnite matrices) while preserving the validity and efﬁciency of an end-to-end deep training framework. In this paper we propose a sound mathematical apparatus to formally integrate global structured computation into deep computation architectures. At the heart of our methodology is the development of the theory and practice of backpropagation that generalizes to the calculus of adjoint matrix variations. The proposed matrix backpropagation methodology applies broadly to a variety of problems in machine learning or computational perception. Here we illustrate it by performing visual segmentation experiments using the BSDS and MSCOCO benchmarks, where we show that deep networks relying on second-order pooling and normalized cuts layers, trained end-to-end using matrix backpropagation, outperform counterparts that do not take advantage of such global layers.",
