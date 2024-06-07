@@ -19,10 +19,13 @@ Cette page présente égamement la procédure d'interrogation de la base de donn
 
 {{<mermaid>}}
 flowchart LR
+    a4[Smart plug data] --> alpha{{Z-Wave}}
     a1[Container metrics] --> b{{Telegraf}}
     a2[CPU metrics] --> b{{Telegraf}}
     a3[GPU metrics] --> b{{Telegraf}}
     
+    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
+    beta{{MQTT Broker}} --> b{{Telegraf}}
     b{{Telegraf}} --> c[(InfluxDB)]
     c[(InfluxDB)] --> d((Grafana))
 
@@ -33,24 +36,26 @@ flowchart LR
     legend2 ~~~ legend4((Visualizer))
     end
 
+    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
     style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
     style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
     style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
     
     style a1 stroke:#384d54,stroke-width:2px,color:#384d54
     style a2 stroke:#384d54,stroke-width:2px,color:#384d54
     style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
 
     style Legend fill:#fff,stroke-width:0px,color:#384d54
     style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
     style legend2 stroke-width:0px,color:#384d54
     style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
     style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
-
     
 {{</mermaid>}}
 
-Le plugin Telegraf, produit par InfluxDB permet la collection des données du hardware de l'ordinateur en temps réel, ainsi que son formatage. 
+Le plugin Telegraf, produit par InfluxDB permet la collection des données du hardware de l'ordinateur en temps réel, ainsi que son formatage. Le plugin ZWave-JS UI collecte les données de la prise connectée, et les transfère à Telegraf via un plugin Mosquitto.
 InfluxDB permet le stockage de ces données en séries temporelles, et constitue la base de donnée qui est interrogée au sein du pipeleine; Grafana est un outil de visualisation et d'analyse des données lues la base de données de InfluxDB.
 
 ## Téléchargement de TIG
@@ -676,84 +681,8 @@ Dans le cas où la prise connectée s'est éteinte, et que l'intervalle d'envoi 
 
   * Modifier la valeur du paramètre _Automatic Reporting Interval_ (Attention, la valeur minimale est de 30 secondes)
 
-## Pipeline final
+{{<unroll-block "Pipeline final">}}
 
-{{<mermaid>}}
-flowchart LR
-    a4[Smart plug data] --> alpha{{Z-Wave}}
-    a1[Container metrics] --> b{{Telegraf}}
-    a2[CPU metrics] --> b{{Telegraf}}
-    a3[GPU metrics] --> b{{Telegraf}}
-    
-    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
-    beta{{MQTT Broker}} --> b{{Telegraf}}
-    b{{Telegraf}} --> c[(InfluxDB)]
-    c[(InfluxDB)] --> d((Grafana))
-    alpha{{Z-Wave}} --> gamma((HomeAssistant))
+![Pipeline final](/config_suivi/smart-switch/pipeline.png)
 
-    gamma ~~~ legend1[Docker container]
-    gamma ~~~ legend2[Data source]
-    subgraph Legend[<u>Legend</u>]
-    legend1 ~~~ legend3[(Database)]
-    legend2 ~~~ legend4((Visualizer))
-    end
-
-    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style gamma fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    
-    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
-
-    style Legend fill:#fff,stroke-width:0px,color:#384d54
-    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
-    style legend2 stroke-width:0px,color:#384d54
-    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
-    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
-    
-{{</mermaid>}}
-
-Sans HomeAssistant (inutile sur le long terme dans notre cas) :
-
-{{<mermaid>}}
-flowchart LR
-    a4[Smart plug data] --> alpha{{Z-Wave}}
-    a1[Container metrics] --> b{{Telegraf}}
-    a2[CPU metrics] --> b{{Telegraf}}
-    a3[GPU metrics] --> b{{Telegraf}}
-    
-    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
-    beta{{MQTT Broker}} --> b{{Telegraf}}
-    b{{Telegraf}} --> c[(InfluxDB)]
-    c[(InfluxDB)] --> d((Grafana))
-
-    d ~~~ legend1[Docker container]
-    d ~~~ legend2[Data source]
-    subgraph Legend[<u>Legend</u>]
-    legend1 ~~~ legend3[(Database)]
-    legend2 ~~~ legend4((Visualizer))
-    end
-
-    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
-    
-    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
-    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
-
-    style Legend fill:#fff,stroke-width:0px,color:#384d54
-    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
-    style legend2 stroke-width:0px,color:#384d54
-    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
-    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
-    
-{{</mermaid>}}
+{{</unroll-block>}}
