@@ -659,6 +659,23 @@ client_trace = true
 #   #      key = type
 ```
 
+## Erreurs possibles
+
+Dans le cas d'un arrêt complet du serveur, les adresses IP des conteneurs Docker peuvent alors être changées. Ceci ne devrait pas poser de problème pour l'ensemble du pipeline, excepté pour le software HomeAssistant.
+Pour reconnecter HomeAssistant :
+
+  * Récupérer l'adresse IP du conteneur de ZWave-JS UI via la commande ```sudo docker inspect --format '{{ .NetworkSettings.Networks.tig_default.IPAddress }}' zwave-js```
+
+  * Réeffectuer la connection à HomeAssistant avec cette adresse IP comme présenté précédemment
+
+Dans le cas où la prise connectée s'est éteinte, et que l'intervalle d'envoi de données à été modifié :
+
+  * Se rendre sur l'interface de ZWave-JS UI `http://localhost:8091/` sur le panneau de contrôle (_Control panel_)
+
+  * Sur le noeud associé à la prise connectée, dans l'onglet _Values_, ouvrir la rubrique _Configuration v1_
+
+  * Modifier la valeur du paramètre _Automatic Reporting Interval_ (Attention, la valeur minimale est de 30 secondes)
+
 ## Pipeline final
 
 {{<mermaid>}}
