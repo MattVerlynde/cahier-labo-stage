@@ -685,4 +685,4 @@ Dans le cas où la prise connectée s'est éteinte, et que l'intervalle d'envoi 
 
 ![Pipeline final](/config_suivi/smart-switch/pipeline.png)
 
-{{</unroll-block>}}
+{{</unroll-block>}} 
