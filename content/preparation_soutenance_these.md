@@ -46,10 +46,6 @@ __Plan détaillé__ :
     écriture de la thèse
     + déploiement de la stratégie de mesure sur le laboratoire
 
-    Slide 2 : Diagramme de Gantt : état de l'art sur les métriques d'évaluations et les méthodes de réduction de consommation, 
-    écriture de la thèse
-    + déploiement de la stratégie de mesure sur le laboratoire
-
 {{</unroll-block>}}
 
 
