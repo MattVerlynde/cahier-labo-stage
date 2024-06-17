@@ -136,6 +136,20 @@ To add
 
 ### Détection des évènements de changement
 
+$$
+H_{0} : \forall (i,j) \in \mathbb{N}^2, \Sigma_i = \Sigma_j 
+$$
+$$
+H_{1} : \exists (i,j) \in \mathbb{N}^2, \Sigma_i \neq \Sigma_j
+$$
+
+$$
+H_{0,j} : \Sigma_{j-1} = \Sigma_j 
+$$
+$$
+H_{1,j} : \Sigma_{j-1} \neq \Sigma_j
+$$
+
 {{<pseudocode>}}
 
 \begin{algorithm}
@@ -146,24 +160,23 @@ To add
 
     \STATE Initialize list of change points $\mathcal{L}$
 
-    \STATE $\mathcal{l} = 1$
+    \STATE $\ell = 1$
 
-    \While{$H_0^{(\mathcal{l})}$ not accepted}
+    \While{$H_0^{(\ell)}$ not accepted}
 
         \STATE Set $\mathcal{j} = 2$
 
-        \While{$H_{0,\mathcal{j}}^{(\mathcal{l})}$ accepted}
+        \While{$H_{0,\mathcal{j}}^{(\ell)}$ accepted}
 
             \STATE $\mathcal{j} = \mathcal{j}+1$
 
         \EndWhile
 
-        \STATE $\mathcal{l} = \mathcal{l}+\mathcal{j}$
+        \STATE $\ell = \ell+\mathcal{j}$
 
-        \STATE Append $\mathcal{l}$ to $\mathcal{L}$
+        \STATE Append $\ell$ to $\mathcal{L}$
 
     \EndWhile
-
 
 \end{algorithmic}
 
