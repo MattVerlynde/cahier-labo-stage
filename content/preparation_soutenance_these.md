@@ -3,7 +3,7 @@ layout: page
 title: . Présentation de thèse
 menu:
   main:
-    weight: 11
+    weight: 12
 bibFile: content/bibliography.json
 toc: True
 mermaid: True
