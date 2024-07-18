@@ -1,0 +1,161 @@
+[
+	{
+		"id": "palomar2016",
+		"type": "article-journal",
+		"abstract": "This paper considers the problem of robustly estimating a structured covariance matrix with an elliptical underlying distribution with a known mean. In applications where the covariance matrix naturally possesses a certain structure, taking the prior structure information into account in the estimation procedure is beneﬁcial to improving the estimation accuracy. We propose incorporating the prior structure information into Tyler’s M -estimator and formulating the problem as minimizing the cost function of Tyler’s estimator under the prior structural constraint. First, the estimation under a general convex structural constraint is introduced with an efﬁcient algorithm for ﬁnding the estimator derived based on the majorization-minimization (MM) algorithm framework. Then, the algorithm is tailored to several special structures that enjoy a wide range of applications in signal processing related ﬁelds, namely, sum of rank-one matrices, Toeplitz, and banded Toeplitz structure. In addition, two types of non-convex structures, i.e., the Kronecker structure and the spiked covariance structure, are also discussed, where it is shown that simple algorithms can be derived under the guidelines of MM. The algorithms are guaranteed to converge to a stationary point of the problems. Furthermore, if the constraint set is geodesically convex, such as the Kronecker structure set, then the algorithm converges to a global minimum. Numerical results show that the proposed estimator achieves a smaller estimation error than the benchmark estimators at a lower computational cost.",
+		"container-title": "IEEE Transactions on Signal Processing",
+		"DOI": "10.1109/TSP.2016.2546222",
+		"ISSN": "1053-587X, 1941-0476",
+		"issue": "14",
+		"journalAbbreviation": "IEEE Trans. Signal Process.",
+		"language": "en",
+		"page": "3576-3590",
+		"source": "DOI.org (Crossref)",
+		"title": "Robust Estimation of Structured Covariance Matrix for Heavy-Tailed Elliptical Distributions",
+		"URL": "http://ieeexplore.ieee.org/document/7439863/",
+		"volume": "64",
+		"author": [
+			{
+				"family": "Sun",
+				"given": "Ying"
+			},
+			{
+				"family": "Babu",
+				"given": "Prabhu"
+			},
+			{
+				"family": "Palomar",
+				"given": "Daniel P."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					28
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2016",
+					7,
+					15
+				]
+			]
+		}
+	},
+	{
+		"id": "tyler1987",
+		"type": "article-journal",
+		"abstract": "The existence and uniqueness of a limiting form of a Huber-type $M$-estimator of multivariate scatter is established under certain conditions on the observed sample. These conditions hold with probability one when sampling randomly from a continuous multivariate distribution. The existence of the estimator is proven by showing that it is the limiting point of a specific algorithm. Hence, the proof is constructive. For continuous populations, the estimator of multivariate scatter is shown to be strongly consistent and asymptotically normal. An important property of the estimator is that its asymptotic distribution is distribution-free with respect to the class of continuous elliptically distributed populations. This distribution-free property also holds for the finite sample size distribution when the location parameter is known. In addition, the estimator is the \"most robust\" estimator of the scatter matrix of an elliptical distribution in the sense of minimizing the maximum asymptotic variance.",
+		"container-title": "The Annals of Statistics",
+		"DOI": "10.1214/aos/1176350263",
+		"ISSN": "0090-5364, 2168-8966",
+		"issue": "1",
+		"note": "publisher: Institute of Mathematical Statistics",
+		"page": "234-251",
+		"source": "Project Euclid",
+		"title": "A Distribution-Free $M$-Estimator of Multivariate Scatter",
+		"URL": "https://projecteuclid.org/journals/annals-of-statistics/volume-15/issue-1/A-Distribution-Free-M-Estimator-of-Multivariate-Scatter/10.1214/aos/1176350263.full",
+		"volume": "15",
+		"author": [
+			{
+				"family": "Tyler",
+				"given": "David E."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2023",
+					3,
+					23
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"1987",
+					3
+				]
+			]
+		}
+	},
+	{
+		"id": "gordana_thesis",
+		"type": "thesis",
+		"abstract": "One of the main challenges in radar processing is to identify a target hidden in a disturbance environment. To this end, the noise statistical properties, especially the ones of the disturbance covariance matrix, need to be determined. Under the Gaussian assumption, the latter is estimated by the sample covariance matrix (SCM) whose behavior is perfectly known. However, in many applications, such as, for instance, the modern high resolution radar systems, collected data exhibit a heterogeneous nature that cannot be adequately described by a Gaussian process. To overcome this problem, Complex Elliptically Symmetric distributions have been proposed since they can correctly model these data behavior. In this case, the SCM performs very poorly and M-estimators appear as a good alternative, mainly due to their flexibility to the statistical model and their robustness to outliers and/or missing data. However, the behavior of such estimators still remains unclear and not well understood. In this context, the contributions of this thesis are multiple.First, an original approach to analyze the statistical properties of M-estimators is proposed, revealing that the statistical properties of M-estimators can be approximately well-described by a Wishart distribution. Thanks to these results, we go further and analyze the eigendecomposition of the covariance matrix. Depending on the application, the covariance matrix can exhibit a particular structure involving multiple eigenvalues containing the information of interest. We thus address various scenarios met in practice and propose robust procedures based on M-estimators. Furthermore, we study the robust signal detection problem. The statistical properties of various adaptive detection statistics built with M-estimators are analyzed. Finally, the last part deals with polarimetric synthetic aperture radar (PolSAR) image processing. In PolSAR imaging, a particular effect called speckle significantly degrades the image quality. In this thesis, we demonstrate how the new statistical properties of M-estimators can be exploited in order to build new despeckling techniques.",
+		"publisher": "Paris-Saclay",
+		"title": "Statistiques des estimateurs robustes pour le traitement du signal et des images.pdf",
+		"URL": "https://www.theses.fr/2019SACLC069",
+		"author": [
+			{
+				"family": "Draskovic",
+        "given": "Gordana"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "http://zotero.org/users/8881707/items/WCUGMWJZ",
+		"type": "article-journal",
+		"abstract": "Complex elliptically symmetric (CES) distributions have been widely used in various engineering applications for which non-Gaussian models are needed. In this overview, circular CES distributions are surveyed, some new results are derived and their applications e.g., in radar and array signal processing are discussed and illustrated with theoretical examples, simulations and analysis of real radar data. The maximum likelihood (ML) estimator of the scatter matrix parameter is derived and general conditions for its existence and uniqueness, and for convergence of the iterative ﬁxed point algorithm are established. Speciﬁc ML-estimators for several CES distributions that are widely used in the signal processing literature are discussed in depth, including the complex -distribution, -distribution, the generalized Gaussian distribution and the closely related angular central Gaussian distribution. A generalization of ML-estimators, the -estimators of the scatter matrix, are also discussed and asymptotic analysis is provided. Applications of CES distributions and the adaptive signal processors based on ML- and -estimators of the scatter matrix are illustrated in radar detection problems and in array signal processing applications for Direction-of-Arrival (DOA) estimation and beamforming. Furthermore, experimental validation of the usefulness of CES distributions for modelling real radar data is given.",
+		"container-title": "IEEE Transactions on Signal Processing",
+		"DOI": "10.1109/TSP.2012.2212433",
+		"ISSN": "1053-587X, 1941-0476",
+		"issue": "11",
+		"journalAbbreviation": "IEEE Trans. Signal Process.",
+		"language": "en",
+		"page": "5597-5625",
+		"source": "DOI.org (Crossref)",
+		"title": "Complex Elliptically Symmetric Distributions: Survey, New Results and Applications",
+		"title-short": "Complex Elliptically Symmetric Distributions",
+		"URL": "http://ieeexplore.ieee.org/document/6263313/",
+		"volume": "60",
+		"author": [
+			{
+				"family": "Ollila",
+				"given": "E."
+			},
+			{
+				"family": "Tyler",
+				"given": "D. E."
+			},
+			{
+				"family": "Koivunen",
+				"given": "V."
+			},
+			{
+				"family": "Poor",
+				"given": "H. V."
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2024",
+					2,
+					12
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2012",
+					11
+				]
+			]
+		}
+	}
+]
