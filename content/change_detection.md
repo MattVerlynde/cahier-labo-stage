@@ -227,6 +227,9 @@ width="300" height="300" style="border: none;"></iframe>
 <iframe src="../results/custom_test_image_n22500_T4_p3_3_pvalue_threshold.html"
 width="300" height="300" style="border: none;"></iframe>
 
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_pvalue_threshold.html"
+width="400" height="400" style="border: none;"></iframe>
+
 Les zones de changement sont bien détectées par l'algorithme, mais également des zones supplémentaires. 
 
 Dans le cas de la seconde image jouet, les changements sont éparses sur la surface d'étude.

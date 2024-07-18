@@ -253,3 +253,4 @@ mindmap
         Optimisation de mémoire
         ...
 {{</mermaid>}}
+
