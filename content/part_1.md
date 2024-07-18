@@ -66,7 +66,7 @@ L'option `--grouped True` permet d'effectuer ces analyses lorsque les exécution
 | Threads            | Paramètre             | Nombre de threads | Nombre de threads utilisées pour les calculs en parallèle (1 ou 12)   |
 | Window             | Paramètre             | Pixels    | Taille de la fenêtre glissante utilisée dans l'estimation  de la matrice de covariance |
 | Image              | Paramètre             |           | Série temporelle utilisée                                                     |
-| Energy             | Variable              | W.s       | Consommation énergétique de la machine mesurée par une prise connectée        |
+| Energy             | Variable              | W.s       | Consommation énergétique de la machine basée sur la mesure de puisance par une prise connectée        |
 | Emissions          | Variable              |           | Emissions en $\text{CO}_2$ estimées par le package Python *CodeCarbon*               |
 | Memory             | Variable              | %.s       | Mémoire RAM **libre** lors de l'éxecution                                     |
 | Duration           | Variable              | s         | Durée d'exécution                                                             |
@@ -85,6 +85,7 @@ $$AP = \sum_{n} (R_n - R_{n-1}) \times P_n$$
 Coefficient de silhouette :
 $$CS = \frac{b - a}{max(a, b)}$$  avec $a$ la distance intra-cluster moyenne et $b$ la distance moyenne au cluster le plus proche.
 
+L'incertitude de la mesure de puissance est de $\pm 3W$ pour des mesures inférieures à $300W$, et de $\pm 1%$ pour des mesures supérieures.
 
 ### Plan d'expérience
 
