@@ -15,14 +15,14 @@ Planification du stage établie le 17/06/2024.
 
 # Déroulé du stage
 
-Objectifs : identifier leproblème de coûts écologique et du compromis performance de mmodèle/performance énergétiques dans le domaine de la télédétection, en prenant en compte ses spécificités.
+Objectifs : identifier le problème de coûts écologique et du compromis performance de mmodèle/performance énergétiques dans le domaine de la télédétection, en prenant en compte ses spécificités.
 Le stage s'organise selon 3 points, correspondant à 3 cas d'applications classiques en télédétection actuellement.
 
 ## Les traitement classiques en machine learning (traitement statistiques)
 
 Effectuer des méthodes statistiques classiques comme celle appliquée dans l'onglet `I. Principe de détection de changement`.
 La stratégie employée dans cette partie est l'application de telles méthodes statistiques sur des images SAR de $100 \times 100$. On identifiera et appliquera également d'autres algorithmes de détéction de changement sur des images SAR.
-On réalisera des expariences selon plusieurs modalités de paramaètres du modèle (taille de la fenêtre à 3, 5, 7, 11, 21px), et on testera différents régimes pour l'algorithme (mono-thread, multi-thread, GPU). On testera également plusierus implémentations (en C/Rust, Jax/Numba).
+On réalisera des experiences selon plusieurs modalités de paramaètres du modèle (taille de la fenêtre à 5, 7, 21px), et on testera différents régimes pour l'algorithme (mono-thread, multi-thread). On testera également plusieurs implémentations (en C/Rust, Jax/Numba).
 
 On mesurera les performances énergétique de ces modèles en récupérant les valeurs de consommation CPU, RAM, et de consommation énergétique mesurée sur la prise, sur lesquels on effectuera des traitements de réduction de bruit.
 
@@ -32,7 +32,7 @@ $$
 \int_{t_1}^{t_2} F(t) - \left(\frac{1}{t_1-t_l-t_0}\int_{t_0}^{t_1-t_l} F(t) \mathrm{d}t\right) \mathrm{d}t
 $$
 
-On calcumlera également des métriques de performances (AUC, SSIM), permettatn alors d'établir une analyse statistiques sur nos résultats et de lier les modalités énérgértiques aux modalités de performances.
+On calculera également des métriques de performances (AUC, SSIM), permettant alors d'établir une analyse statistiques sur nos résultats et de lier les modalités énérgértiques aux modalités de performances.
 
 ## Les traitement classiques en apprentissage profond
 

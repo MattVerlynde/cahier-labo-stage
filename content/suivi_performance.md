@@ -10,7 +10,7 @@ toc: True
 ---
 
 Cette page résume la procédure d'installation du pipeline de lecture, écriture, sauvegarde et visualisation des données internes du hardware. Celle-ci est basée sur le pipeline **Telegraf-InfluxDB-Grafana** (TIG). Elle s'inspire largement sur le tutoriel accessible en ligne à [cette adresse](https://domopi.eu/tig-le-trio-telegraf-influxdb-grafana-pour-surveiller-vos-equipements/).
-Cette page présente égamement la procédure d'interrogation de la base de données **InfluxDB** après exécution d'un programme python, via l'exécution d'un script bash.
+Cette page présente également la procédure d'interrogation de la base de données **InfluxDB** après exécution d'un programme python, via l'exécution d'un script bash.
 
 <!--more-->
 
@@ -261,6 +261,8 @@ Effectuez alors les modifications suivantes :
 * Dans `[agent]`, la variable `hostname` comme la variable d'environnement `INFLUX_DB`, ici `"telegraf"`
 
 * Décommenter `[[outputs.influxdb_v2]]`, la variable `urls` comme `["http://influxdb:8086"]`, et les variables `token`, `organization` et `bucket` comme `DOCKER_INFLUXDB_INIT_ADMIN_TOKEN`, `DOCKER_INFLUXDB_INIT_ORG` et `DOCKER_INFLUXDB_INIT_BUCKET`, ici de valeur `"telegraf_token"`, `"telegraf_org"` et `"telegraf_bucket"`.
+
+* Commenter `[[outputs.file]]`. Garder un fichier de sauvegarde au sein de Telegraf ne sera pas utile en complément de la base InfluxDB.
 
 * Décommenter `[[outputs.influxdb]]`, la variable `urls` comme `["http://influxdb:8086"]`, et les variables `username` et `password` comme `DOCKER_INFLUXDB_INIT_USERNAME` et `DOCKER_INFLUXDB_INIT_PASSWORD`, ici de valeur `"telegraf_user"` et `"telegraf_password"`.
 
