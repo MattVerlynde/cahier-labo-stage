@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Stage optimisation analyse d&#39;images satellites
+</title>
+    <link>/</link>
+    <description>Recent content in Home on Stage optimisation analyse d&#39;images satellites
+</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 22 Jun 2023 09:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>. Planification du stage</title>
+      <link>/plan_stage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/plan_stage/</guid>
+      <description>&lt;p&gt;Planification du stage établie le 17/06/2024.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>. Présentation de thèse</title>
+      <link>/preparation_soutenance_these/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/preparation_soutenance_these/</guid>
+      <description>&lt;p&gt;Cette section présente les éléments choisis pour l&amp;rsquo;organisation de la &lt;strong&gt;demande de financement de thèse&lt;/strong&gt; se tenant à l&amp;rsquo;école doctorale SIE.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>. Présentation et rapport de stage</title>
+      <link>/preparation_soutenance_stage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/preparation_soutenance_stage/</guid>
+      <description>&lt;p&gt;Cette section présente les éléments choisis ainsi que l&amp;rsquo;organisation du &lt;strong&gt;rapport et de la présentation intermédiaire du stage&lt;/strong&gt; se tenant à AgroParisTech (Palaiseau) le 4 juin 2024 de 9h45 à 10h25. Le projet Overleaf de ce rapport est accessible sur ce &lt;a href=&#34;https://www.overleaf.com/read/sshbhhgmzksm#fa7d2e&#34;&gt;lien&lt;/a&gt; et celui de la présentation sur ce &lt;a href=&#34;https://www.overleaf.com/read/gbywzhjpfrgb#587646&#34;&gt;lien&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.Partie 1 - Analyse statistique</title>
+      <link>/part_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/part_1/</guid>
+      <description>&lt;p&gt;Cette section présente les résultats de la première partie d&amp;rsquo;expérimentations, sur l&amp;rsquo;analyse des coûts énergétiques et des performances de modèles sur des applications en détection de changement et clustering par algorithmes basés sur des statistiques sans apprentissage.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>.Partie 2 - CLassification avec deep learning</title>
+      <link>/part_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/part_2/</guid>
+      <description>&lt;p&gt;Cette section présente les résultats de la seconde partie d&amp;rsquo;expérimentations, sur l&amp;rsquo;analyse des coûts énergétiques et des performances de modèles sur des applications en classification supervisée par algorithmes basés sur de l&amp;rsquo;apprentissage profond (&lt;em&gt;deep learning&lt;/em&gt;).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>I. Principe de détection de changement</title>
+      <link>/change_detection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/change_detection/</guid>
+      <description>&lt;p&gt;Test d&amp;rsquo;un algorithme de détection de changement.
+Ce problème est centré sur l&amp;rsquo;optimisation d&amp;rsquo;algorithme de détection de changements à partir d&amp;rsquo;images SAR (Radar à synthèse d&amp;rsquo;ouverture).&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>II. Bibliographie - Mesures de performance d&#39;algorithme</title>
+      <link>/calcul_performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/calcul_performance/</guid>
+      <description>&lt;p&gt;La durée d&amp;rsquo;exécution d&amp;rsquo;un programme peut rendre compte de l&amp;rsquo;optimalité d&amp;rsquo;un programme, mais elle peut apparaître insuffisante en cela qu&amp;rsquo;elle peut ne pas rendre commpte de la complexité intrinsèque de l&amp;rsquo;algorithme, et de la quantité d&amp;rsquo;énergie nécessaire (même si elle reste très corrélée à ces aspects)&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>III. Mise en place d&#39;outils de suivi de performance</title>
+      <link>/suivi_performance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/suivi_performance/</guid>
+      <description>&lt;p&gt;Cette page résume la procédure d&amp;rsquo;installation du pipeline de lecture, écriture, sauvegarde et visualisation des données internes du hardware. Celle-ci est basée sur le pipeline &lt;strong&gt;Telegraf-InfluxDB-Grafana&lt;/strong&gt; (TIG). Elle s&amp;rsquo;inspire largement sur le tutoriel accessible en ligne à &lt;a href=&#34;https://domopi.eu/tig-le-trio-telegraf-influxdb-grafana-pour-surveiller-vos-equipements/&#34;&gt;cette adresse&lt;/a&gt;.
+Cette page présente également la procédure d&amp;rsquo;interrogation de la base de données &lt;strong&gt;InfluxDB&lt;/strong&gt; après exécution d&amp;rsquo;un programme python, via l&amp;rsquo;exécution d&amp;rsquo;un script bash.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IV. Simulations en détection de changement</title>
+      <link>/simulations/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/simulations/</guid>
+      <description>&lt;p&gt;Cette page présente la planification de simulations d&amp;rsquo;exécution d&amp;rsquo;algorithmes de détection de changement via le programme présenté sur la page &lt;strong&gt;Détection de changement&lt;/strong&gt;, ainsi que les résultats obtenus en termes de performances, temps de calcul, cosommation CPU et mémoire, température au sein de la machine&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>V. Expérimentations sur les données BigEarthNet</title>
+      <link>/bigearthnet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/bigearthnet/</guid>
+      <description>&lt;p&gt;Cette page présente l&amp;rsquo;application de la stratégie mise en place dans la partie &lt;strong&gt;Mise en place d&amp;rsquo;outils de suivi de performance&lt;/strong&gt; sur les données BigEarthNet contenant un ensemble d&amp;rsquo;images Sentinel-1 et Sentinel-2 multimodales.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VI. Bibliographie - Covariance et Optimisation</title>
+      <link>/covar/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/covar/</guid>
+      <description>&lt;p&gt;Notes de lectures de bibliographie sur les méthodes de &lt;em&gt;covariance pooling&lt;/em&gt; et d&amp;rsquo;optimisation.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture</title>
+      <link>/reduction-size/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reduction-size/</guid>
+      <description>&lt;p&gt;Notes de lectures de bibliographie sur les méthodes de réduction de dimension ou de taille d&amp;rsquo;architecture autres que par l&amp;rsquo;utilisation de &lt;em&gt;covariance pooling&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

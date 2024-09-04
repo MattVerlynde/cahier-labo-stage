@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>III. Mise en place d&#39;outils de suivi de performance &middot; Stage optimisation analyse d&#39;images satellites
+</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="../css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="../css/poole.css">
+  <link type="text/css" rel="stylesheet" href="../css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="../css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../hugo-cite.css" />
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+
+  
+  <div></div>
+<script>
+"use strict";function addBackToTop(){var o,t,e,n,i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=i.backgroundColor,d=void 0===r?"#000":r,a=i.cornerOffset,c=void 0===a?20:a,s=i.diameter,l=void 0===s?56:s,u=i.ease,p=void 0===u?function(o){return.5*(1-Math.cos(Math.PI*o))}:u,m=i.id,h=void 0===m?"back-to-top":m,b=i.innerHTML,v=void 0===b?'<svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>':b,f=i.onClickScrollTo,x=void 0===f?0:f,w=i.scrollContainer,g=void 0===w?document.body:w,k=i.scrollDuration,y=void 0===k?100:k,T=i.showWhenScrollTopIs,M=void 0===T?1:T,z=i.size,E=void 0===z?l:z,C=i.textColor,L=void 0===C?"#fff":C,N=i.zIndex,I=void 0===N?1:N,A=g===document.body,B=A&&document.documentElement;o=Math.round(.43*E),t=Math.round(.29*E),e="#"+h+"{background:"+d+";-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;bottom:"+c+"px;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);box-shadow:0 2px 5px 0 rgba(0,0,0,.26);color:"+L+";cursor:pointer;display:block;height:"+E+"px;opacity:1;outline:0;position:fixed;right:"+c+"px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-transition:bottom .2s,opacity .2s;-o-transition:bottom .2s,opacity .2s;-moz-transition:bottom .2s,opacity .2s;transition:bottom .2s,opacity .2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:"+E+"px;z-index:"+I+"}#"+h+" svg{display:block;fill:currentColor;height:"+o+"px;margin:"+t+"px auto 0;width:"+o+"px}#"+h+".hidden{bottom:-"+E+"px;opacity:0}",(n=document.createElement("style")).appendChild(document.createTextNode(e)),document.head.insertAdjacentElement("afterbegin",n);var D=function(){var o=document.createElement("div");return o.id=h,o.className="hidden",o.innerHTML=v,o.addEventListener("click",function(o){o.preventDefault(),function(){var o="function"==typeof x?x():x,t=window,e=t.performance,n=t.requestAnimationFrame;if(y<=0||void 0===e||void 0===n)return q(o);var i=e.now(),r=j(),d=r-o;n(function o(t){var e=Math.min((t-i)/y,1);q(r-Math.round(p(e)*d)),e<1&&n(o)})}()}),document.body.appendChild(o),o}(),H=!0;function S(){j()>=M?function(){if(!H)return;D.className="",H=!1}():function(){if(H)return;D.className="hidden",H=!0}()}function j(){return g.scrollTop||B&&document.documentElement.scrollTop||0}function q(o){g.scrollTop=o,B&&(document.documentElement.scrollTop=o)}(A?window:g).addEventListener("scroll",S),S()}
+
+addBackToTop({
+  diameter: 56,
+  backgroundColor: 'black',
+  textColor: '#fff',
+})</script>
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="../index.html"><h3 style="color: white;">Stage optimisation analyse d&#39;images satellites
+</h3></a>
+      <p>
+       Cahier de laboratoire sur l&#39;optimisation d&#39;algorithmes d&#39;analyse d&#39;image en télédetection, appliqué sur des images SAR.
+ 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><i class="fa-solid fa-house"></i> <a href="../index.html">Home</a> </li>
+        <li><i class="fa-brands fa-pagelines"></i> <a href="../change_detection/index.html"> I. Principe de détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../calcul_performance/index.html"> II. Bibliographie - Mesures de performance d&#39;algorithme </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../suivi_performance/index.html"> III. Mise en place d&#39;outils de suivi de performance </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../simulations/index.html"> IV. Simulations en détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../bigearthnet/index.html"> V. Expérimentations sur les données BigEarthNet </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../covar/index.html"> VI. Bibliographie - Covariance et Optimisation </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../reduction-size/index.html"> VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../plan_stage/index.html"> . Planification du stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_stage/index.html"> . Présentation et rapport de stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_these/index.html"> . Présentation de thèse </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_1/index.html"> .Partie 1 - Analyse statistique </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_2/index.html"> .Partie 2 - CLassification avec deep learning </a></li>
+      </ul>
+    </nav>
+
+    <p><p>Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.</p>
+<p>@2023 Université Savoie Mont-Blanc. All rights reserved.</p>
+</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    
+
+<div class="post">
+  <h1>III. Mise en place d&#39;outils de suivi de performance</h1>
+
+  
+  <div class="toc-page">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#présentation-du-pipeline">Présentation du pipeline</a></li>
+    <li><a href="#téléchargement-de-tig">Téléchargement de TIG</a></li>
+    <li><a href="#configuration-de-grafana">Configuration de Grafana</a></li>
+    <li><a href="#interrogation-de-la-base">Interrogation de la base</a></li>
+    <li><a href="#suivre-les-performances-énergétiques">Suivre les performances énergétiques</a>
+      <ul>
+        <li><a href="#connection-à-influxdb">Connection à InfluxDB</a></li>
+      </ul>
+    </li>
+    <li><a href="#erreurs-possibles">Erreurs possibles</a></li>
+  </ul>
+</nav>
+  </div>
+  <div class="post-content">
+    <p>Cette page résume la procédure d&rsquo;installation du pipeline de lecture, écriture, sauvegarde et visualisation des données internes du hardware. Celle-ci est basée sur le pipeline <strong>Telegraf-InfluxDB-Grafana</strong> (TIG). Elle s&rsquo;inspire largement sur le tutoriel accessible en ligne à <a href="https://domopi.eu/tig-le-trio-telegraf-influxdb-grafana-pour-surveiller-vos-equipements/">cette adresse</a>.
+Cette page présente également la procédure d&rsquo;interrogation de la base de données <strong>InfluxDB</strong> après exécution d&rsquo;un programme python, via l&rsquo;exécution d&rsquo;un script bash.</p>
+<h2 id="présentation-du-pipeline">Présentation du pipeline</h2>
+<div class="mermaid">
+flowchart LR
+    a4[Smart plug data] --> alpha{{Z-Wave}}
+    a1[Container metrics] --> b{{Telegraf}}
+    a2[CPU metrics] --> b{{Telegraf}}
+    a3[GPU metrics] --> b{{Telegraf}}
+    
+    alpha{{Z-Wave}} --> beta{{MQTT Broker}}
+    beta{{MQTT Broker}} --> b{{Telegraf}}
+    b{{Telegraf}} --> c[(InfluxDB)]
+    c[(InfluxDB)] --> d((Grafana))
+
+    d ~~~ legend1[Docker container]
+    d ~~~ legend2[Data source]
+    subgraph Legend[<u>Legend</u>]
+    legend1 ~~~ legend3[(Database)]
+    legend2 ~~~ legend4((Visualizer))
+    end
+
+    style alpha fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style b fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style beta fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style c fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    style d fill:#0db7ed,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+    style a1 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a2 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a3 stroke:#384d54,stroke-width:2px,color:#384d54
+    style a4 stroke:#384d54,stroke-width:2px,color:#384d54
+
+    style Legend fill:#fff,stroke-width:0px,color:#384d54
+    style legend1 fill:#0db7ed,stroke-width:0px,color:#384d54
+    style legend2 stroke-width:0px,color:#384d54
+    style legend3 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    style legend4 fill:#fff,stroke:#384d54,stroke-width:2px,color:#384d54
+    
+</div>
+
+<p>Le plugin Telegraf, produit par InfluxDB permet la collection des données du hardware de l&rsquo;ordinateur en temps réel, ainsi que son formatage. Le plugin ZWave-JS UI collecte les données de la prise connectée, et les transfère à Telegraf via un plugin Mosquitto.
+InfluxDB permet le stockage de ces données en séries temporelles, et constitue la base de donnée qui est interrogée au sein du pipeleine; Grafana est un outil de visualisation et d&rsquo;analyse des données lues la base de données de InfluxDB.</p>
+<h2 id="téléchargement-de-tig">Téléchargement de TIG</h2>
+
+
+
+<div class="highlight-block warning-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: orange;"> <i class='fa-solid fa-triangle-exclamation'></i> Warning </b>
+  <div style="position: relative; left: 0px">
+    Ce tutoriel se concentre sur l&rsquo;installation de pipeline via docker, et nécessite donc son installation préalable.
+  </div>
+
+</div>
+
+
+<p>Commençons par télécharger les images docker de trois plugins constituant le pipeline.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>docker pull telegraf
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>docker pull influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span>docker pull grafana/grafana-oss
+</span></span></code></pre></div><p>Nous allons utiliser la commande <code>docker compose</code> afin de réaliser notre pipeline. Construisons alors le fichier de construction <code>docker-compose.yml</code>. Configurons le port d&rsquo;entrée de Grafana selon notre choix. Dans cet exemple, nous avons choisi le port <code>9090</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span><span style="color:#81a1c1">version</span><span style="color:#eceff4">:</span> <span style="color:#a3be8c">&#34;3.8&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span><span style="color:#81a1c1">services</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span>  <span style="color:#81a1c1">influxdb</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>    <span style="color:#81a1c1">image</span><span style="color:#eceff4">:</span> influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>    <span style="color:#81a1c1">container_name</span><span style="color:#eceff4">:</span> influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>    <span style="color:#81a1c1">restart</span><span style="color:#eceff4">:</span> always
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>    <span style="color:#81a1c1">ports</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>      - <span style="color:#b48ead">8086</span><span style="color:#eceff4">:</span><span style="color:#b48ead">8086</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>    <span style="color:#81a1c1">hostname</span><span style="color:#eceff4">:</span> influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>    <span style="color:#81a1c1">environment</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>      <span style="color:#81a1c1">INFLUX_DB</span><span style="color:#eceff4">:</span> $INFLUX_DB  <span style="color:#616e87;font-style:italic"># nom de la base de données créée à l&#39;initialisation d&#39;InfluxDB</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>      <span style="color:#81a1c1">INFLUXDB_USER</span><span style="color:#eceff4">:</span> $INFLUXDB_USER  <span style="color:#616e87;font-style:italic"># nom de l&#39;utilisateur pour gérer cette base de données</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>      <span style="color:#81a1c1">INFLUXDB_USER_PASSWORD</span><span style="color:#eceff4">:</span> $INFLUXDB_USER_PASSWORD  <span style="color:#616e87;font-style:italic"># mot de passe de l&#39;utilisateur pour gérer cette base de données</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_MODE</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_MODE
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_USERNAME</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_USERNAME
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">16</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_PASSWORD</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_PASSWORD
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">17</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_ORG</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_ORG
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">18</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_BUCKET</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_BUCKET
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">19</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_RETENTION</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_RETENTION
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">20</span><span>      <span style="color:#81a1c1">DOCKER_INFLUXDB_INIT_ADMIN_TOKEN</span><span style="color:#eceff4">:</span> $DOCKER_INFLUXDB_INIT_ADMIN_TOKEN
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">21</span><span>    <span style="color:#81a1c1">volumes</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">22</span><span>      - ./influxdb:/var/lib/influxdb  <span style="color:#616e87;font-style:italic"># volume pour stocker la base de données InfluxDB</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">23</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">24</span><span>  <span style="color:#81a1c1">telegraf</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">25</span><span>    <span style="color:#81a1c1">image</span><span style="color:#eceff4">:</span> telegraf
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">26</span><span>    <span style="color:#81a1c1">depends_on</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">27</span><span>      - influxdb  <span style="color:#616e87;font-style:italic"># indique que le service influxdb est nécessaire</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">28</span><span>    <span style="color:#81a1c1">container_name</span><span style="color:#eceff4">:</span> telegraf
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">29</span><span>    <span style="color:#81a1c1">restart</span><span style="color:#eceff4">:</span> always
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">30</span><span>    <span style="color:#81a1c1">links</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">31</span><span>      - influxdb:influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">32</span><span>    <span style="color:#81a1c1">tty</span><span style="color:#eceff4">:</span> <span style="color:#81a1c1;font-weight:bold">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">33</span><span>    <span style="color:#81a1c1">volumes</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">34</span><span>      - /var/run/docker.sock:/var/run/docker.sock  <span style="color:#616e87;font-style:italic"># nécessaire pour remonter les données du démon Docker</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">35</span><span>      - ./telegraf/telegraf.conf:/etc/telegraf/telegraf.conf  <span style="color:#616e87;font-style:italic"># fichier de configuration de Telegraf</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">36</span><span>      - /:/host:ro <span style="color:#616e87;font-style:italic"># nécessaire pour remonter les données de l&#39;host (processes, threads...)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">37</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">38</span><span>  <span style="color:#81a1c1">grafana</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">39</span><span>    <span style="color:#81a1c1">image</span><span style="color:#eceff4">:</span> grafana/grafana-oss
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">40</span><span>    <span style="color:#81a1c1">depends_on</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">41</span><span>      - influxdb  <span style="color:#616e87;font-style:italic"># indique que le service influxdb est nécessaire</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">42</span><span>    <span style="color:#81a1c1">container_name</span><span style="color:#eceff4">:</span> grafana
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">43</span><span>    <span style="color:#81a1c1">restart</span><span style="color:#eceff4">:</span> always
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">44</span><span>    <span style="color:#81a1c1">ports</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">45</span><span>      - <span style="color:#b48ead">9090</span><span style="color:#eceff4">:</span><span style="color:#b48ead">3000</span>  <span style="color:#616e87;font-style:italic"># port pour accéder à l&#39;interface web de Grafana</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">46</span><span>    <span style="color:#81a1c1">links</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">47</span><span>      - influxdb:influxdb
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">48</span><span>    <span style="color:#81a1c1">environment</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">49</span><span>      <span style="color:#81a1c1">GF_INSTALL_PLUGINS</span><span style="color:#eceff4">:</span> <span style="color:#a3be8c">&#34;grafana-clock-panel,\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">50</span><span><span style="color:#a3be8c">                          grafana-influxdb-08-datasource,\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">51</span><span><span style="color:#a3be8c">                          grafana-kairosdb-datasource,\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">52</span><span><span style="color:#a3be8c">                          grafana-piechart-panel,\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">53</span><span><span style="color:#a3be8c">                          grafana-simple-json-datasource,\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">54</span><span><span style="color:#a3be8c">                          grafana-worldmap-panel&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">55</span><span>      <span style="color:#81a1c1">GF_SECURITY_ADMIN_USER</span><span style="color:#eceff4">:</span> $GF_SECURITY_ADMIN_USER  <span style="color:#616e87;font-style:italic"># nom de l&#39;utilisateur créé par défaut pour accéder à Grafana</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">56</span><span>      <span style="color:#81a1c1">GF_SECURITY_ADMIN_PASSWORD</span><span style="color:#eceff4">:</span> $GF_SECURITY_ADMIN_PASSWORD  <span style="color:#616e87;font-style:italic"># mot de passe de l&#39;utilisateur créé par défaut pour accéder à Grafana</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">57</span><span>    <span style="color:#81a1c1">volumes</span><span style="color:#eceff4">:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">58</span><span>      - ./grafana:/var/lib/grafana-oss
+</span></span></code></pre></div>
+
+
+<div class="highlight-block info-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: black;"> <i class='fa-solid fa-circle-info'></i> Info </b>
+  <div style="position: relative; left: 0px">
+    Ce fichier est disponible machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/config_suivi/tig/docker-compose.yml</code>.
+  </div>
+
+</div>
+
+
+<p>Ce fichier est construit en dépendance d&rsquo;un fichier de contenance des variables d&rsquo;environnement. Construisonsce fichier <code>.env</code> avec les valeurs de ces variables dans le même dossier.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span>INFLUX_DB=telegraf
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span>INFLUXDB_USER=telegraf_user
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span>INFLUXDB_USER_PASSWORD=telegraf_password
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>GF_SECURITY_ADMIN_USER=grafana_user
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>GF_SECURITY_ADMIN_PASSWORD=grafana_password
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>DOCKER_INFLUXDB_INIT_MODE=setup
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>DOCKER_INFLUXDB_INIT_USERNAME=telegraf_user
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>DOCKER_INFLUXDB_INIT_PASSWORD=telegraf_password
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>DOCKER_INFLUXDB_INIT_ORG=telegraf_org
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>DOCKER_INFLUXDB_INIT_BUCKET=telegraf_bucket
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>DOCKER_INFLUXDB_INIT_RETENTION=365d
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=telegraf_token
+</span></span></code></pre></div>
+
+
+<div class="highlight-block info-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: black;"> <i class='fa-solid fa-circle-info'></i> Info </b>
+  <div style="position: relative; left: 0px">
+    Ce fichier est disponible machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/config_suivi/tig/.env</code>.
+  </div>
+
+</div>
+
+
+<p>Nous allons maintenant configurer les paramètres de Telegraf. Dans le shell, exécutez la commane suivante.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>mkdir telegraf
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>docker run --rm telegraf telegraf config &gt; telegraf/telegraf.conf
+</span></span></code></pre></div><p>Cette commande nous a permi de créer un fichier de configuration par défaut de Telegraf, que nous alons alors modifier pour notre projet.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-squidconf" data-lang="squidconf"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span><span style="color:#616e87;font-style:italic"># Configuration for telegraf agent</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span>[agent]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>  
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>  [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>  <span style="color:#616e87;font-style:italic">## Override default hostname, if empty use os.Hostname()</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>  hostname = &#34;telegraf&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>  <span style="color:#616e87;font-style:italic">## If set to true, do no set the &#34;host&#34; tag in the telegraf agent.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>  omit_hostname = false
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>[...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span><span style="color:#616e87;font-style:italic">###############################################################################</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span><span style="color:#616e87;font-style:italic">#                            OUTPUT PLUGINS                                   #</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">16</span><span><span style="color:#616e87;font-style:italic">###############################################################################</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">17</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">18</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">19</span><span><span style="color:#616e87;font-style:italic"># # Configuration for sending metrics to InfluxDB 2.0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">20</span><span>[[outputs.influxdb_v2]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">21</span><span><span style="color:#616e87;font-style:italic">#   ## The URLs of the InfluxDB cluster nodes.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">22</span><span><span style="color:#616e87;font-style:italic">#   ##</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">23</span><span><span style="color:#616e87;font-style:italic">#   ## Multiple URLs can be specified for a single cluster, only ONE of the</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">24</span><span><span style="color:#616e87;font-style:italic">#   ## urls will be written to each interval.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">25</span><span><span style="color:#616e87;font-style:italic">#   ##   ex: urls = [&#34;https://us-west-2-1.aws.cloud2.influxdata.com&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">26</span><span>   urls = [&#34;http://influxdb:8086&#34;]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">27</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">28</span><span><span style="color:#616e87;font-style:italic">#   ## Token for authentication.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">29</span><span>   token = &#34;telegraf_token&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">30</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">31</span><span><span style="color:#616e87;font-style:italic">#   ## Organization is the name of the organization you wish to write to.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">32</span><span>   organization = &#34;telegraf_org&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">33</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">34</span><span><span style="color:#616e87;font-style:italic">#   ## Destination bucket to write into.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">35</span><span>   bucket = &#34;telegraf_bucket&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">37</span><span>   [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">38</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">39</span><span>[...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">40</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">41</span><span>[[outputs.influxdb]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">42</span><span><span style="color:#616e87;font-style:italic">#   ## The full HTTP or UDP URL for your InfluxDB instance.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">43</span><span><span style="color:#616e87;font-style:italic">#   ##</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">44</span><span><span style="color:#616e87;font-style:italic">#   ## Multiple URLs can be specified for a single cluster, only ONE of the</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">45</span><span><span style="color:#616e87;font-style:italic">#   ## urls will be written to each interval.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">46</span><span><span style="color:#616e87;font-style:italic">#   # urls = [&#34;unix:///var/run/influxdb.sock&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">47</span><span><span style="color:#616e87;font-style:italic">#   # urls = [&#34;udp://127.0.0.1:8089&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">48</span><span><span style="color:#616e87;font-style:italic">#   # urls = [&#34;http://127.0.0.1:8086&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">49</span><span>   urls = [&#34;http://influxdb:8086&#34;]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">50</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">51</span><span>   [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">52</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">53</span><span><span style="color:#616e87;font-style:italic">#   ## HTTP Basic Auth</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">54</span><span>   username = &#34;telegraf_user&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">55</span><span>   password = &#34;telegraf_password&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">56</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">57</span><span>   [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">58</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">59</span><span>[...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">60</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">61</span><span>[[inputs.docker]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">62</span><span><span style="color:#616e87;font-style:italic">#   ## Docker Endpoint</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">63</span><span><span style="color:#616e87;font-style:italic">#   ##   To use TCP, set endpoint = &#34;tcp://[ip]:[port]&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">64</span><span><span style="color:#616e87;font-style:italic">#   ##   To use environment variables (ie, docker-machine), set endpoint = &#34;ENV&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">65</span><span>   endpoint = &#34;unix:///var/run/docker.sock&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">66</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">67</span><span>   [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">68</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">69</span><span>[...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">70</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">71</span><span><span style="color:#616e87;font-style:italic"># # Monitor process cpu and memory usage</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">72</span><span>[[inputs.procstat]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">73</span><span>   pattern = &#34;.*&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">74</span><span>   fieldpass = [&#34;cpu_time_system&#34;, &#34;cpu_time_user&#34;, &#34;cpu_usage&#34;, &#34;memory_*&#34;, &#34;num_threads&#34;, &#34;*pid&#34;]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">75</span><span>   pid_finder = &#34;native&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">76</span><span>   pid_tag = true
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">77</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">78</span><span>   [...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">79</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">80</span><span>[...]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">81</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">82</span><span><span style="color:#616e87;font-style:italic"># # Read metrics about temperature</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">83</span><span>[[inputs.temp]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">84</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">85</span><span>[...]
+</span></span></code></pre></div><p>Effectuez alors les modifications suivantes :</p>
+<ul>
+<li>
+<p>Dans <code>[agent]</code>, la variable <code>hostname</code> comme la variable d&rsquo;environnement <code>INFLUX_DB</code>, ici <code>&quot;telegraf&quot;</code></p>
+</li>
+<li>
+<p>Décommenter <code>[[outputs.influxdb_v2]]</code>, la variable <code>urls</code> comme <code>[&quot;http://influxdb:8086&quot;]</code>, et les variables <code>token</code>, <code>organization</code> et <code>bucket</code> comme <code>DOCKER_INFLUXDB_INIT_ADMIN_TOKEN</code>, <code>DOCKER_INFLUXDB_INIT_ORG</code> et <code>DOCKER_INFLUXDB_INIT_BUCKET</code>, ici de valeur <code>&quot;telegraf_token&quot;</code>, <code>&quot;telegraf_org&quot;</code> et <code>&quot;telegraf_bucket&quot;</code>.</p>
+</li>
+<li>
+<p>Commenter <code>[[outputs.file]]</code>. Garder un fichier de sauvegarde au sein de Telegraf ne sera pas utile en complément de la base InfluxDB.</p>
+</li>
+<li>
+<p>Décommenter <code>[[outputs.influxdb]]</code>, la variable <code>urls</code> comme <code>[&quot;http://influxdb:8086&quot;]</code>, et les variables <code>username</code> et <code>password</code> comme <code>DOCKER_INFLUXDB_INIT_USERNAME</code> et <code>DOCKER_INFLUXDB_INIT_PASSWORD</code>, ici de valeur <code>&quot;telegraf_user&quot;</code> et <code>&quot;telegraf_password&quot;</code>.</p>
+</li>
+<li>
+<p>Décommenter <code>[[inputs.docker]]</code>, la variable <code>endpoint</code> comme <code>&quot;unix:///var/run/docker.sock&quot;</code>.</p>
+</li>
+<li>
+<p>Décommenter <code>[[inputs.procstat]]</code>, définir la variable <code>pattern</code> comme <code>&quot;.*&quot;</code> pour récupérer les données de tous les processes, <code>fieldpass</code> comme les variables que l&rsquo;on souhaite récupérer, ici <code>[&quot;cpu_time_system&quot;, &quot;cpu_time_user&quot;, &quot;cpu_usage&quot;, &quot;memory_*&quot;, &quot;num_threads&quot;, &quot;*pid&quot;]</code>, <code>pid_finder</code> comme <code>&quot;native&quot;</code> afin d&rsquo;accéder aux données de l&rsquo;hôte hors du container, et <code>pid_tag</code> comme <code>true</code> afin de conserver l&rsquo;identifiant des processes,</p>
+</li>
+<li>
+<p>Décommenter <code>[[inputs.temp]]</code> pour obtenir les données de températures du CPU et de la NVME.</p>
+</li>
+</ul>
+
+
+
+<div class="highlight-block info-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: black;"> <i class='fa-solid fa-circle-info'></i> Info </b>
+  <div style="position: relative; left: 0px">
+    Ce fichier est disponible machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/config_suivi/tig/telegraf/telegraf.conf</code>.
+  </div>
+
+</div>
+
+
+<p>Nous pouvons alors ensuite créer les conteneurs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>docker compose up -d
+</span></span></code></pre></div><p>Vérifiez que les conteneurs ont bien été créés avec la commande suivante:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>docker ps
+</span></span></code></pre></div><p>Si nous avons bien créé les conteneurs, vous pouvons accéder à l&rsquo;interface de Grafana sur le port choisi, ici <code>http://localhost:9090</code>.</p>
+
+
+
+<div class="highlight-block info-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: black;"> <i class='fa-solid fa-circle-info'></i> Info </b>
+  <div style="position: relative; left: 0px">
+    Nous pouvons également accéder à l&rsquo;interface de InfluxDB via le port configuré dans le fichier <code>docker-compose.yml</code>, ici à l&rsquo;adresse <code>http://localhost:8086</code>.
+  </div>
+
+</div>
+
+
+<p>Nous pouvons alors passer à la configuration de Grafana.</p>
+<h2 id="configuration-de-grafana">Configuration de Grafana</h2>
+<p>Sur la page d&rsquo;accueil de Grafana, connectons nous avec l&rsquo;identifiant et le mot de passe configuré dans le fichier <code>.env</code>. Dans notre exemple, nous avons <code>grafana_user</code> et <code>grafana_password</code>.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_welcome.png" alt="Page d&rsquo;accueil de Grafana"></p>
+<p>Configurons la source des données dans l&rsquo;onger Data source, et choisissons InfluxDB comme tyope de source.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_select_influx.png" alt="Sélection de la source des données (InfluxDB)"></p>
+<p>Configurons maintenant la source des données avec le port de InfluxDB, et choisissons <code>FLUX</code> comme langage d&rsquo;interrogation de la base.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_set_datasource1.png" alt="Sélection du nom et du port"></p>
+<p>Ajoutons ensuite les identifiants de connexion à la base de données avec ceux choisis dans le fichier <code>.env</code>.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_set_datasource2.png" alt="Sélection ajout des identifiant"></p>
+<p>Importons ensuite un dashboard de visualisation des données compatible avec nos configurations. Nous pouvons choisir un dashboard compatible en ligne, mais le dashboard correspondant à l&rsquo;identifiant <code>15650</code> convient à notre exemple.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_import_dashb1.png" alt="Importation du dashboard"></p>
+<p>Choisissons la source que nous avons configuré avant d&rsquo;importer.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_import_dashb2.png" alt="Sélection de la source"></p>
+<p>Enfin, choisissons les paramètres du dashboard correspondant à nos données, ici le nom du bucket que nous avons configuré.</p>
+<p><img src="../config_suivi/screenshots_config/grafana_import_dashb3.png" alt="Sélection des paramètres"></p>
+<p>Nous pouvons ensuite modifier plus finement les affichages du dashboard selon nos objectifs, en modifiant leurs paramètres ou les queries associées (en respectant le langage d&rsquo;écriture Flux).</p>
+<p>Une autre possibilité pour importer un dashboard est d&rsquo;importer le fichier associé au forma <code>.json</code>. Le fichier configuré que nous pouvons importer est disponible sur la machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/config_suivi/grafana_dashboard_template_07052024.json</code>.</p>
+<p>Le dashboard créé lors de notre projet est accessible sur <a href="http://localhost:9090/d/edh1jtjp0b4lcb/38860f63-1c6f-5143-a2a7-cfc431003966?orgId=1&amp;from=1715083321958&amp;to=1715084221958">ce lien</a>.</p>
+<h2 id="interrogation-de-la-base">Interrogation de la base</h2>
+<p>Afin d&rsquo;interrogée la base de données <strong>InfluxDB</strong> créée précédemment, nous utilisons un script bash exécute un fichier python présenté en argument, puis interroge la base de donnée afin de récolter les données enregistrée sur la période d&rsquo;exécution du fichier python.</p>
+<p>Ce fichier est disponible sur la machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/config_suivi/get_metrics.sh</code>.</p>
+<p>L&rsquo;exécution de ce fichier est réalisée selon la commande suivante :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>bash get_metrics.sh -f <span style="color:#81a1c1">[</span>python.file<span style="color:#81a1c1">]</span> <span style="color:#81a1c1">(</span>-p<span style="color:#81a1c1">)</span> <span style="color:#81a1c1">(</span>-P <span style="color:#81a1c1">[</span>pid<span style="color:#81a1c1">])</span>
+</span></span></code></pre></div><ul>
+<li>le drapeau <code>-f</code> est obligatoire et précède le nom du fichier python à exécuter</li>
+<li>le drapeau <code>-P</code> est facultatif : si renseigné, les données récoltées seront celles associées au process dont l&rsquo;identifiant est disponible dans un fichier <code>python_process.pid</code> sur la période d&rsquo;exécution du fichier python</li>
+<li>le drapeau <code>-p</code> est facultatif : si renseigné, les données récoltées seront celles associées au process dont l&rsquo;identifiant est renseigné comme argument dans la commande,</li>
+<li>si les drapeaux <code>-p</code> et <code>-P</code> ne sont pas renseignés, l&rsquo;ensemble des données de la base sur la période d&rsquo;exécution du fichier python sera récoltée.</li>
+</ul>
+<p>Les données récoltées sont enregistrées dans un fichier <code>metrics_output</code>.</p>
+<p>Le fichier de récolte de donnée s&rsquo;organise ainsi :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span><span style="color:#5e81ac;font-style:italic">#!/bin/bash
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span><span style="color:#5e81ac;font-style:italic"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span><span style="color:#616e87;font-style:italic">#Récolte des arguments en entrée</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span><span style="color:#81a1c1;font-weight:bold">while</span> <span style="color:#81a1c1">getopts</span> <span style="color:#a3be8c">&#39;f:p:P:&#39;</span> OPTION<span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>  <span style="color:#81a1c1;font-weight:bold">case</span> <span style="color:#a3be8c">&#34;</span>$OPTION<span style="color:#a3be8c">&#34;</span> in
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>    f<span style="color:#81a1c1">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>      name_file<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;</span>$OPTARG<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>    P<span style="color:#81a1c1">)</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>      by_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>      get_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>    p<span style="color:#81a1c1">)</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span>      by_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span>      get_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">16</span><span>      npid<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;</span>$OPTARG<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">17</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">18</span><span>    <span style="color:#ebcb8b">\?</span><span style="color:#81a1c1">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">19</span><span>      <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Invalid option: </span>$OPTARG<span style="color:#a3be8c">&#34;</span> 1&gt;<span style="color:#eceff4">&amp;</span><span style="color:#b48ead">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">20</span><span>      <span style="color:#81a1c1">exit</span> <span style="color:#b48ead">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">21</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">22</span><span>  <span style="color:#81a1c1;font-weight:bold">esac</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">23</span><span><span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">24</span><span>: <span style="color:#a3be8c">${</span>name_file<span style="color:#eceff4">:?Missing -f</span><span style="color:#a3be8c">}</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">26</span><span><span style="color:#616e87;font-style:italic">#Relevé du premier temps avant exécution du fichier python</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">27</span><span>t1<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>date -u +%Y-%m-%dT%T.%9NZ<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">28</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">29</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Time start: </span>$t1<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">30</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">31</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Running python script: </span>$name_file<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">32</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">33</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">34</span><span><span style="color:#616e87;font-style:italic">#Exécution du fichier python</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">35</span><span>python3 $name_file
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">37</span><span><span style="color:#616e87;font-style:italic">#Relevé du second temps après exécution du fichier python</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">38</span><span>t2<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>date -u +%Y-%m-%dT%T.%9NZ<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">39</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">40</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">41</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Time stop: </span>$t2<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">42</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">43</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">44</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">45</span><span><span style="color:#81a1c1;font-weight:bold">if</span> <span style="color:#81a1c1">[</span> <span style="color:#a3be8c">&#34;</span>$by_pid<span style="color:#a3be8c">&#34;</span> <span style="color:#81a1c1">=</span> <span style="color:#81a1c1">true</span> <span style="color:#81a1c1">]</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">46</span><span>  <span style="color:#81a1c1;font-weight:bold">if</span> <span style="color:#81a1c1">[</span> <span style="color:#a3be8c">&#34;</span>$get_pid<span style="color:#a3be8c">&#34;</span> <span style="color:#81a1c1">=</span> <span style="color:#81a1c1">true</span> <span style="color:#81a1c1">]</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">47</span><span>    <span style="color:#616e87;font-style:italic"># Récolte du pid si non renseigné en entrée </span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">48</span><span>    npid<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>cat python_process.pid<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">49</span><span>  <span style="color:#81a1c1;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">50</span><span>  <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Process ID: </span><span style="color:#a3be8c">${</span>npid<span style="color:#a3be8c">}</span><span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">51</span><span>  <span style="color:#616e87;font-style:italic"># Construction de la query sur le process</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">52</span><span>  query<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;data=from(bucket: \&#34;telegraf_bucket\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">53</span><span><span style="color:#a3be8c">    |&gt; range(start: </span><span style="color:#a3be8c">${</span>t1<span style="color:#a3be8c">}</span><span style="color:#a3be8c">, stop: </span><span style="color:#a3be8c">${</span>t2<span style="color:#a3be8c">}</span><span style="color:#a3be8c">)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">54</span><span><span style="color:#a3be8c">    |&gt; filter(fn: (r) =&gt; r[\&#34;_measurement\&#34;] == \&#34;procstat\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">55</span><span><span style="color:#a3be8c">    |&gt; filter(fn: (r) =&gt; r[\&#34;pid\&#34;] == \&#34;</span><span style="color:#a3be8c">${</span>npid<span style="color:#a3be8c">}</span><span style="color:#a3be8c">\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">56</span><span><span style="color:#a3be8c">    |&gt; aggregateWindow(every: 1s, fn: mean, createEmpty: false)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">57</span><span><span style="color:#a3be8c">    |&gt; yield(name: \&#34;mean\&#34;)&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">58</span><span><span style="color:#81a1c1;font-weight:bold">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">59</span><span>  <span style="color:#616e87;font-style:italic"># Construction de la query sur l&#39;ensemble des données</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">60</span><span>  query<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;data=from(bucket: \&#34;telegraf_bucket\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">61</span><span><span style="color:#a3be8c">    |&gt; range(start: </span><span style="color:#a3be8c">${</span>t1<span style="color:#a3be8c">}</span><span style="color:#a3be8c">, stop: </span><span style="color:#a3be8c">${</span>t2<span style="color:#a3be8c">}</span><span style="color:#a3be8c">)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">62</span><span><span style="color:#a3be8c">    |&gt; aggregateWindow(every: 1s, fn: mean, createEmpty: false)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">63</span><span><span style="color:#a3be8c">    |&gt; yield(name: \&#34;mean\&#34;)&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">64</span><span><span style="color:#81a1c1;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">65</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">66</span><span><span style="color:#616e87;font-style:italic"># Ecriture de la query</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">67</span><span><span style="color:#81a1c1">echo</span> $query &gt; query
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">68</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">69</span><span><span style="color:#616e87;font-style:italic"># Copie de la query dans le conteneur d&#39;InfluxDB</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">70</span><span>sudo docker cp query influxdb:/query
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">71</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">72</span><span><span style="color:#616e87;font-style:italic"># Exécution de la query dans le conteneur, et enregistrement de la sortie dans metrics_output</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">73</span><span>sudo docker <span style="color:#81a1c1">exec</span> -it influxdb sh -c <span style="color:#a3be8c">&#39;influx query -f query -r&#39;</span> &gt; metrics_output
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">74</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">75</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">76</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;File metrics_output created&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">77</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">78</span><span>head metrics_output
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">79</span><span><span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span></code></pre></div><p>Format de sortie dans <code>metrics_output</code> :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span>#group,false,false,true,true,false,false,true,true,true,true,true,true
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span>#datatype,string,long,dateTime:RFC3339,dateTime:RFC3339,dateTime:RFC3339,double,string,string,string,string,string,string
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>#default,mean,,,,,,,,,,,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>,result,table,_start,_stop,_time,_value,_field,_measurement,host,pattern,pid,process_name
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>,,0,2024-03-27T16:15:21.073488201Z,2024-03-27T16:15:57.890192557Z,2024-03-27T16:15:31Z,6.46,cpu_time_system,procstat,telegraf,.*,1601463,python3
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>,,0,2024-03-27T16:15:21.073488201Z,2024-03-27T16:15:57.890192557Z,2024-03-27T16:15:41Z,6.87,cpu_time_system,procstat,telegraf,.*,1601463,python3
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>,,0,2024-03-27T16:15:21.073488201Z,2024-03-27T16:15:57.890192557Z,2024-03-27T16:15:51Z,7.46,cpu_time_system,procstat,telegraf,.*,1601463,python3
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span>[...]
+</span></span></code></pre></div><h2 id="suivre-les-performances-énergétiques">Suivre les performances énergétiques</h2>
+<p>Création du container Docker de l&rsquo;application Home Assistant (dashboard spécifique optimisé pour Z-Wave):</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>sudo docker run -d <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span><span style="color:#ebcb8b"></span>  --name homeassistant <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span><span style="color:#ebcb8b"></span>  --privileged <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">4</span><span><span style="color:#ebcb8b"></span>  --restart<span style="color:#81a1c1">=</span>unless-stopped <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">5</span><span><span style="color:#ebcb8b"></span>  -e TZ<span style="color:#81a1c1">=</span>Europe/Paris <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">6</span><span><span style="color:#ebcb8b"></span>  -v ~/homeassistant:/config <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">7</span><span><span style="color:#ebcb8b"></span>  -v /run/dbus:/run/dbus:ro <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">8</span><span><span style="color:#ebcb8b"></span>  --network<span style="color:#81a1c1">=</span>host <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">9</span><span><span style="color:#ebcb8b"></span>  ghcr.io/home-assistant/home-assistant:stable
+</span></span></code></pre></div><p>Création du dossier contenant les configurations de Z-Wave:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span><span style="color:#81a1c1">cd</span> homeassistant
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>mkdir docker
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span>mkdir docker/zwave-js
+</span></span></code></pre></div><p>Récupération du nom du Network sur lequel a été installé telegraf :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>sudo docker inspect telegraf -f <span style="color:#a3be8c">&#39;{{range $k, $v := .NetworkSettings.Networks}}{{printf &#34;%s\n&#34; $k}}{{end}}&#39;</span>
+</span></span></code></pre></div><p>Récupération du nom du controleur USB :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>dmesg <span style="color:#eceff4">|</span> grep tty
+</span></span></code></pre></div><p>Création du container Docker de l&rsquo;application Z-Wave JS:</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>sudo docker run -d <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span><span style="color:#ebcb8b"></span>  --network <span style="color:#81a1c1">[</span>TELEGRAF_NETWORK<span style="color:#81a1c1">]</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span><span style="color:#ebcb8b"></span>  --restart<span style="color:#81a1c1">=</span>always <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">4</span><span><span style="color:#ebcb8b"></span>  -p 8091:8091 <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">5</span><span><span style="color:#ebcb8b"></span>  -p 3002:3000 <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">6</span><span><span style="color:#ebcb8b"></span>  --device<span style="color:#81a1c1">=[</span>USB_CONTROLLER<span style="color:#81a1c1">]</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">7</span><span><span style="color:#ebcb8b"></span>  --name<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;zwave-js&#34;</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">8</span><span><span style="color:#ebcb8b"></span>  -e <span style="color:#a3be8c">&#34;TZ=Europe/Paris&#34;</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">9</span><span><span style="color:#ebcb8b"></span>  -v ~/homeassistant/docker/zwave-js:/usr/src/app/store zwavejs/zwavejs2mqtt:latest
+</span></span></code></pre></div><p>Configuration de Z-Wave JS sur le port associé:</p>
+<p>Pour configurer l&rsquo;application Z-Wave JS afin de collecter les données de la prise intelligente, rendons nous à l&rsquo;adresse <code>http://localhost:8091</code> et dans l&rsquo;onglet <code>Smart Start</code>.</p>
+<p><img src="../config_suivi/smart-switch/smart-start.png" alt="Smart Start"></p>
+<p>Ajoutons les informations de notre périphérique Smart Switch, via le bouton <code>Add</code>, et ajoutons le code DSK de la prise intelligente (indiqué sur l&rsquo;emballage) et activons tous les systèmes de sécurité.</p>
+<p><img src="../config_suivi/smart-switch/add-device.png" alt="Add device">
+<img src="../config_suivi/smart-switch/new-entry.png" alt="New entry"></p>
+<p>Une fois la prise intelligente connectée, configurons les paramètres de l&rsquo;application. Dans l&rsquo;onglet <code>Settings</code>, et la partie <code>Z-Wave</code>, ajoutons le nom du contrôleur USB identifié précedemment avant la création des conteneurs Docker.</p>
+<p><img src="../config_suivi/smart-switch/config-zwave.png" alt="Configure Z-Wave"></p>
+<p>Vérifions que l&rsquo;enregistrement des statistiques est activé.</p>
+<p><img src="../config_suivi/smart-switch/enable-stats.png" alt="Enable statistics"></p>
+<p>Enfin, dans la partie Home Assistant, ajoutons l&rsquo;adresse IP du conteneur Z-Wave comme hôte. Celle-ci peut être identifiée via la commande <code>docker sudo docker inspect --format '{{ .NetworkSettings.IPAddress }}' zwave-js</code> dans le terminal. Nous pouvons aussi modifier le port si nous le souhaitons.</p>
+<p><img src="../config_suivi/smart-switch/config-homeassist.png" alt="Configure Home Assistant"></p>
+<p>Maintenant que l&rsquo;application Z-Wave JS est configurée, rendons nous à l&rsquo;adresse <code>http://localhost:8123</code> pour configurer l&rsquo;application Home Assistant. Commençopns par créer un compte en suivant la procédure guidée à l&rsquo;écran.
+Une fois notre compte créé, ajoutons le périphérique d&rsquo;intérêt.</p>
+<p>Dans l&rsquo;onglet <code>Settings</code>, rendons-nous sur la page <code>Devices &amp; services</code>.
+<img src="../config_suivi/smart-switch/add-device-ha.png" alt="Add device"></p>
+<p>Ajoutons une intégration Z-Wave en nous rendant sur la fonction <code>Add integration</code> et en sélectionnant <code>Z-Wave</code>. Il nous faut alors renseigner l&rsquo;adresse configurée dans les paramètres de Z-Wave JS sous la forme <code>ws://[IP du conteneur zwave-js]:[port configuré]</code>.
+<img src="../config_suivi/smart-switch/connect-zwave-ha.png" alt="Connect to Z-Wave"></p>
+<p>Séléctionnons notre périphérique Smart Switch 7, et nous avons alors bien ajouté notre périphérique. Nous pouvons alors observer les premières acquisitions de données de la prise intelligente, et créer un dashboard si nous le souhaitons.
+<img src="../config_suivi/smart-switch/first-data.png" alt="Get first data"></p>
+<h3 id="connection-à-influxdb">Connection à InfluxDB</h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span>pid_file /var/run/mosquitto.pid
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span>persistence <span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>persistence_location /mosquitto/data/
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>log_dest file /mosquitto/log/mosquitto.log
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>log_dest stdout
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>password_file /mosquitto/config/mosquitto.passwd
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>allow_anonymous <span style="color:#81a1c1">false</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>sudo docker run -d <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span><span style="color:#ebcb8b"></span>  --network <span style="color:#81a1c1">[</span>TELEGRAF_NETWORK<span style="color:#81a1c1">]</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span><span style="color:#ebcb8b"></span>  --restart<span style="color:#81a1c1">=</span>always <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">4</span><span><span style="color:#ebcb8b"></span>  -p 1883:1883 <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">5</span><span><span style="color:#ebcb8b"></span>  --name<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;mosquitto&#34;</span> <span style="color:#ebcb8b">\
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">6</span><span><span style="color:#ebcb8b"></span>  -v ~/homeassistant/docker/mqtt:/mosquitto eclipse-mosquitto:1.6.15
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>sudo docker <span style="color:#81a1c1">exec</span> -it mosquitto sh
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>mosquitto_passwd -c mosquitto/config/mosquitto.passwd <span style="color:#81a1c1">[</span>user<span style="color:#81a1c1">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span><span style="color:#81a1c1">[</span>password<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-squidconf" data-lang="squidconf"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span><span style="color:#616e87;font-style:italic"># # Read metrics from MQTT topic(s)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span>[[inputs.mqtt_consumer]]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span><span style="color:#616e87;font-style:italic">#   ## Broker URLs for the MQTT server or cluster.  To connect to multiple</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span><span style="color:#616e87;font-style:italic">#   ## clusters or standalone servers, use a separate plugin instance.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span><span style="color:#616e87;font-style:italic">#   ##   example: servers = [&#34;tcp://localhost:1883&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span><span style="color:#616e87;font-style:italic">#   ##            servers = [&#34;ssl://localhost:1883&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span><span style="color:#616e87;font-style:italic">#   ##            servers = [&#34;ws://localhost:1883&#34;]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>   servers = [&#34;tcp://mosquitto:1883&#34;]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span><span style="color:#616e87;font-style:italic">#   ## Topics that will be subscribed to.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>   topics = [
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>     &#34;zwave/Smart_switch_PC/50/0/value/65537&#34;,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>     &#34;zwave/Smart_switch_PC/50/0/value/66049&#34;,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span>     &#34;zwave/Smart_switch_PC/50/0/value/66561&#34;,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span>     &#34;zwave/Smart_switch_PC/50/0/value/66817&#34;,
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">16</span><span>   ]
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">17</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">18</span><span><span style="color:#616e87;font-style:italic">#   ## The message topic will be stored in a tag specified by this value.  If set</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">19</span><span><span style="color:#616e87;font-style:italic">#   ## to the empty string no topic tag will be created.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">20</span><span><span style="color:#616e87;font-style:italic">#   # topic_tag = &#34;topic&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">21</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">22</span><span><span style="color:#616e87;font-style:italic">#   ## QoS policy for messages</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">23</span><span><span style="color:#616e87;font-style:italic">#   ##   0 = at most once</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">24</span><span><span style="color:#616e87;font-style:italic">#   ##   1 = at least once</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">25</span><span><span style="color:#616e87;font-style:italic">#   ##   2 = exactly once</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">26</span><span><span style="color:#616e87;font-style:italic">#   ##</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">27</span><span><span style="color:#616e87;font-style:italic">#   ## When using a QoS of 1 or 2, you should enable persistent_session to allow</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">28</span><span><span style="color:#616e87;font-style:italic">#   ## resuming unacknowledged messages.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">29</span><span><span style="color:#616e87;font-style:italic">#   # qos = 0</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">30</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">31</span><span><span style="color:#616e87;font-style:italic">#   ## Connection timeout for initial connection in seconds</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">32</span><span>connection_timeout = &#34;60s&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">33</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">34</span><span><span style="color:#616e87;font-style:italic">#   ## Max undelivered messages</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">35</span><span><span style="color:#616e87;font-style:italic">#   ## This plugin uses tracking metrics, which ensure messages are read to</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">36</span><span><span style="color:#616e87;font-style:italic">#   ## outputs before acknowledging them to the original broker to ensure data</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">37</span><span><span style="color:#616e87;font-style:italic">#   ## is not lost. This option sets the maximum messages to read from the</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">38</span><span><span style="color:#616e87;font-style:italic">#   ## broker that have not been written by an output.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">39</span><span><span style="color:#616e87;font-style:italic">#   ##</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">40</span><span><span style="color:#616e87;font-style:italic">#   ## This value needs to be picked with awareness of the agent&#39;s</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">41</span><span><span style="color:#616e87;font-style:italic">#   ## metric_batch_size value as well. Setting max undelivered messages too high</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">42</span><span><span style="color:#616e87;font-style:italic">#   ## can result in a constant stream of data batches to the output. While</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">43</span><span><span style="color:#616e87;font-style:italic">#   ## setting it too low may never flush the broker&#39;s messages.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">44</span><span><span style="color:#616e87;font-style:italic">#   # max_undelivered_messages = 1000</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">45</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">46</span><span><span style="color:#616e87;font-style:italic">#   ## Persistent session disables clearing of the client session on connection.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">47</span><span><span style="color:#616e87;font-style:italic">#   ## In order for this option to work you must also set client_id to identify</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">48</span><span><span style="color:#616e87;font-style:italic">#   ## the client.  To receive messages that arrived while the client is offline,</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">49</span><span><span style="color:#616e87;font-style:italic">#   ## also set the qos option to 1 or 2 and don&#39;t forget to also set the QoS when</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">50</span><span><span style="color:#616e87;font-style:italic">#   ## publishing. Finally, using a persistent session will use the initial</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">51</span><span><span style="color:#616e87;font-style:italic">#   ## connection topics and not subscribe to any new topics even after</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">52</span><span><span style="color:#616e87;font-style:italic">#   ## reconnecting or restarting without a change in client ID.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">53</span><span><span style="color:#616e87;font-style:italic">#   # persistent_session = false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">54</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">55</span><span><span style="color:#616e87;font-style:italic">#   ## If unset, a random client ID will be generated.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">56</span><span>client_id = &#34;telegraf&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">57</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">58</span><span><span style="color:#616e87;font-style:italic">#   ## Username and password to connect MQTT server.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">59</span><span>username=&#34;********&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">60</span><span>password=&#34;********&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">61</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">62</span><span><span style="color:#616e87;font-style:italic">#   ## Optional TLS Config</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">63</span><span><span style="color:#616e87;font-style:italic">#   # tls_ca = &#34;/etc/telegraf/ca.pem&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">64</span><span><span style="color:#616e87;font-style:italic">#   # tls_cert = &#34;/etc/telegraf/cert.pem&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">65</span><span><span style="color:#616e87;font-style:italic">#   # tls_key = &#34;/etc/telegraf/key.pem&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">66</span><span><span style="color:#616e87;font-style:italic">#   ## Use TLS but skip chain &amp; host verification</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">67</span><span><span style="color:#616e87;font-style:italic">#   # insecure_skip_verify = false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">68</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">69</span><span><span style="color:#616e87;font-style:italic">#   ## Client trace messages</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">70</span><span><span style="color:#616e87;font-style:italic">#   ## When set to true, and debug mode enabled in the agent settings, the MQTT</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">71</span><span><span style="color:#616e87;font-style:italic">#   ## client&#39;s messages are included in telegraf logs. These messages are very</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">72</span><span><span style="color:#616e87;font-style:italic">#   ## noisey, but essential for debugging issues.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">73</span><span>client_trace = true
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">74</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">75</span><span><span style="color:#616e87;font-style:italic">#   ## Data format to consume.</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">76</span><span><span style="color:#616e87;font-style:italic">#   ## Each data format has its own unique set of configuration options, read</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">77</span><span><span style="color:#616e87;font-style:italic">#   ## more about them here:</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">78</span><span><span style="color:#616e87;font-style:italic">#   ## https://github.com/influxdata/telegraf/blob/master/docs/DATA_FORMATS_INPUT.md</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">79</span><span>   data_format = &#34;json&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">80</span><span>   interval = &#34;60s&#34;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">81</span><span><span style="color:#616e87;font-style:italic">#</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">82</span><span><span style="color:#616e87;font-style:italic">#   ## Enable extracting tag values from MQTT topics</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">83</span><span><span style="color:#616e87;font-style:italic">#   ## _ denotes an ignored entry in the topic path</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">84</span><span><span style="color:#616e87;font-style:italic">#   # [[inputs.mqtt_consumer.topic_parsing]]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">85</span><span><span style="color:#616e87;font-style:italic">#   #   topic = &#34;&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">86</span><span><span style="color:#616e87;font-style:italic">#   #   measurement = &#34;&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">87</span><span><span style="color:#616e87;font-style:italic">#   #   tags = &#34;&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">88</span><span><span style="color:#616e87;font-style:italic">#   #   fields = &#34;&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">89</span><span><span style="color:#616e87;font-style:italic">#   ## Value supported is int, float, unit</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">90</span><span><span style="color:#616e87;font-style:italic">#   #   [[inputs.mqtt_consumer.topic.types]]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">91</span><span><span style="color:#616e87;font-style:italic">#   #      key = type</span>
+</span></span></code></pre></div><h2 id="erreurs-possibles">Erreurs possibles</h2>
+<p>Dans le cas d&rsquo;un arrêt complet du serveur, les adresses IP des conteneurs Docker peuvent alors être changées. Ceci ne devrait pas poser de problème pour l&rsquo;ensemble du pipeline, excepté pour le software HomeAssistant.
+Pour reconnecter HomeAssistant :</p>
+<ul>
+<li>
+<p>Récupérer l&rsquo;adresse IP du conteneur de ZWave-JS UI via la commande <code>sudo docker inspect --format '{{ .NetworkSettings.Networks.tig_default.IPAddress }}' zwave-js</code></p>
+</li>
+<li>
+<p>Réeffectuer la connection à HomeAssistant avec cette adresse IP comme présenté précédemment</p>
+</li>
+</ul>
+<p>Dans le cas où la prise connectée s&rsquo;est éteinte, et que l&rsquo;intervalle d&rsquo;envoi de données à été modifié :</p>
+<ul>
+<li>
+<p>Se rendre sur l&rsquo;interface de ZWave-JS UI <code>http://localhost:8091/</code> sur le panneau de contrôle (<em>Control panel</em>)</p>
+</li>
+<li>
+<p>Sur le noeud associé à la prise connectée, dans l&rsquo;onglet <em>Values</em>, ouvrir la rubrique <em>Configuration v1</em></p>
+</li>
+<li>
+<p>Modifier la valeur du paramètre <em>Automatic Reporting Interval</em> (Attention, la valeur minimale est de 30 secondes)</p>
+</li>
+</ul>
+<div class="highlight-block">
+  
+  <div class="highlight-vbar"></div>
+  <details>
+    <summary><b style="font-size: 1.1rem; color: black;"> Pipeline final</b></summary>
+    
+      <img src="../config_suivi/smart-switch/pipeline.png" alt="Pipeline final">
+    </details>
+
+</div>
+  </div>
+</div>
+
+
+
+
+
+<script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'light',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

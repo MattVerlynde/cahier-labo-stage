@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IV. Simulations en détection de changement &middot; Stage optimisation analyse d&#39;images satellites
+</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="../css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="../css/poole.css">
+  <link type="text/css" rel="stylesheet" href="../css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="../css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../hugo-cite.css" />
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+
+  
+  <div></div>
+<script>
+"use strict";function addBackToTop(){var o,t,e,n,i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=i.backgroundColor,d=void 0===r?"#000":r,a=i.cornerOffset,c=void 0===a?20:a,s=i.diameter,l=void 0===s?56:s,u=i.ease,p=void 0===u?function(o){return.5*(1-Math.cos(Math.PI*o))}:u,m=i.id,h=void 0===m?"back-to-top":m,b=i.innerHTML,v=void 0===b?'<svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>':b,f=i.onClickScrollTo,x=void 0===f?0:f,w=i.scrollContainer,g=void 0===w?document.body:w,k=i.scrollDuration,y=void 0===k?100:k,T=i.showWhenScrollTopIs,M=void 0===T?1:T,z=i.size,E=void 0===z?l:z,C=i.textColor,L=void 0===C?"#fff":C,N=i.zIndex,I=void 0===N?1:N,A=g===document.body,B=A&&document.documentElement;o=Math.round(.43*E),t=Math.round(.29*E),e="#"+h+"{background:"+d+";-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;bottom:"+c+"px;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);box-shadow:0 2px 5px 0 rgba(0,0,0,.26);color:"+L+";cursor:pointer;display:block;height:"+E+"px;opacity:1;outline:0;position:fixed;right:"+c+"px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-transition:bottom .2s,opacity .2s;-o-transition:bottom .2s,opacity .2s;-moz-transition:bottom .2s,opacity .2s;transition:bottom .2s,opacity .2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:"+E+"px;z-index:"+I+"}#"+h+" svg{display:block;fill:currentColor;height:"+o+"px;margin:"+t+"px auto 0;width:"+o+"px}#"+h+".hidden{bottom:-"+E+"px;opacity:0}",(n=document.createElement("style")).appendChild(document.createTextNode(e)),document.head.insertAdjacentElement("afterbegin",n);var D=function(){var o=document.createElement("div");return o.id=h,o.className="hidden",o.innerHTML=v,o.addEventListener("click",function(o){o.preventDefault(),function(){var o="function"==typeof x?x():x,t=window,e=t.performance,n=t.requestAnimationFrame;if(y<=0||void 0===e||void 0===n)return q(o);var i=e.now(),r=j(),d=r-o;n(function o(t){var e=Math.min((t-i)/y,1);q(r-Math.round(p(e)*d)),e<1&&n(o)})}()}),document.body.appendChild(o),o}(),H=!0;function S(){j()>=M?function(){if(!H)return;D.className="",H=!1}():function(){if(H)return;D.className="hidden",H=!0}()}function j(){return g.scrollTop||B&&document.documentElement.scrollTop||0}function q(o){g.scrollTop=o,B&&(document.documentElement.scrollTop=o)}(A?window:g).addEventListener("scroll",S),S()}
+
+addBackToTop({
+  diameter: 56,
+  backgroundColor: 'black',
+  textColor: '#fff',
+})</script>
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="../index.html"><h3 style="color: white;">Stage optimisation analyse d&#39;images satellites
+</h3></a>
+      <p>
+       Cahier de laboratoire sur l&#39;optimisation d&#39;algorithmes d&#39;analyse d&#39;image en télédetection, appliqué sur des images SAR.
+ 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><i class="fa-solid fa-house"></i> <a href="../index.html">Home</a> </li>
+        <li><i class="fa-brands fa-pagelines"></i> <a href="../change_detection/index.html"> I. Principe de détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../calcul_performance/index.html"> II. Bibliographie - Mesures de performance d&#39;algorithme </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../suivi_performance/index.html"> III. Mise en place d&#39;outils de suivi de performance </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../simulations/index.html"> IV. Simulations en détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../bigearthnet/index.html"> V. Expérimentations sur les données BigEarthNet </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../covar/index.html"> VI. Bibliographie - Covariance et Optimisation </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../reduction-size/index.html"> VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../plan_stage/index.html"> . Planification du stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_stage/index.html"> . Présentation et rapport de stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_these/index.html"> . Présentation de thèse </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_1/index.html"> .Partie 1 - Analyse statistique </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_2/index.html"> .Partie 2 - CLassification avec deep learning </a></li>
+      </ul>
+    </nav>
+
+    <p><p>Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.</p>
+<p>@2023 Université Savoie Mont-Blanc. All rights reserved.</p>
+</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    
+
+<div class="post">
+  <h1>IV. Simulations en détection de changement</h1>
+
+  
+  <div class="toc-page">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#plan-de-simulation">Plan de simulation</a>
+      <ul>
+        <li><a href="#hyperparamètres">Hyperparamètres</a></li>
+        <li><a href="#format-du-résultat">Format du résultat</a></li>
+        <li><a href="#fichier-dexécution">Fichier d&rsquo;exécution</a></li>
+      </ul>
+    </li>
+    <li><a href="#résultats">Résultats</a></li>
+  </ul>
+</nav>
+  </div>
+  <div class="post-content">
+    <p>Cette page présente la planification de simulations d&rsquo;exécution d&rsquo;algorithmes de détection de changement via le programme présenté sur la page <strong>Détection de changement</strong>, ainsi que les résultats obtenus en termes de performances, temps de calcul, cosommation CPU et mémoire, température au sein de la machine&hellip;</p>
+<h2 id="plan-de-simulation">Plan de simulation</h2>
+<h3 id="hyperparamètres">Hyperparamètres</h3>
+<table>
+<thead>
+<tr>
+<th>Hyperparamètres</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taille des images (px)</td>
+<td>500x500 - 500x1000 - 1000x1000</td>
+</tr>
+<tr>
+<td>Nombre d&rsquo;images</td>
+<td>4 - 17 - 68</td>
+</tr>
+<tr>
+<td>Taille de la fenêtre de calcul de covariance (px)</td>
+<td>5x5 - 11x11 - 21x21</td>
+</tr>
+<tr>
+<td>Nombre de threads pour calcul de covariance</td>
+<td>5 - 10 - 12</td>
+</tr>
+</tbody>
+</table>
+<p>Nombre de types de simulations : $81$ ($\times 10$ afin d&rsquo;obtenir des descriptions statistiques des résultats)</p>
+<h3 id="format-du-résultat">Format du résultat</h3>
+<ul>
+<li>Temps d&rsquo;exécution (ns)</li>
+<li>Données sur la période d&rsquo;exécution (format csv)</li>
+</ul>
+<h3 id="fichier-dexécution">Fichier d&rsquo;exécution</h3>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 1</span><span><span style="color:#5e81ac;font-style:italic">#!/bin/bash
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 2</span><span><span style="color:#5e81ac;font-style:italic"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 3</span><span><span style="color:#81a1c1;font-weight:bold">while</span> <span style="color:#81a1c1">getopts</span> <span style="color:#a3be8c">&#39;f:p:P&#39;</span> OPTION<span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 4</span><span>  <span style="color:#81a1c1;font-weight:bold">case</span> <span style="color:#a3be8c">&#34;</span>$OPTION<span style="color:#a3be8c">&#34;</span> in
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 5</span><span>    f<span style="color:#81a1c1">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 6</span><span>      name_file<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;</span>$OPTARG<span style="color:#a3be8c">&#34;</span> <span style="color:#616e87;font-style:italic">#récupération du nom du fichier python à exécuter</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 7</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 8</span><span>    P<span style="color:#81a1c1">)</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74"> 9</span><span>      by_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">10</span><span>      get_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">11</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">12</span><span>    p<span style="color:#81a1c1">)</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">13</span><span>      by_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">true</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">14</span><span>      get_pid<span style="color:#81a1c1">=</span><span style="color:#81a1c1">false</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">15</span><span>      npid<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;</span>$OPTARG<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">16</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">17</span><span>    <span style="color:#ebcb8b">\?</span><span style="color:#81a1c1">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">18</span><span>      <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Invalid option: </span>$OPTARG<span style="color:#a3be8c">&#34;</span> 1&gt;<span style="color:#eceff4">&amp;</span><span style="color:#b48ead">2</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">19</span><span>      <span style="color:#81a1c1">exit</span> <span style="color:#b48ead">1</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">20</span><span>      <span style="color:#eceff4">;;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">21</span><span>  <span style="color:#81a1c1;font-weight:bold">esac</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">22</span><span><span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">23</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">24</span><span>: <span style="color:#a3be8c">${</span>name_file<span style="color:#eceff4">:?Missing -f</span><span style="color:#a3be8c">}</span> <span style="color:#616e87;font-style:italic">#vérification de l&#39;argument du nom du fichier python</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">25</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">26</span><span><span style="color:#81a1c1;font-weight:bold">for</span> name_image in <span style="color:#a3be8c">&#34;500x500x4&#34;</span> <span style="color:#a3be8c">&#34;1000x1000x4&#34;</span> <span style="color:#a3be8c">&#34;500x500x17&#34;</span> <span style="color:#a3be8c">&#34;1000x1000x17&#34;</span> <span style="color:#a3be8c">&#34;500x500x68&#34;</span> <span style="color:#a3be8c">&#34;1000x1000x68&#34;</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span>  <span style="color:#616e87;font-style:italic">#nom du repository avec les images redimensionnées</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">27</span><span>  <span style="color:#81a1c1;font-weight:bold">for</span> window_size in <span style="color:#b48ead">5</span> <span style="color:#b48ead">11</span> 21<span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span> 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">28</span><span>    <span style="color:#81a1c1;font-weight:bold">for</span> n_jobs_cov in <span style="color:#b48ead">5</span> <span style="color:#b48ead">10</span> 12<span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">29</span><span>      <span style="color:#81a1c1;font-weight:bold">for</span> i in <span style="color:#81a1c1">{</span>1..10<span style="color:#81a1c1">}</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">do</span>  <span style="color:#616e87;font-style:italic">#réplication de l&#39;expérience 10 fois</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">30</span><span>        t1<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>date -u +%Y-%m-%dT%T.%9NZ<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">31</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">32</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Time start: </span>$t1<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">33</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">34</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Running python script: </span>$name_file<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">35</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">36</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">37</span><span>        python3 $name_file $name_image $window_size $n_jobs_cov  <span style="color:#616e87;font-style:italic">#exécution du fichier python avec les hyperparamètres</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">38</span><span>        t2<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>date -u +%Y-%m-%dT%T.%9NZ<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">39</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">40</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">41</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Time stop: </span>$t2<span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">42</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">43</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">44</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;</span>$name_image<span style="color:#a3be8c">,</span>$window_size<span style="color:#a3be8c">,</span>$n_jobs_cov<span style="color:#a3be8c">,</span><span style="color:#81a1c1;font-weight:bold">$(($(</span>date -d <span style="color:#a3be8c">&#34;</span>$t2<span style="color:#a3be8c">&#34;</span> +%s%9N<span style="color:#81a1c1;font-weight:bold">)</span> <span style="color:#81a1c1">-</span> <span style="color:#81a1c1;font-weight:bold">$(</span>date -d <span style="color:#a3be8c">&#34;</span>$t1<span style="color:#a3be8c">&#34;</span> +%s%9N<span style="color:#81a1c1;font-weight:bold">)))</span><span style="color:#a3be8c">&#34;</span> &gt;&gt; execution_time  <span style="color:#616e87;font-style:italic">#sauvegarde du temps d&#39;exécution</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">45</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">46</span><span>        <span style="color:#81a1c1;font-weight:bold">if</span> <span style="color:#81a1c1">[</span> <span style="color:#a3be8c">&#34;</span>$by_pid<span style="color:#a3be8c">&#34;</span> <span style="color:#81a1c1">=</span> <span style="color:#81a1c1">true</span> <span style="color:#81a1c1">]</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">47</span><span>          <span style="color:#81a1c1;font-weight:bold">if</span> <span style="color:#81a1c1">[</span> <span style="color:#a3be8c">&#34;</span>$get_pid<span style="color:#a3be8c">&#34;</span> <span style="color:#81a1c1">=</span> <span style="color:#81a1c1">true</span> <span style="color:#81a1c1">]</span><span style="color:#eceff4">;</span> <span style="color:#81a1c1;font-weight:bold">then</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">48</span><span>            npid<span style="color:#81a1c1">=</span><span style="color:#81a1c1;font-weight:bold">$(</span>cat python_process.pid<span style="color:#81a1c1;font-weight:bold">)</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">49</span><span>          <span style="color:#81a1c1;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">50</span><span>          <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;Process ID: </span><span style="color:#a3be8c">${</span>npid<span style="color:#a3be8c">}</span><span style="color:#a3be8c">&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">51</span><span>          query<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;data=from(bucket: \&#34;telegraf_bucket\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">52</span><span><span style="color:#a3be8c">            |&gt; range(start: </span><span style="color:#a3be8c">${</span>t1<span style="color:#a3be8c">}</span><span style="color:#a3be8c">, stop: </span><span style="color:#a3be8c">${</span>t2<span style="color:#a3be8c">}</span><span style="color:#a3be8c">)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">53</span><span><span style="color:#a3be8c">            |&gt; filter(fn: (r) =&gt; r[\&#34;_measurement\&#34;] == \&#34;procstat\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">54</span><span><span style="color:#a3be8c">            |&gt; filter(fn: (r) =&gt; r[\&#34;pid\&#34;] == \&#34;</span><span style="color:#a3be8c">${</span>npid<span style="color:#a3be8c">}</span><span style="color:#a3be8c">\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">55</span><span><span style="color:#a3be8c">            |&gt; aggregateWindow(every: 1s, fn: mean, createEmpty: false)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">56</span><span><span style="color:#a3be8c">            |&gt; yield(name: \&#34;mean\&#34;)&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">57</span><span>        <span style="color:#81a1c1;font-weight:bold">else</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">58</span><span>          query<span style="color:#81a1c1">=</span><span style="color:#a3be8c">&#34;data=from(bucket: \&#34;telegraf_bucket\&#34;)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">59</span><span><span style="color:#a3be8c">            |&gt; range(start: </span><span style="color:#a3be8c">${</span>t1<span style="color:#a3be8c">}</span><span style="color:#a3be8c">, stop: </span><span style="color:#a3be8c">${</span>t2<span style="color:#a3be8c">}</span><span style="color:#a3be8c">)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">60</span><span><span style="color:#a3be8c">            |&gt; aggregateWindow(every: 1s, fn: mean, createEmpty: false)
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">61</span><span><span style="color:#a3be8c">            |&gt; yield(name: \&#34;mean\&#34;)&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">62</span><span>        <span style="color:#81a1c1;font-weight:bold">fi</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">63</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">64</span><span>        <span style="color:#81a1c1">echo</span> $query &gt; query
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">65</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">66</span><span>        sudo docker cp query influxdb:/query
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">67</span><span>        sudo docker <span style="color:#81a1c1">exec</span> -it influxdb sh -c <span style="color:#a3be8c">&#39;influx query -f query -r&#39;</span> &gt; metrics_output
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">68</span><span>        sudo docker <span style="color:#81a1c1">exec</span> -it influxdb sh -c <span style="color:#a3be8c">&#39;rm query&#39;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">69</span><span>        sudo rm query
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">70</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">71</span><span>        mv metrics_output $name_image.$window_size.$n_jobs_cov.$i.metrics_output
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">72</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">73</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;File </span>$name_image<span style="color:#a3be8c">.</span>$window_size<span style="color:#a3be8c">.</span>$n_jobs_cov<span style="color:#a3be8c">.</span>$i<span style="color:#a3be8c">.metrics_output created&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">74</span><span>        <span style="color:#81a1c1">echo</span> <span style="color:#a3be8c">&#34;*************************************************&#34;</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">75</span><span>        mv $name_image.$window_size.$n_jobs_cov.$i.metrics_output results_simulation/  <span style="color:#616e87;font-style:italic">#sauvegarde du résultat</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">76</span><span>      <span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">77</span><span>    <span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">78</span><span>  <span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">79</span><span><span style="color:#81a1c1;font-weight:bold">done</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>bash <span style="color:#81a1c1">[</span>nom du script bash<span style="color:#81a1c1">]</span> <span style="color:#81a1c1">[</span>nom du script python<span style="color:#81a1c1">]</span> <span style="color:#81a1c1">[</span>éventuelle option sur le process<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><h2 id="résultats">Résultats</h2>
+<!---
+1000x1000x4_11_12  41.806750  0.659514
+1000x1000x4_21_12  55.804168  0.884749
+1000x1000x4_5_12   38.160634  0.420911
+500x500x17_5_12    51.393487  0.455210
+500x500x4_11_12    14.030667  0.250084
+500x500x4_21_12    16.680907  0.202637
+500x500x4_5_12     12.813025  0.307787
+500x1000x17_11_12   95.213890  0.885555
+500x1000x17_21_12  123.228465  0.868575
+500x1000x17_5_12    86.993663  1.249665
+500x1000x4_11_12    23.294776  0.248905
+500x1000x4_21_12    29.507388  0.378102
+500x1000x4_5_12     21.270526  0.270534
+--->
+<p>Temps d&rsquo;exécution des algorithmes de détection de changement en fonction de la taille de l&rsquo;échantillon, et de la taille de la fenêtre de calcul de la covariance (longueur du côté de la fenêtre carrée).</p>
+<iframe src="../simulation/result_simulation_time.html"
+width="1400" height="800" style="border: none;"></iframe>
+<p>Temps d&rsquo;exécution des algorithmes de détection de changement en fonction de la taille de la fenêtre de calcul de la covariance (longueur du côté de la fenêtre carrée), et de la taille de l&rsquo;image, ici avec 4 images.</p>
+<iframe src="../simulation/result_simulation_time_window.html"
+width="1400" height="800" style="border: none;"></iframe>
+<p>Temps d&rsquo;exécution des algorithmes de détection de changement en fonction de la taille de l&rsquo;image, et de la taille de la fenêtre de calcul de la covariance (longueur du côté de la fenêtre carrée), ici avec 4 images.</p>
+<iframe src="../simulation/result_simulation_time_imagesize.html"
+width="1400" height="800" style="border: none;"></iframe>
+<iframe src="../simulation/cpu_usage_500x500x4.html"
+width="1400" height="800" style="border: none;"></iframe>
+<iframe src="../simulation/cpu_usage_500x1000x4.html"
+width="1400" height="800" style="border: none;"></iframe>
+<iframe src="../simulation/cpu_usage_1000x1000x4.html"
+width="1400" height="800" style="border: none;"></iframe>
+<!---
+| Taille - Nombre - Fenêtre - Cores                 |Durée d'exécution (s)|
+|---------------------------------------------------|:-------------------:|
+| 500x500 - 4 - 5x5 - 5                             |                     |
+| 500x500 - 4 - 5x5 - 10                            |                     |
+| 500x500 - 4 - 5x5 - 12                            | $12.813 \pm 0.308$  |
+| 500x500 - 4 - 11x11 - 5                           |                     |
+| 500x500 - 4 - 11x11 - 10                          |                     |
+| 500x500 - 4 - 11x11 - 12                          | $14.031 \pm 0.250$  |
+| 500x500 - 4 - 21x21 - 5                           |                     |
+| 500x500 - 4 - 21x21 - 10                          |                     |
+| 500x500 - 4 - 21x21 - 12                          | $16.681 \pm 0.203$  |
+| 500x500 - 17 - 5x5 - 5                            |                     |
+| 500x500 - 17 - 5x5 - 10                           |                     |
+| 500x500 - 17 - 5x5 - 12                           | $51.393 \pm 0.455$  |
+| 500x500 - 17 - 11x11 - 5                          |                     |
+| 500x500 - 17 - 11x11 - 10                         |                     |
+| 500x500 - 17 - 11x11 - 12                         |                     |
+| 500x500 - 17 - 21x21 - 5                          |                     |
+| 500x500 - 17 - 21x21 - 10                         |                     |
+| 500x500 - 17 - 21x21 - 12                         |                     |
+| 500x500 - 68 - 5x5 - 5                            |                     |
+| 500x500 - 68 - 5x5 - 10                           |                     |
+| 500x500 - 68 - 5x5 - 12                           |                     |
+| 500x500 - 68 - 11x11 - 5                          |                     |
+| 500x500 - 68 - 11x11 - 10                         |                     |
+| 500x500 - 68 - 11x11 - 12                         |                     |
+| 500x500 - 68 - 21x21 - 5                          |                     |
+| 500x500 - 68 - 21x21 - 10                         |                     |
+| 500x500 - 68 - 21x21 - 12                         |                     |
+| 500x1000 - 4 - 5x5 - 5                            |                     |
+| 500x1000 - 4 - 5x5 - 10                           |                     |
+| 500x1000 - 4 - 5x5 - 12                           | $21.276 \pm 0.271$  |
+| 500x1000 - 4 - 11x11 - 5                          |                     |
+| 500x1000 - 4 - 11x11 - 10                         |                     |
+| 500x1000 - 4 - 11x11 - 12                         | $23.295 \pm 0.249$  |
+| 500x1000 - 4 - 21x21 - 5                          |                     |
+| 500x1000 - 4 - 21x21 - 10                         |                     |
+| 500x1000 - 4 - 21x21 - 12                         | $29.507 \pm 0.378$  |
+| 500x1000 - 17 - 5x5 - 5                           |                     |
+| 500x1000 - 17 - 5x5 - 10                          |                     |
+| 500x1000 - 17 - 5x5 - 12                          | $86.994 \pm 1.250$  |
+| 500x1000 - 17 - 11x11 - 5                         |                     |
+| 500x1000 - 17 - 11x11 - 10                        |                     |
+| 500x1000 - 17 - 11x11 - 12                        | $95.214 \pm 0.886$  |
+| 500x1000 - 17 - 21x21 - 5                         |                     |
+| 500x1000 - 17 - 21x21 - 10                        |                     |
+| 500x1000 - 17 - 21x21 - 12                        | $123.228 \pm 0.869$ |
+| 500x1000 - 68 - 5x5 - 5                           |                     |
+| 500x1000 - 68 - 5x5 - 10                          |                     |
+| 500x1000 - 68 - 5x5 - 12                          |                     |
+| 500x1000 - 68 - 11x11 - 5                         |                     |
+| 500x1000 - 68 - 11x11 - 10                        |                     |
+| 500x1000 - 68 - 11x11 - 12                        |                     |
+| 500x1000 - 68 - 21x21 - 5                         |                     |
+| 500x1000 - 68 - 21x21 - 10                        |                     |
+| 500x1000 - 68 - 21x21 - 12                        |                     |
+| 1000x1000 - 4 - 5x5 - 5                           |                     |
+| 1000x1000 - 4 - 5x5 - 10                          |                     |
+| 1000x1000 - 4 - 5x5 - 12                          | $38.161 \pm 0.421$  |
+| 1000x1000 - 4 - 11x11 - 5                         |                     |
+| 1000x1000 - 4 - 11x11 - 10                        |                     |
+| 1000x1000 - 4 - 11x11 - 12                        | $41.807 \pm 0.660$  |
+| 1000x1000 - 4 - 21x21 - 5                         |                     |
+| 1000x1000 - 4 - 21x21 - 10                        |                     |
+| 1000x1000 - 4 - 21x21 - 12                        | $55.804 \pm 0.885$  |
+| 1000x1000 - 17 - 5x5 - 5                          |                     |
+| 1000x1000 - 17 - 5x5 - 10                         |                     |
+| 1000x1000 - 17 - 5x5 - 12                         |                     |
+| 1000x1000 - 17 - 11x11 - 5                        |                     |
+| 1000x1000 - 17 - 11x11 - 10                       |                     |
+| 1000x1000 - 17 - 11x11 - 12                       |                     |
+| 1000x1000 - 17 - 21x21 - 5                        |                     |
+| 1000x1000 - 17 - 21x21 - 10                       |                     |
+| 1000x1000 - 17 - 21x21 - 12                       |                     |
+| 1000x1000 - 68 - 5x5 - 5                          |                     |
+| 1000x1000 - 68 - 5x5 - 10                         |                     |
+| 1000x1000 - 68 - 5x5 - 12                         |                     |
+| 1000x1000 - 68 - 11x11 - 5                        |                     |
+| 1000x1000 - 68 - 11x11 - 10                       |                     |
+| 1000x1000 - 68 - 11x11 - 12                       |                     |
+| 1000x1000 - 68 - 21x21 - 5                        |                     |
+| 1000x1000 - 68 - 21x21 - 10                       |                     |
+| 1000x1000 - 68 - 21x21 - 12                       |                     |
+
+--->
+  </div>
+</div>
+
+
+
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

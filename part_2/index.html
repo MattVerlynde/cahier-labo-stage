@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>.Partie 2 - CLassification avec deep learning &middot; Stage optimisation analyse d&#39;images satellites
+</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="../css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="../css/poole.css">
+  <link type="text/css" rel="stylesheet" href="../css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="../css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../hugo-cite.css" />
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+
+  
+  <div></div>
+<script>
+"use strict";function addBackToTop(){var o,t,e,n,i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=i.backgroundColor,d=void 0===r?"#000":r,a=i.cornerOffset,c=void 0===a?20:a,s=i.diameter,l=void 0===s?56:s,u=i.ease,p=void 0===u?function(o){return.5*(1-Math.cos(Math.PI*o))}:u,m=i.id,h=void 0===m?"back-to-top":m,b=i.innerHTML,v=void 0===b?'<svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>':b,f=i.onClickScrollTo,x=void 0===f?0:f,w=i.scrollContainer,g=void 0===w?document.body:w,k=i.scrollDuration,y=void 0===k?100:k,T=i.showWhenScrollTopIs,M=void 0===T?1:T,z=i.size,E=void 0===z?l:z,C=i.textColor,L=void 0===C?"#fff":C,N=i.zIndex,I=void 0===N?1:N,A=g===document.body,B=A&&document.documentElement;o=Math.round(.43*E),t=Math.round(.29*E),e="#"+h+"{background:"+d+";-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;bottom:"+c+"px;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);box-shadow:0 2px 5px 0 rgba(0,0,0,.26);color:"+L+";cursor:pointer;display:block;height:"+E+"px;opacity:1;outline:0;position:fixed;right:"+c+"px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-transition:bottom .2s,opacity .2s;-o-transition:bottom .2s,opacity .2s;-moz-transition:bottom .2s,opacity .2s;transition:bottom .2s,opacity .2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:"+E+"px;z-index:"+I+"}#"+h+" svg{display:block;fill:currentColor;height:"+o+"px;margin:"+t+"px auto 0;width:"+o+"px}#"+h+".hidden{bottom:-"+E+"px;opacity:0}",(n=document.createElement("style")).appendChild(document.createTextNode(e)),document.head.insertAdjacentElement("afterbegin",n);var D=function(){var o=document.createElement("div");return o.id=h,o.className="hidden",o.innerHTML=v,o.addEventListener("click",function(o){o.preventDefault(),function(){var o="function"==typeof x?x():x,t=window,e=t.performance,n=t.requestAnimationFrame;if(y<=0||void 0===e||void 0===n)return q(o);var i=e.now(),r=j(),d=r-o;n(function o(t){var e=Math.min((t-i)/y,1);q(r-Math.round(p(e)*d)),e<1&&n(o)})}()}),document.body.appendChild(o),o}(),H=!0;function S(){j()>=M?function(){if(!H)return;D.className="",H=!1}():function(){if(H)return;D.className="hidden",H=!0}()}function j(){return g.scrollTop||B&&document.documentElement.scrollTop||0}function q(o){g.scrollTop=o,B&&(document.documentElement.scrollTop=o)}(A?window:g).addEventListener("scroll",S),S()}
+
+addBackToTop({
+  diameter: 56,
+  backgroundColor: 'black',
+  textColor: '#fff',
+})</script>
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="../index.html"><h3 style="color: white;">Stage optimisation analyse d&#39;images satellites
+</h3></a>
+      <p>
+       Cahier de laboratoire sur l&#39;optimisation d&#39;algorithmes d&#39;analyse d&#39;image en télédetection, appliqué sur des images SAR.
+ 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><i class="fa-solid fa-house"></i> <a href="../index.html">Home</a> </li>
+        <li><i class="fa-brands fa-pagelines"></i> <a href="../change_detection/index.html"> I. Principe de détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../calcul_performance/index.html"> II. Bibliographie - Mesures de performance d&#39;algorithme </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../suivi_performance/index.html"> III. Mise en place d&#39;outils de suivi de performance </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../simulations/index.html"> IV. Simulations en détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../bigearthnet/index.html"> V. Expérimentations sur les données BigEarthNet </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../covar/index.html"> VI. Bibliographie - Covariance et Optimisation </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../reduction-size/index.html"> VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../plan_stage/index.html"> . Planification du stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_stage/index.html"> . Présentation et rapport de stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_these/index.html"> . Présentation de thèse </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_1/index.html"> .Partie 1 - Analyse statistique </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_2/index.html"> .Partie 2 - CLassification avec deep learning </a></li>
+      </ul>
+    </nav>
+
+    <p><p>Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.</p>
+<p>@2023 Université Savoie Mont-Blanc. All rights reserved.</p>
+</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    
+
+<div class="post">
+  <h1>.Partie 2 - CLassification avec deep learning</h1>
+
+  
+  <div class="toc-page">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#structure-des-expériences">Structure des expériences</a>
+      <ul>
+        <li><a href="#méthodologie">Méthodologie</a></li>
+        <li><a href="#explication-des-paramètres-et-des-variables">Explication des paramètres et des variables</a></li>
+        <li><a href="#plan-dexpérience">Plan d&rsquo;expérience</a></li>
+        <li><a href="#résultats">Résultats</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+  <div class="post-content">
+    <p>Cette section présente les résultats de la seconde partie d&rsquo;expérimentations, sur l&rsquo;analyse des coûts énergétiques et des performances de modèles sur des applications en classification supervisée par algorithmes basés sur de l&rsquo;apprentissage profond (<em>deep learning</em>).</p>
+<h2 id="structure-des-expériences">Structure des expériences</h2>
+<h3 id="méthodologie">Méthodologie</h3>
+<p><strong>Classification multilabel</strong> : chaque image est associée à une ou plusieurs étiquettes.</p>
+<h4 id="méthodes">Méthodes</h4>
+<p>Deep learning, CNN
+Deux types d&rsquo;architecture explorés, en accord avec les travaux présentés en accompagnement de la base de données.
+S-CNN (RGB ou All)
+InceptionV3 (ici InceptionV2 n&rsquo;est pas disponible sur PyTorch)</p>
+<h4 id="execution-des-algorithmes-selon-des-intervalles-de-paramètres">Execution des algorithmes selon des intervalles de paramètres</h4>
+<p>Les expériences débutent par l&rsquo;exécution des algorithmes selon des paramètres renseignés en entrée.</p>
+<ul>
+<li>pour le cas de la détection de changement :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>qanat experiment run conso-classif-deep --model <span style="color:#81a1c1">[</span>MODEL_NAME<span style="color:#81a1c1">]</span> --optim <span style="color:#81a1c1">[</span>OPTIMIZER_NAME<span style="color:#81a1c1">]</span> --lr <span style="color:#81a1c1">[</span>LEARNING_RATE<span style="color:#81a1c1">]</span> --loss <span style="color:#81a1c1">[</span>LOSS_FUNCTION_NAME<span style="color:#81a1c1">]</span> --epochs <span style="color:#81a1c1">[</span>NUMBER_OF_EPOCHS<span style="color:#81a1c1">]</span> --batch <span style="color:#81a1c1">[</span>BATCH_SIZE<span style="color:#81a1c1">]</span> --count <span style="color:#81a1c1">[</span><span style="color:#b48ead">0</span> OU 1<span style="color:#81a1c1">]</span> --rgb <span style="color:#81a1c1">[</span><span style="color:#b48ead">0</span> OU 1<span style="color:#81a1c1">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>// or
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span>qanat experiment run conso-classif-deep --param_file <span style="color:#81a1c1">[</span>PATH_TO_PARAM_FILE<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><p>L&rsquo;exécution des algorithmes permet la création de plusieurs fichiers en sortie :</p>
+<ul>
+<li><code>times.txt</code> contient des checkpoints de temps clés entres différentes étapes d&rsquo;exécution des algorithmes : le temps de début d&rsquo;expérience, le temps de fin de période sans exécution &ldquo;à froid&rdquo; et de début d&rsquo;exécutions &ldquo;de chauffe&rdquo; sans mesure, puis les temps de début et fin de chaque répétition d&rsquo;exécution.</li>
+<li><code>output/</code> contient les fichiers <code>.npy</code> de sortie d&rsquo;algorithmes</li>
+<li><code>emissions/</code> contient les fichiers <code>.csv</code> de sortie de mesure de consommation énergétique et d&rsquo;émissions de carbone du package Python CodeCarbon</li>
+</ul>
+<h4 id="récupération-des-données-de-consommation-et-analyse">Récupération des données de consommation et analyse</h4>
+<p>Enfin, pour réaliser une analyse statistique des données de consommation énergétique et les performances du modèle pour un ensemble d&rsquo;expériences :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>python performance-tracking/experiments/conso/stats_summary.py <span style="color:#81a1c1">[</span>RUN_ID<span style="color:#81a1c1">(</span>S<span style="color:#81a1c1">)]</span> --grouped/-g <span style="color:#81a1c1">[</span>True/False<span style="color:#81a1c1">]</span> --file/-f <span style="color:#81a1c1">[</span>True/False<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><p>Cette commande permet de créer un fichier résultats <code>output_all.csv</code> contenant toutes les données de consommation et de performances avec une ligne par exécution si <code>--file False</code> en interrogeant la base de données InfluxDB de stockage de données de consommation à partir du fichier <code>times.txt</code>, et en calculant les performances des algorithmes en utilisant les fichiers de sorties compris dans <code>output/</code>. Les données d&rsquo;émissions issues des fichiers de <code>emissions/</code> sont également prises en compte. A partir du fichier <code>output_all.csv</code>, les analyses de résultats sont réalisées et enregistrées sous la forme de graphiques (distribution des données, covariances entre les variables, ACP).
+La phase de création du fichier <code>output_all.csv</code> pouvant être coûteuse en termes calculatoires, il est possible de réeffectuer les analyses sur un fichier déjà créé via l&rsquo;option <code>--file True</code>.</p>
+<p>L&rsquo;option <code>--grouped True</code> permet d&rsquo;effectuer ces analyses lorsque les exécutions via <em>Qanat</em> ont été réalisées par l&rsquo;utilisation de <code>--param_file</code>.</p>
+<h3 id="explication-des-paramètres-et-des-variables">Explication des paramètres et des variables</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Variable/Paramètre</th>
+<th style="text-align:center">Paramètre ou variable</th>
+<th style="text-align:center">Unité</th>
+<th>Commentaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Energy</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">W $\times$ s</td>
+<td>Consommation énergétique de la machine basée sur la mesure de puisance par une prise connectée</td>
+</tr>
+<tr>
+<td style="text-align:center">Emissions</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center"></td>
+<td>Emissions en $\text{CO}_2$ estimées par le package Python <em>CodeCarbon</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Memory</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">% $\times$ s</td>
+<td>Mémoire RAM <strong>libre</strong> lors de l&rsquo;éxecution</td>
+</tr>
+<tr>
+<td style="text-align:center">Duration</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">s</td>
+<td>Durée d&rsquo;exécution</td>
+</tr>
+<tr>
+<td style="text-align:center">CPU</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">% $\times$ s</td>
+<td>Consommation de la mémoire du CPU</td>
+</tr>
+<tr>
+<td style="text-align:center">Temperature</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">°C $\times$ s</td>
+<td>Température interne du CPU</td>
+</tr>
+<tr>
+<td style="text-align:center">Reads</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">Nombre de lectures $\times$ s</td>
+<td>Nombre de lectures du disque</td>
+</tr>
+<tr>
+<td style="text-align:center">Accuracy</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center"></td>
+<td>Accuracy de classification globale sur chaque étiquette sur l&rsquo;échantillon de test</td>
+</tr>
+<tr>
+<td style="text-align:center">Recall</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center"></td>
+<td>Rappel de classification moyen pour chaque étiquette sur l&rsquo;échantillon de test</td>
+</tr>
+<tr>
+<td style="text-align:center">Modèle</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Modèle utilisé parmi S-CNN-All, S-CNN-RGB, InceptionV3 from scratch, InceptionV3 préentrainé sur ImageNet (<em>transfer learning</em>), InceptionV3 préentrainé sur ImageNet (<em>fine-tuning</em>)</td>
+</tr>
+<tr>
+<td style="text-align:center">Epochs</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Nombre d&rsquo;époques en entraînement (10, 20, 30)</td>
+</tr>
+<tr>
+<td style="text-align:center">Batch</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Taille de batch utilisée (100, 200, 300)</td>
+</tr>
+<tr>
+<td style="text-align:center">lr</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Learning rate (1e-4, 1e-3, 1e-2)</td>
+</tr>
+</tbody>
+</table>
+<p>L&rsquo;incertitude de la mesure de puissance par la prise connectée est de $\pm 3W$ pour des mesures inférieures à $300W$, et de $\pm 1%$ pour des mesures supérieures.</p>
+<h3 id="plan-dexpérience">Plan d&rsquo;expérience</h3>
+<p>X paramètres seront explorés dans ces expériences :</p>
+<ul>
+<li>XX</li>
+<li>XX</li>
+</ul>
+<p>Les données utilisées sont tirées de la base de données BigEarthNet (voir page <em>V. Expérimentations sur les données BigEarthNet</em>).</p>
+<p>A réaliser alors : XXX scénarios</p>
+<p>A réaliser alors : XXX exécutions</p>
+<h3 id="résultats">Résultats</h3>
+  </div>
+</div>
+
+
+
+
+
+<script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'light',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

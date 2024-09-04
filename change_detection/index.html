@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>I. Principe de détection de changement &middot; Stage optimisation analyse d&#39;images satellites
+</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="../css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="../css/poole.css">
+  <link type="text/css" rel="stylesheet" href="../css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="../css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../hugo-cite.css" />
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+
+  
+  <div></div>
+<script>
+"use strict";function addBackToTop(){var o,t,e,n,i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=i.backgroundColor,d=void 0===r?"#000":r,a=i.cornerOffset,c=void 0===a?20:a,s=i.diameter,l=void 0===s?56:s,u=i.ease,p=void 0===u?function(o){return.5*(1-Math.cos(Math.PI*o))}:u,m=i.id,h=void 0===m?"back-to-top":m,b=i.innerHTML,v=void 0===b?'<svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>':b,f=i.onClickScrollTo,x=void 0===f?0:f,w=i.scrollContainer,g=void 0===w?document.body:w,k=i.scrollDuration,y=void 0===k?100:k,T=i.showWhenScrollTopIs,M=void 0===T?1:T,z=i.size,E=void 0===z?l:z,C=i.textColor,L=void 0===C?"#fff":C,N=i.zIndex,I=void 0===N?1:N,A=g===document.body,B=A&&document.documentElement;o=Math.round(.43*E),t=Math.round(.29*E),e="#"+h+"{background:"+d+";-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;bottom:"+c+"px;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);box-shadow:0 2px 5px 0 rgba(0,0,0,.26);color:"+L+";cursor:pointer;display:block;height:"+E+"px;opacity:1;outline:0;position:fixed;right:"+c+"px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-transition:bottom .2s,opacity .2s;-o-transition:bottom .2s,opacity .2s;-moz-transition:bottom .2s,opacity .2s;transition:bottom .2s,opacity .2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:"+E+"px;z-index:"+I+"}#"+h+" svg{display:block;fill:currentColor;height:"+o+"px;margin:"+t+"px auto 0;width:"+o+"px}#"+h+".hidden{bottom:-"+E+"px;opacity:0}",(n=document.createElement("style")).appendChild(document.createTextNode(e)),document.head.insertAdjacentElement("afterbegin",n);var D=function(){var o=document.createElement("div");return o.id=h,o.className="hidden",o.innerHTML=v,o.addEventListener("click",function(o){o.preventDefault(),function(){var o="function"==typeof x?x():x,t=window,e=t.performance,n=t.requestAnimationFrame;if(y<=0||void 0===e||void 0===n)return q(o);var i=e.now(),r=j(),d=r-o;n(function o(t){var e=Math.min((t-i)/y,1);q(r-Math.round(p(e)*d)),e<1&&n(o)})}()}),document.body.appendChild(o),o}(),H=!0;function S(){j()>=M?function(){if(!H)return;D.className="",H=!1}():function(){if(H)return;D.className="hidden",H=!0}()}function j(){return g.scrollTop||B&&document.documentElement.scrollTop||0}function q(o){g.scrollTop=o,B&&(document.documentElement.scrollTop=o)}(A?window:g).addEventListener("scroll",S),S()}
+
+addBackToTop({
+  diameter: 56,
+  backgroundColor: 'black',
+  textColor: '#fff',
+})</script>
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="../index.html"><h3 style="color: white;">Stage optimisation analyse d&#39;images satellites
+</h3></a>
+      <p>
+       Cahier de laboratoire sur l&#39;optimisation d&#39;algorithmes d&#39;analyse d&#39;image en télédetection, appliqué sur des images SAR.
+ 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><i class="fa-solid fa-house"></i> <a href="../index.html">Home</a> </li>
+        <li><i class="fa-brands fa-pagelines"></i> <a href="../change_detection/index.html"> I. Principe de détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../calcul_performance/index.html"> II. Bibliographie - Mesures de performance d&#39;algorithme </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../suivi_performance/index.html"> III. Mise en place d&#39;outils de suivi de performance </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../simulations/index.html"> IV. Simulations en détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../bigearthnet/index.html"> V. Expérimentations sur les données BigEarthNet </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../covar/index.html"> VI. Bibliographie - Covariance et Optimisation </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../reduction-size/index.html"> VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../plan_stage/index.html"> . Planification du stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_stage/index.html"> . Présentation et rapport de stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_these/index.html"> . Présentation de thèse </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_1/index.html"> .Partie 1 - Analyse statistique </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_2/index.html"> .Partie 2 - CLassification avec deep learning </a></li>
+      </ul>
+    </nav>
+
+    <p><p>Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.</p>
+<p>@2023 Université Savoie Mont-Blanc. All rights reserved.</p>
+</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    
+
+<div class="post">
+  <h1>I. Principe de détection de changement</h1>
+
+  
+  <div class="toc-page">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#données">Données</a></li>
+    <li><a href="#présentation-de-lalgorithme-global">Présentation de l&rsquo;algorithme global</a>
+      <ul>
+        <li><a href="#détection-des-zones-de-changement">Détection des zones de changement</a></li>
+        <li><a href="#détection-des-évènements-de-changement">Détection des évènements de changement</a></li>
+      </ul>
+    </li>
+    <li><a href="#résultats">Résultats</a></li>
+  </ul>
+</nav>
+  </div>
+  <div class="post-content">
+    <p>Test d&rsquo;un algorithme de détection de changement.
+Ce problème est centré sur l&rsquo;optimisation d&rsquo;algorithme de détection de changements à partir d&rsquo;images SAR (Radar à synthèse d&rsquo;ouverture).</p>
+<h2 id="introduction">Introduction</h2>
+<p>Ce test d&rsquo;algorithmes de détection de changement basé sur les travaux de 
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<span class="hugo-cite-group">
+
+          <a href="#conradsen2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Knut"><span itemprop="familyName">Conradsen</span></span>,&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Allan"><span itemprop="familyName">Nielsen</span></span>
+                  <em>&amp; al.</em>,&#32;<span itemprop="datePublished">2016</span></a><span class="hugo-cite-citation"> 
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Conradsen</span>,&#32;
+    <meta itemprop="givenName" content="Knut" />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nielsen</span>,&#32;
+    <meta itemprop="givenName" content="Allan" />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Skriver</span>,&#32;
+    <meta itemprop="givenName" content="Henning" />
+    H.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Determining the Points of Change in Time Series of Polarimetric SAR Data</span>.<i>
+    <span itemprop="about">IEEE Transactions on Geoscience and Remote Sensing}</span>,&#32;54(1)</i>.&#32;<span itemprop="pagination">1–18</span>.
+  <a href="https://doi.org/10.1109/TGRS.2015.2510160"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1109/TGRS.2015.2510160</a></span>
+
+
+
+
+</span></span>)</span>
+ et 
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<span class="hugo-cite-group">
+
+          <a href="#mian2019"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Ammar"><span itemprop="familyName">Mian</span></span>,&#32;<span itemprop="datePublished">2019</span></a><span class="hugo-cite-citation"> 
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Thesis"
+      data-type="thesis"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Mian</span>,&#32;
+    <meta itemprop="givenName" content="Ammar" />
+    A.</span>
+  &#32;
+    (<span itemprop="datePublished">2019</span>).
+  &#32;<span itemprop="name">
+    <i>Contributions to SAR Image Time Series Analysis</i>
+  </span><span itemprop="inSupportOf">&nbsp;(These de doctorat)</span>.&#32;<span itemprop="publisher"
+        itemtype="http://schema.org/EducationalOrganization"
+        itemscope>
+    <span itemprop="name">Université Paris-Saclay (ComUE)</span>
+  &#32;Retrieved from&#32;
+  <a href="https://theses.fr/2019SACLC074"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://theses.fr/2019SACLC074</a></span>
+
+
+
+
+</span></span>)</span>
+.</p>
+<h2 id="données">Données</h2>
+<p>Les données à notre disposition afin de réaliser nos tests sont:</p>
+<ul>
+<li>
+<p>Images SAR au format <code>.npy</code></p>
+<ul>
+<li>Scene 1 avec une taille 2360x600x3 sur 4 dates</li>
+<li>Scene 2 avec une taille 2360x600x3 sur 4 dates</li>
+<li>Scene 3 avec une taille 3000x1500x3 sur 17 dates</li>
+<li>Scene 4 avec une taille 3000x3000x3 sur 68 dates</li>
+</ul>
+<p>Chaque image présente 3 bandes correspondant à 3 types de signaux : HH (onde émise horizontale et reçue horizontale), HV (onde émise horizontale et reçue verticale) et VV (onde émise verticale et reçue verticale).</p>
+</li>
+<li>
+<p>Images présentant une vérité terrain au format <code>.npy</code> pour les scènes 1 à 3</p>
+</li>
+</ul>
+<iframe src="../ground_truth/ground_truth_scene_1.html"
+width="400" height="400" style="border: none;"></iframe>
+<iframe src="../ground_truth/ground_truth_scene_2.html"
+width="400" height="400" style="border: none;"></iframe>
+<iframe src="../ground_truth/ground_truth_scene_3_temporal_4_classes.html"
+width="400" height="400" style="border: none;"></iframe>
+<p>Ces images permettent de quantifier la performance des préditions réalisées par nos algorithmes.</p>
+<h2 id="présentation-de-lalgorithme-global">Présentation de l&rsquo;algorithme global</h2>
+<p>Pour étudier ce problème, nous nous basons sur l&rsquo;algorithme de 
+
+
+
+
+<span class="hugo-cite-intext"
+        itemprop="citation">(<span class="hugo-cite-group">
+
+          <a href="#conradsen2016"><span class="visually-hidden">Citation: </span><span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Knut"><span itemprop="familyName">Conradsen</span></span>,&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="givenName" content="Allan"><span itemprop="familyName">Nielsen</span></span>
+                  <em>&amp; al.</em>,&#32;<span itemprop="datePublished">2016</span></a><span class="hugo-cite-citation"> 
+
+
+
+
+
+
+
+
+
+
+<span itemscope
+      itemtype="https://schema.org/Article"
+      data-type="article"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Conradsen</span>,&#32;
+    <meta itemprop="givenName" content="Knut" />
+    K.</span>,&#32;
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Nielsen</span>,&#32;
+    <meta itemprop="givenName" content="Allan" />
+    A.</span>&#32;&amp;&#32;<span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="familyName">Skriver</span>,&#32;
+    <meta itemprop="givenName" content="Henning" />
+    H.</span>
+  &#32;
+    (<span itemprop="datePublished">2016</span>).
+  &#32;<span itemprop="name">Determining the Points of Change in Time Series of Polarimetric SAR Data</span>.<i>
+    <span itemprop="about">IEEE Transactions on Geoscience and Remote Sensing}</span>,&#32;54(1)</i>.&#32;<span itemprop="pagination">1–18</span>.
+  <a href="https://doi.org/10.1109/TGRS.2015.2510160"
+     itemprop="identifier"
+     itemtype="https://schema.org/URL">https://doi.org/10.1109/TGRS.2015.2510160</a></span>
+
+
+
+
+</span></span>)</span>
+ afin de détecter les pixels présentant au moins un changement au cours de la série temporelle, le nombre et la localisation temporelle des changements.</p>
+<p>Pour cela, les comparaisons sont réalisées entre les matrices de variance-covariance des trois bandes pour chaque pixel à chaque temps.</p>
+<h3 id="détection-des-zones-de-changement">Détection des zones de changement</h3>
+<p>Notons $T$ le nombre d&rsquo;images,</p>
+<p>La matrice de covariances calculée pour un pixel à un temps $t \in [[1, T]]$ notée $\Sigma_t$ est estimée pour un nombre de pixels $k \in [[1, N]]$. Celle-ci est calculée de façon suivante $\Sigma_t = \mathbb{E} ( x_k^t,{x_k^t}^H ) $ (où $\bullet^H$ correspond à l&rsquo;opérateur transposé conjugué).</p>
+<p>Nous testons d&rsquo;abord si la série temporelle présente ou non au moins un changement pour chaque pixel, donc si l&rsquo;ensemble des $\Sigma_t$ pour $t \in [[1, T]]$ ont la même espérance $\Sigma$, ou si leurs espérences sont différentes, soit qu&rsquo;il existe $(i,j) \in [[1, T]]^2$ tel que $i \neq j$ et $\Sigma_i \neq \Sigma_j$</p>
+<p>Nous considérons donc des variables aléatoires indépendantes $X_i, i = 1, . . . , T$ suivant une distribution de Wishart complexe.</p>
+<p>$$
+X_i \sim W_C(p, n, \Sigma_i), i = 1, \cdots , T
+$$</p>
+<p>où $\mathbb{E}(X_i/n) = \Sigma_i$. Ceci nous permet de tester l&rsquo;hypothèse nulle</p>
+<p>$$
+H_0 : \Sigma_1 = \Sigma_2 = \cdots = \Sigma_T
+$$</p>
+<p>Nous posons alors</p>
+<p>$$
+Q = T^{pnT}\frac{\prod_{i=1}^{T}|X_i|^n}{|X|^T}
+$$</p>
+<p>où $|\bullet|$ qualifie le déterminant, $X_i \sim W_C(p, n, \Sigma_i)$ et $X = \sum_{i=1}^{T}X_i \sim W_C(p, nT, \Sigma)$, p est le nombre de bandes (ici 3) et n le paramètre ENL (<em>Equivalent Number of Looks</em>, correspondant au nombre de pixels dans la fenêtre de calcul de la covariance pour chaque pixel).</p>
+<p>Pour le logarithme du test statistique, on obtient:</p>
+<p>$$
+\ln Q = n \left( pT \ln T + \sum_{i=1}^{T}\ln|X_i|-T\ln|X| \right)
+$$</p>
+<div class="highlight-block">
+  
+  <div class="highlight-vbar"></div>
+  <b style="font-size: 1.1rem; color: black;"> Proposition</b>
+  <div style="position: relative; left: 0px">
+    <p>Soient :
+$$
+f = (k − 1)p^2
+$$
+$$
+\rho = 1 - \frac{2p^2-1}{6(T-1)p}(\frac{T}{n}-\frac{1}{nT})
+$$
+$$
+\omega_2 = \frac{p^2(p^2-1)}{24\rho^2}\left(\frac{k}{n^2}-\frac{1}{(nT)^2}\right)-\frac{p^2(k-1)}{4}\left(1-\frac{1}{\rho}\right)
+$$</p>
+<p>La probabilité de trouver une plus petite valeur de $-2 \rho \ln Q$ est
+$$
+P \left( −2\rho \ln Q \leq z \right) \approx P \left( \chi^2 (f) \leq z \right)  + \omega_2 \left[ P \left( \chi^2(f + 4) \leq z \right) − P \left( \chi^2(f) \leq z \right) \right]
+$$</p>
+<p>avec $z = -2 \rho \ln q$ et $q$ est une valeur observée de la variable aléatoire $Q$.</p>
+
+  </div>
+
+</div>
+
+
+<div style="position: relative; left: 10px">
+<details>
+<summary><b>Proof</b></summary>
+
+  To add
+</details>
+</div>
+
+<div class="highlight-block">
+  
+  <div class="highlight-vbar"></div>
+  <b style="font-size: 1.1rem; color: black;"> Proposition</b>
+  <div style="position: relative; left: 0px">
+    <p>Pour tester l&rsquo;hypothèse, avec $j \in [[1,T]]$</p>
+<p>$$
+H_{0,j} : \Sigma_{j-1} = \Sigma_j
+$$
+$$
+H_{1,j} : \Sigma_{j-1} \neq \Sigma_j
+$$</p>
+<p>Posons la statistique de test $R_j$ telle que :</p>
+<p>$$
+R_j = \left[ \frac{j^{jp}}{(j-1)^{(j-1)p}} \frac{|X_1 + \cdots + X_{j-1}|^{(j-1)n}|X_j|^n}{|X_1 + \cdots + X_j|^j} \right]^n
+$$</p>
+<p>et nous avons</p>
+<p>$$
+Q = \prod_{j=2}^T R_j
+$$</p>
+
+  </div>
+
+</div>
+
+
+<div style="position: relative; left: 10px">
+<details>
+<summary><b>Proof</b></summary>
+
+  To add
+</details>
+</div>
+
+<h3 id="détection-des-évènements-de-changement">Détection des évènements de changement</h3>
+<p>$$
+H_{0} : \forall (i,j) \in \mathbb{N}^2, \Sigma_i = \Sigma_j
+$$
+$$
+H_{1} : \exists (i,j) \in \mathbb{N}^2, \Sigma_i \neq \Sigma_j
+$$</p>
+<p>$$
+H_{0,j} : \Sigma_{j-1} = \Sigma_j
+$$
+$$
+H_{1,j} : \Sigma_{j-1} \neq \Sigma_j
+$$</p>
+
+
+
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<script src="../pseudocode.min.js"></script>
+<link rel="stylesheet" href="../pseudocode.min.css">
+
+<pre id="bb84d6dcc2c4ae8e1ddcc4c5fac8f4f5">
+
+
+\begin{algorithm}
+
+\caption{Change detection}
+
+\begin{algorithmic}
+
+    \STATE Initialize list of change points $\mathcal{L}$
+
+    \STATE $\ell = 1$
+
+    \While{$H_0^{(\ell)}$ not accepted}
+
+        \STATE Set $\mathcal{j} = 2$
+
+        \While{$H_{0,\mathcal{j}}^{(\ell)}$ accepted}
+
+            \STATE $\mathcal{j} = \mathcal{j}+1$
+
+        \EndWhile
+
+        \STATE $\ell = \ell+\mathcal{j}$
+
+        \STATE Append $\ell$ to $\mathcal{L}$
+
+    \EndWhile
+
+\end{algorithmic}
+
+\end{algorithm}
+</pre>
+
+<script>
+pseudocode.renderElement(document.getElementById("bb84d6dcc2c4ae8e1ddcc4c5fac8f4f5"));
+</script>
+
+<h2 id="résultats">Résultats</h2>
+<p>Application sur les données de test :</p>
+<ul>
+<li>
+<p>Calculs en parallèle des matrices de covariances et de la statistique de test pour chaque pixel (à l&rsquo;aide d&rsquo;une fenêtre glissante réalisée par la méthode <code>sliding_window_view</code> de <code>numpy</code> ainsi que du package <code>Joblib</code>).</p>
+<iframe src="../results/Scene_1_lnq.html" width="450" height="450" style="border: none;"></iframe>
+<iframe src="../results/Scene_2_lnq.html" width="450" height="450" style="border: none;"></iframe>
+<iframe src="../results/Scene_3_lnq.html" width="450" height="450" style="border: none;"></iframe>
+<p>Le script utilisé est disponible sur la machine <code>lst-pa33</code> au chemin: <code>verlyndem/static/scripts/cd_sklearn_pair.py</code>.</p>
+</li>
+</ul>
+<p>Les performances des différentes contructions du code d&rsquo;exécution de cet algorithme sont présentées dans le tableau suivant, en quantifiant la durée d&rsquo;éxecution du code (en minutes).</p>
+<table>
+<thead>
+<tr>
+<th>Construction de l&rsquo;algorithme</th>
+<th style="text-align:center">Scene 1</th>
+<th style="text-align:center">Scene 2</th>
+<th style="text-align:center">Scene 3</th>
+<th style="text-align:center">Scene 4</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sans parallélisation</td>
+<td style="text-align:center">2:14</td>
+<td style="text-align:center">2:15</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Avec fenêtre glissante et parallélisation sur <code>Joblib</code></td>
+<td style="text-align:center">0:40</td>
+<td style="text-align:center">0:36</td>
+<td style="text-align:center">x</td>
+<td style="text-align:center">x</td>
+</tr>
+<tr>
+<td>Avec traitement des images paire à paire</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center">12:02</td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="highlight-block error-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: red;"> <i class='fa-solid fa-circle-xmark'></i> Error </b>
+  <div style="position: relative; left: 0px">
+    Un problème au niveau de nos données rend l&rsquo;application de nos tests inutilisable : l&rsquo;hypothèse de distribution gaussienne de la variable aléatoire de test. Celle-ci n&rsquo;est pas vérifiée dans notre cas.
+  </div>
+
+</div>
+
+
+<p>Testons sur notre algorithme sur un échantillon de données jouet, aux valeurs artificiellement distribuées de façon gaussienne. Nous fixons pour ces simulations le paramètre $\text{window_size} = 21$.</p>
+<p>Dans le cas de ma première image jouet, deux zones ont été délimitées avec un même changement à deux temps différents.</p>
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_truth.html"
+width="400" height="400" style="border: none;"></iframe>
+<p>La première zone présente un changement au 4e temps, et la seconde présente un changement au deuxième temps.</p>
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_lnq.html"
+width="300" height="300" style="border: none;"></iframe>
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_pvalue.html"
+width="300" height="300" style="border: none;"></iframe>
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_pvalue_threshold.html"
+width="300" height="300" style="border: none;"></iframe>
+<iframe src="../results/custom_test_image_n22500_T4_p3_3_pvalue_threshold.html"
+width="400" height="400" style="border: none;"></iframe>
+<p>Les zones de changement sont bien détectées par l&rsquo;algorithme, mais également des zones supplémentaires.</p>
+<p>Dans le cas de la seconde image jouet, les changements sont éparses sur la surface d&rsquo;étude.</p>
+<iframe src="../results/custom_test_image_n22500_T4_p3_truth.html"
+width="400" height="400" style="border: none;"></iframe>
+<p>Les zones de changement correspondent à des variations de covariance à des temps aléatoires entre le second et le quatrième temps.</p>
+<iframe src="../results/custom_test_image_n22500_T4_p3_lnq.html"
+width="300" height="300" style="border: none;"></iframe>
+<iframe src="../results/custom_test_image_n22500_T4_p3_pvalue.html"
+width="300" height="300" style="border: none;"></iframe>
+<iframe src="../results/custom_test_image_n22500_T4_p3_pvalue_threshold.html"
+width="300" height="300" style="border: none;"></iframe>  
+<p>L&rsquo;algorithme possède donc plus de difficulté pour identifier les zones de changement, ceci dû à l&rsquo;étape de calcul des covariances.</p>
+  </div>
+</div>
+
+
+
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

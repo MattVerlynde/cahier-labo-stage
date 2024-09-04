@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.119.0">
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>.Partie 1 - Analyse statistique &middot; Stage optimisation analyse d&#39;images satellites
+</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="../css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="../css/poole.css">
+  <link type="text/css" rel="stylesheet" href="../css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="../css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+
+  
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$', '$'], ['\\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+    }
+  });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+  
+  <link rel="stylesheet" type="text/css" href="../hugo-cite.css" />
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+
+  
+  <div></div>
+<script>
+"use strict";function addBackToTop(){var o,t,e,n,i=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{},r=i.backgroundColor,d=void 0===r?"#000":r,a=i.cornerOffset,c=void 0===a?20:a,s=i.diameter,l=void 0===s?56:s,u=i.ease,p=void 0===u?function(o){return.5*(1-Math.cos(Math.PI*o))}:u,m=i.id,h=void 0===m?"back-to-top":m,b=i.innerHTML,v=void 0===b?'<svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"></path></svg>':b,f=i.onClickScrollTo,x=void 0===f?0:f,w=i.scrollContainer,g=void 0===w?document.body:w,k=i.scrollDuration,y=void 0===k?100:k,T=i.showWhenScrollTopIs,M=void 0===T?1:T,z=i.size,E=void 0===z?l:z,C=i.textColor,L=void 0===C?"#fff":C,N=i.zIndex,I=void 0===N?1:N,A=g===document.body,B=A&&document.documentElement;o=Math.round(.43*E),t=Math.round(.29*E),e="#"+h+"{background:"+d+";-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;bottom:"+c+"px;-webkit-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);-moz-box-shadow:0 2px 5px 0 rgba(0,0,0,.26);box-shadow:0 2px 5px 0 rgba(0,0,0,.26);color:"+L+";cursor:pointer;display:block;height:"+E+"px;opacity:1;outline:0;position:fixed;right:"+c+"px;-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;-webkit-transition:bottom .2s,opacity .2s;-o-transition:bottom .2s,opacity .2s;-moz-transition:bottom .2s,opacity .2s;transition:bottom .2s,opacity .2s;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:"+E+"px;z-index:"+I+"}#"+h+" svg{display:block;fill:currentColor;height:"+o+"px;margin:"+t+"px auto 0;width:"+o+"px}#"+h+".hidden{bottom:-"+E+"px;opacity:0}",(n=document.createElement("style")).appendChild(document.createTextNode(e)),document.head.insertAdjacentElement("afterbegin",n);var D=function(){var o=document.createElement("div");return o.id=h,o.className="hidden",o.innerHTML=v,o.addEventListener("click",function(o){o.preventDefault(),function(){var o="function"==typeof x?x():x,t=window,e=t.performance,n=t.requestAnimationFrame;if(y<=0||void 0===e||void 0===n)return q(o);var i=e.now(),r=j(),d=r-o;n(function o(t){var e=Math.min((t-i)/y,1);q(r-Math.round(p(e)*d)),e<1&&n(o)})}()}),document.body.appendChild(o),o}(),H=!0;function S(){j()>=M?function(){if(!H)return;D.className="",H=!1}():function(){if(H)return;D.className="hidden",H=!0}()}function j(){return g.scrollTop||B&&document.documentElement.scrollTop||0}function q(o){g.scrollTop=o,B&&(document.documentElement.scrollTop=o)}(A?window:g).addEventListener("scroll",S),S()}
+
+addBackToTop({
+  diameter: 56,
+  backgroundColor: 'black',
+  textColor: '#fff',
+})</script>
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="../favicon.png">
+
+  
+  
+</head>
+
+  <body class=" ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="../index.html"><h3 style="color: white;">Stage optimisation analyse d&#39;images satellites
+</h3></a>
+      <p>
+       Cahier de laboratoire sur l&#39;optimisation d&#39;algorithmes d&#39;analyse d&#39;image en télédetection, appliqué sur des images SAR.
+ 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><i class="fa-solid fa-house"></i> <a href="../index.html">Home</a> </li>
+        <li><i class="fa-brands fa-pagelines"></i> <a href="../change_detection/index.html"> I. Principe de détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../calcul_performance/index.html"> II. Bibliographie - Mesures de performance d&#39;algorithme </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../suivi_performance/index.html"> III. Mise en place d&#39;outils de suivi de performance </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../simulations/index.html"> IV. Simulations en détection de changement </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../bigearthnet/index.html"> V. Expérimentations sur les données BigEarthNet </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../covar/index.html"> VI. Bibliographie - Covariance et Optimisation </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../reduction-size/index.html"> VII. Bibliographie - Réduction de dimension ou de taille d&#39;architecture </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../plan_stage/index.html"> . Planification du stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_stage/index.html"> . Présentation et rapport de stage </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../preparation_soutenance_these/index.html"> . Présentation de thèse </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_1/index.html"> .Partie 1 - Analyse statistique </a></li><li><i class="fa-brands fa-pagelines"></i> <a href="../part_2/index.html"> .Partie 2 - CLassification avec deep learning </a></li>
+      </ul>
+    </nav>
+
+    <p><p>Report by <a href="https://github.com/MattVerlynde">Matthieu Verlynde</a>
+Template made by <a href="http://ammarmian.github.io">Ammar Mian</a>, thanks to <a href="https://github.com/spf13/hyde">Hyde</a> theme.</p>
+<p>@2023 Université Savoie Mont-Blanc. All rights reserved.</p>
+</p>
+  </div>
+</aside>
+
+    <main class="content container">
+    
+
+<div class="post">
+  <h1>.Partie 1 - Analyse statistique</h1>
+
+  
+  <div class="toc-page">
+    <h2>Table of Contents</h2>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#structure-des-expériences">Structure des expériences</a>
+      <ul>
+        <li><a href="#méthodologie">Méthodologie</a></li>
+        <li><a href="#explication-des-paramètres-et-des-variables">Explication des paramètres et des variables</a></li>
+        <li><a href="#plan-dexpérience">Plan d&rsquo;expérience</a></li>
+        <li><a href="#résultats">Résultats</a></li>
+        <li><a href="#conclusions">Conclusions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+  <div class="post-content">
+    <p>Cette section présente les résultats de la première partie d&rsquo;expérimentations, sur l&rsquo;analyse des coûts énergétiques et des performances de modèles sur des applications en détection de changement et clustering par algorithmes basés sur des statistiques sans apprentissage.</p>
+<h2 id="structure-des-expériences">Structure des expériences</h2>
+<h3 id="méthodologie">Méthodologie</h3>
+<p><strong>Détection de changements</strong>, avec classification binaire : zone avec changement(s), zone sans changement.
+<strong>Clustering</strong> avec un nombre de clusters fixé
+Les données utilisées sont des images SAR polarisées.</p>
+<p>La réalisation des expériences s&rsquo;effectue en deux temps : l&rsquo;exécution des algorithmes, puis la récupération des résultats de consommation.</p>
+<h4 id="méthodes">Méthodes</h4>
+<p>Les différentes méthodes utilisées sont la méthodes du <em>GLRT</em> (<em>Generalised Likelihood Ratio Test</em>), du <em>robust GLRT</em> et de la <em>log difference</em> pour la détection de changement et de la métrique <em>logdet</em> et <em>riemann</em> pour le clustering.</p>
+<h5 id="détection-de-changement">Détection de changement</h5>
+<p>La méthode <em>GLRT</em> est explicitée dans la partie <em>I. Principe de détection de changement</em>, et est basée sur la statistique $\hat{\Lambda}_G$.</p>
+<p>$$
+\hat{\Lambda}_G = \frac{|\hat{\Sigma}<em>0^{SCM}|^{TN}}{\prod</em>{t=1}^{T}|\hat{\Sigma}_t^{SCM}|^{N}}
+$$</p>
+<p>Où :
+$$
+\forall t, \hat{\Sigma}<em>t^{SCM} = \frac{1}{N} \sum</em>{k=1}^{N} {x_k^(t)x_k^(t)}^H \
+\hat{\Sigma}<em>0^{SCM} = \frac{1}{T} \sum</em>{k=1}^{T} \hat{\Sigma}_t^{SCM}
+$$</p>
+<p>La méthode <em>robust GLRT</em> est basée sur la méthode <em>GLRT</em> mais prend en compte le caractère non-gaussien des données. Une information de texture, c&rsquo;est-à-dire d&rsquo;hétérogénéité entre pixels voisins, au sein de la fenêtre glissante d&rsquo;estimation des matrices de covariance est prise en compte et testée. Cette méthode est basée sur la statistique $\hat{\Lambda}_{MT}$.</p>
+<p>$$
+\hat{\Lambda}<em>{MT} = \frac{|\hat{\Sigma}<em>0^{MT}|^{TN}}{\prod</em>{t=1}^{T}|\hat{\Sigma}<em>t^{TE}|^{N}} \prod</em>{k=1}^{N} \frac{\left( \sum</em>{t=1}^{T} q\left( \hat{\Sigma}<em>0^{MT}, x_k^{(t)}  \right)   \right)^{Tp}}
+{ T^{Tp} \prod</em>{t=1}^{T} \left(  q\left( \hat{\Sigma}_0^{TE}, x_k^{(t)}  \right)   \right)^p      }
+$$</p>
+<p>Où :
+$$
+q(\Sigma,x) = x^H\Sigma^{-1}x \
+\forall k, \forall t, S_k^{(t)} = {x_k^{(t)}x_k^{(t)}}^H
+$$
+et
+$$
+\hat{\Sigma}<em>0^{MT} = \frac{p}{N}\sum</em>{k=1}{N}\frac{\sum_{t=1}^{T}S_k^{(t)}}{\sum_{t=1}^{T}q\left(\hat{\Sigma}_0^{MT}, x_k^{(t)} \right)}
+$$
+et
+$$
+\hat{\Sigma}<em>t^{TE} = \frac{p}{N}\sum</em>{k=1}{N}\frac{S_k^{(t)}}{q\left(\hat{\Sigma}_t^{TE}, x_k^{(t)} \right)}
+$$
+l&rsquo;estimateur de Tyler.</p>
+<p>La méthode <em>log difference</em> est la méthode la plus simple et necéssitant le moins de calculs, mais également la moins performante parmi celles présentée. La statistique utilisée est $\hat{\Lambda}_{LD}$. Celle-ci est compatible uniquement sur deux temps $t_0$ et $t_1$.</p>
+<p>$$
+\hat{\Lambda}<em>{LD} = \frac{1}{p} \left( \sum</em>{\text{bande}} \log x^{(t1)} - \sum_{\text{bande}} \log x^{(t0)} \right)
+$$</p>
+<h4 id="execution-des-algorithmes-selon-des-intervalles-de-paramètres">Execution des algorithmes selon des intervalles de paramètres</h4>
+<p>Les expériences débutent par l&rsquo;exécution des algorithmes selon des paramètres renseignés en entrée.</p>
+<ul>
+<li>pour le cas de la détection de changement :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>qanat experiment run conso-change --image <span style="color:#81a1c1">[</span>PATH_TO_IMAGE<span style="color:#81a1c1">]</span> --cores <span style="color:#81a1c1">[</span>NUMBER_OF_THREADS<span style="color:#81a1c1">]</span> --window <span style="color:#81a1c1">[</span>WINDOW_SIZE<span style="color:#81a1c1">]</span> --robust <span style="color:#81a1c1">[</span>0, <span style="color:#b48ead">1</span> or 2<span style="color:#81a1c1">]</span> --number_run/-n <span style="color:#81a1c1">[</span>NUMBER_OF_REPETITIONS_TO_RUN<span style="color:#81a1c1">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>// or
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span>qanat experiment run conso-change --param_file <span style="color:#81a1c1">[</span>PATH_TO_PARAM_FILE<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><ul>
+<li>pour le cas du clustering :</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>qanat experiment run conso-clustering --image <span style="color:#81a1c1">[</span>PATH_TO_IMAGE<span style="color:#81a1c1">]</span> --cores <span style="color:#81a1c1">[</span>NUMBER_OF_THREADS<span style="color:#81a1c1">]</span> --window <span style="color:#81a1c1">[</span>WINDOW_SIZE<span style="color:#81a1c1">]</span> --riemann <span style="color:#81a1c1">[</span><span style="color:#b48ead">0</span> or 1<span style="color:#81a1c1">]</span> --number_run/-n <span style="color:#81a1c1">[</span>NUMBER_OF_REPETITIONS_TO_RUN<span style="color:#81a1c1">]</span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">2</span><span>// or
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">3</span><span>qanat experiment run conso-clustering --param_file <span style="color:#81a1c1">[</span>PATH_TO_PARAM_FILE<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><p>L&rsquo;exécution des algorithmes permet la création de plusieurs fichiers en sortie :</p>
+<ul>
+<li><code>times.txt</code> contient des checkpoints de temps clés entres différentes étapes d&rsquo;exécution des algorithmes : le temps de début d&rsquo;expérience, le temps de fin de période sans exécution &ldquo;à froid&rdquo; et de début d&rsquo;exécutions &ldquo;de chauffe&rdquo; sans mesure, puis les temps de début et fin de chaque répétition d&rsquo;exécution.</li>
+<li><code>output/</code> contient les fichiers <code>.npy</code> de sortie d&rsquo;algorithmes (en détection de changement ou en clustering)</li>
+<li><code>emissions/</code> contient les fichiers <code>.csv</code> de sortie de mesure de consommation énergétique et d&rsquo;émissions de carbone du package Python CodeCarbon</li>
+</ul>
+<h4 id="récupération-des-données-de-consommation-et-analyse">Récupération des données de consommation et analyse</h4>
+<p>Enfin, pour réaliser une analyse statistique des données de consommation énergétique et les performances du modèle pour un ensemble d&rsquo;expériences :</p>
+<div class="highlight"><pre tabindex="0" style="color:#d8dee9;background-color:#2e3440;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#6c6f74">1</span><span>python performance-tracking/experiments/conso/stats_summary.py <span style="color:#81a1c1">[</span>RUN_ID<span style="color:#81a1c1">(</span>S<span style="color:#81a1c1">)]</span> --grouped/-g <span style="color:#81a1c1">[</span>True/False<span style="color:#81a1c1">]</span> --file/-f <span style="color:#81a1c1">[</span>True/False<span style="color:#81a1c1">]</span>
+</span></span></code></pre></div><p>Cette commande permet de créer un fichier résultats <code>output_all.csv</code> contenant toutes les données de consommation et de performances avec une ligne par exécution si <code>--file False</code> en interrogeant la base de données InfluxDB de stockage de données de consommation à partir du fichier <code>times.txt</code>, et en calculant les performances des algorithmes en utilisant les fichiers de sorties compris dans <code>output/</code>. Les données d&rsquo;émissions issues des fichiers de <code>emissions/</code> sont également prises en compte. A partir du fichier <code>output_all.csv</code>, les analyses de résultats sont réalisées et enregistrées sous la forme de graphiques (distribution des données, covariances entre les variables, ACP).
+La phase de création du fichier <code>output_all.csv</code> pouvant être coûteuse en termes calculatoires, il est possible de réeffectuer les analyses sur un fichier déjà créé via l&rsquo;option <code>--file True</code>.</p>
+<p>L&rsquo;option <code>--grouped True</code> permet d&rsquo;effectuer ces analyses lorsque les exécutions via <em>Qanat</em> ont été réalisées par l&rsquo;utilisation de <code>--param_file</code>.</p>
+<h3 id="explication-des-paramètres-et-des-variables">Explication des paramètres et des variables</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Variable/Paramètre</th>
+<th style="text-align:center">Paramètre ou variable</th>
+<th style="text-align:center">Unité</th>
+<th>Commentaire</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Méthode</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Nature de la méthode utilisée parmi <em>GLRT</em>, <em>robust GLRT</em> et <em>log difference</em> pour la détection de changement et  <em>clustering logdet</em> et <em>clustering riemann</em> pour le clustering</td>
+</tr>
+<tr>
+<td style="text-align:center">Threads</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center">Nombre de threads</td>
+<td>Nombre de threads utilisées pour les calculs en parallèle (1 ou 12)</td>
+</tr>
+<tr>
+<td style="text-align:center">Window</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center">Pixels</td>
+<td>Taille de la fenêtre glissante utilisée dans l&rsquo;estimation  de la matrice de covariance</td>
+</tr>
+<tr>
+<td style="text-align:center">Image</td>
+<td style="text-align:center">Paramètre</td>
+<td style="text-align:center"></td>
+<td>Série temporelle / Image utilisée</td>
+</tr>
+<tr>
+<td style="text-align:center">Energy</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">W $\times$ s</td>
+<td>Consommation énergétique de la machine basée sur la mesure de puisance par une prise connectée</td>
+</tr>
+<tr>
+<td style="text-align:center">Emissions</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center"></td>
+<td>Emissions en $\text{CO}_2$ estimées par le package Python <em>CodeCarbon</em></td>
+</tr>
+<tr>
+<td style="text-align:center">Memory</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">% $\times$ s</td>
+<td>Mémoire RAM <strong>libre</strong> lors de l&rsquo;éxecution</td>
+</tr>
+<tr>
+<td style="text-align:center">Duration</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">s</td>
+<td>Durée d&rsquo;exécution</td>
+</tr>
+<tr>
+<td style="text-align:center">CPU</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">% $\times$ s</td>
+<td>Consommation de la mémoire du CPU</td>
+</tr>
+<tr>
+<td style="text-align:center">Temperature</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">°C $\times$ s</td>
+<td>Température interne du CPU</td>
+</tr>
+<tr>
+<td style="text-align:center">Reads</td>
+<td style="text-align:center">Variable</td>
+<td style="text-align:center">Nombre de lectures $\times$ s</td>
+<td>Nombre de lectures du disque</td>
+</tr>
+<tr>
+<td style="text-align:center">AUC</td>
+<td style="text-align:center">Variable (change detection)</td>
+<td style="text-align:center"></td>
+<td>Aire sous la courbe ROC</td>
+</tr>
+<tr>
+<td style="text-align:center">Calinski-Harabasz score</td>
+<td style="text-align:center">Variable (clustering)</td>
+<td style="text-align:center"></td>
+<td>Rapport de la variance inter-cluster sur la variance intra-cluster</td>
+</tr>
+<tr>
+<td style="text-align:center">Davies-Bouldin score</td>
+<td style="text-align:center">Variable (clustering)</td>
+<td style="text-align:center"></td>
+<td>Moyenne du rapport maximal entre la distance d&rsquo;un point au centre de son groupe et la distance entre deux centres de groupes</td>
+</tr>
+</tbody>
+</table>
+<p>L&rsquo;incertitude de la mesure de puissance par la prise connectée est de $\pm 3W$ pour des mesures inférieures à $300W$, et de $\pm 1%$ pour des mesures supérieures.</p>
+<h3 id="plan-dexpérience">Plan d&rsquo;expérience</h3>
+<p>4 paramètres seront explorés dans ces expériences :</p>
+<ul>
+<li>L&rsquo;algorithme utilisé (<em>GLRT</em>, <em>robust GLRT</em>, <em>log difference</em>, <em>clustering logdet</em>, <em>clustering riemann</em>)</li>
+<li>Nombre de threads (1, 12)</li>
+<li>Taille de la fenêtre d&rsquo;estimation de covariance ($5 \times 5$, $7 \times 7$, $21 \times 21$)</li>
+<li>Données utilisées (<em>Scene_1small</em>, <em>Scene_2small</em>, <em>Scene_3small</em>)</li>
+</ul>
+<p>Les données utilisées sont tirées de découpes des images Scene_1, Scene_2 et Scene_3 et de dimension $1000 \times 500$ pixels. <em>Scene_1small</em> compte 2 images, <em>Scene_2small</em> compte 4 images et <em>Scene_3small</em> compte 17 images. La tâche de clustering est effectuée sur la première image uniquement.</p>
+<p>A réaliser alors : $5 \times 2 \times 3 \times 3 = 90 \text{ scénarios}$</p>
+<p>On observe des temps d&rsquo;exécution variant fortement selon les paramètres et la méthode utilisée. En effet, la méthode de détection de changement de GLRT robuste tend à nécessiter plus d&rsquo;une heure d&rsquo;éxecution sur un ensemble d&rsquo;images avec parallélisation (et moins de temps sans parallélisation). Au contraire, la méthode GLRT est associée à des temps d&rsquo;exécution beaucoup plus rapide sur les mêmes données (de l&rsquo;ordre de quelques dizaines de secondes). Ceci peut représenter un problème dans la récolte des données de consommation, le pas de temps entre deux mesures de consommation électrique étant de 30 secondes.</p>
+<p>Ainsi notre choix a été de répéter les expériences sur le modèle de GLRT robuste 10 fois sur les données <em>Scene_1small</em>, et 50 fois pour les autres modèles.</p>
+<p>A réaliser alors : $6 \times 10 + 1 \times 50 + 54 \times 50 = 2810 \text{ exécutions}$</p>
+<h3 id="résultats">Résultats</h3>
+<iframe src="../conso-change-clustering/energy_energy_all.html"
+width=" 1000" height="1000" style="border: none;"></iframe>
+<p>Pour un certain nombre d&rsquo;expériences, la durée d&rsquo;exécution fut inférieure au pas de temps de mesure de consommation énergétique par la prise connectée. Nous pourrions alors suggérer dans notre analyse d&rsquo;approximer cette consommation par la consommation énergétique mesurée par le package CodeCarbon. En comparant nos mesure de consommation énergétique selon le capteur, on observe que, si les deux métriques sont très corrélées, la mesure de CodeCarbon est une sous-estimation de la consommation réelle de la machine (d&rsquo;un facteur 2).
+Hypothèse : CodeCarbon estime la consommation d&rsquo;un algorithme en additionnant les consommations du GPU, du CPU et de la RAM. Il ne prend alors pas en compte l&rsquo;ensemble des composants (carte mère, disque dur&hellip;).
+Plus important, dans notre méthode de calcul, la consommation énergétique mesurée par la prise est standardisée par la consommation &ldquo;à froid&rdquo;, c&rsquo;est à dire que les données qui soknt utilisées ne correspondent quà la différence de consommation entre la période de calcul et la période à froid. La sous-estimation de la consommation énergétique de CodeCarbon est donc plus importante encore que le montre cette figure.</p>
+<p>Néanmoins, les évolutions de consommation énergétique selon les deux métriques restent très corrélées, et on utilisera alors la mesure de CodeCarbon dans cette partie dû à la courte durée d&rsquo;exécution des algorithmes ici présentés.</p>
+<h4 id="détection-de-changement-1">Détection de changement</h4>
+<iframe src="../conso-change-clustering/change/correlation_matrix.html"
+width="1000" height="1000" style="border: none;"></iframe>
+<p>Forte corrélation entre la température, le nombre de lectures, la durée d&rsquo;exécution, et la consommation énergétique mesurée par la prise et celle récoltée par CodeCarbon. Egalement une corrélation à 1 entre la consommation énergétique et l&rsquo;émission en carbone mesurées par CadeCarbon : ceci est attendu, le package Python ne faisant qu&rsquo;appliquer un coefficient de conversion à la consommation énergétique pour estimer l&rsquo;émission.
+Le taux d&rsquo;utilisation de CPU, le nombre d&rsquo;images et le taux de mémoire RAM libre sont également corrélés.</p>
+<p>Afin de réaliser une analyse plus fine de nos résultats, nous devons étudier les corrélations entre les différentes métriques selon les mêmes données et méthodes de calcul.</p>
+<iframe src="../conso-change-clustering/change/correlation_matrices.html"
+width=" 1000" height="1000" style="border: none;"></iframe>
+<p>Toujours forte corrélation entre la consommation énergétique mesurée par la prise et celle récoltée par CodeCarbon.
+Ici, selon la méthode, on observe des résulatsts très différents :</p>
+<p>Dans le cas de la méthode <em>GLRT</em>, la taille de la fenêtre glissante est corrélée à l&rsquo;utilisation en CPU, et anticorrélée à la mémoire RAM libre, donc corrélée à l&rsquo;utilisation de la RAM. Dans le cas de la méthode <em>log difference</em>, la consommation en CPU est anticorrélée avec l&rsquo;ensemble des autres métriques !</p>
+<p>ICI OBSERVATION IMPORTANTE: suivant la méthode, l&rsquo;utilisation en CPU diffère drastiquement
+Hypothèse : dû à la méthode de parallélisation des calculs. La méthode <em>GLRT</em> utilise joblib, la création de process parallèles est relativement automatisée, gérée par le package python. La méthode <em>robust GLRT</em> utilise multiprocessing, et gère la création de process en parallèle manuellement en créant des objets Queue.</p>
+<p>PCA pour toutes les données :</p>
+<iframe src="../conso-change-clustering/change/pca_circle_all.html"
+width="800" height="400" style="border: none;"></iframe>
+<h5 id="méthode-_glrt_-">Méthode <em>GLRT</em> :</h5>
+<p>Pour 2 images :</p>
+<iframe src="../conso-change-clustering/change/perf_energy_2images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Ici, un plus grand nombre de threads et une plus gradne taille de fenêtre induisent une consommation énergétique plus élevée.
+Aussi, une plus grande taille de fenêtre permet de meilleures performances.</p>
+<p>Pour 4 images :</p>
+<iframe src="../conso-change-clustering/change/perf_energy_4images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Idem, avec ici des consommation splus élevées (l&rsquo;algorithme traitant 2 fois plus d&rsquo;images)</p>
+<p>Pour 17 images :</p>
+<iframe src="../conso-change-clustering/change/perf_energy_17images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Idem</p>
+<h5 id="acp-">ACP :</h5>
+<p>Pour 2 images :
+<img src="../conso-change-clustering/change/pca_circle_2.0images_method0.0.png" alt="ACP methode 0 images 2"></p>
+<iframe src="../conso-change-clustering/change/pca_2.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>AUC, taille de fenêtre et Consommation CPU très corrélées aussi très corrélée
+Energie (CodeCarbon), température, nombre de lectures et durée d&rsquo;exécution très corrélées
+Threads non corrélées aux performances de calcul (AUC), donc la parallélisation n&rsquo;infue aps sur le résultat du calcul (ouf)
+Corrélation du nombre de thread avec la mémoire libre, donc anticorrélation avec l&rsquo;utilisation de la RAM : plus on parallélise, moins on utilise de mémoire. Ce résultat est surpenant.
+Hypithèse, ceci est peut-être dû à la faible durée d&rsquo;exécution de l&rsquo;lgorithme sur ces données <strong>EXPLICATION COMPLEXE</strong>
+L&rsquo;utilisation de la mémoire est cependant non corrélée avec la consommation énergétique</p>
+<p>Energie (plug) plutôt seule décrite par le troisième axe de l&rsquo;ACP, peu corrélée au reste (un peu avec la consommation Energie (CodeCarbon))
+Hypothèse : les durées d&rsquo;exécution étant courtes sur ces données selon cette méthode, un grand nombre de mesures de Energy (plug) sont à 0. Ainsi, elles apparaîssent  comme peu corrélées au reste des métriques.</p>
+<p>Pour 4 images :
+<img src="../conso-change-clustering/change/pca_circle_4.0images_method0.0.png" alt="ACP methode 0 images 4"></p>
+<iframe src="../conso-change-clustering/change/pca_4.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Résultats similaires, mais la mémoire libre est pluôt eanticorrélée avec le nombre de threads, donc la prallélisation entraîne une plus grande utilisation de la RAM : ce résultat fait intuitivement plus de sens</p>
+<p>Pour 17 images :
+<img src="../conso-change-clustering/change/pca_circle_17.0images_method0.0.png" alt="ACP methode 0 images 17"></p>
+<iframe src="../conso-change-clustering/change/pca_17.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Résultats similaires à précédemment</p>
+<h5 id="méthode-_robust-glrt_-">Méthode <em>robust GLRT</em> :</h5>
+<iframe src="../conso-change-clustering/change/perf_energy_2images_method1.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Ici idem pour la taille de fenêtre, <strong>mais une plus grand nombre de threads induit une consommation énergétique inférieure à court terme, mais pas à long terme où un nombre de thread plus important induit une consommation énergétique accrue</strong>.</p>
+<iframe src="../conso-change-clustering/change/duration_performance.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>En visualisant les données, on observe que la parallélisation pour des grandes tailles de fenêtres selon la méthode <em>robust GLRT</em> accentue d&rsquo;un facteur 2 la durée d&rsquo;exécution ! La méthode de parallélisation paraît donc adaptée à des petites fenêtres d&rsquo;estimations.</p>
+<h5 id="acp--1">ACP :</h5>
+<p><img src="../conso-change-clustering/change/pca_circle_2.0images_method1.0.png" alt="ACP methode 1 images 2"></p>
+<iframe src="../conso-change-clustering/change/pca_2.0images_method1.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>On observe des résultats similaires à la méthode <em>GLRT</em> sur des durées d&rsquo;exécutions longues (4 et 17 images), mais la consommation énergétique est plutôt anticorrélée avec la consommation en CPU et en RAM (corrélée à la mémoire libre), tandis que la méthode <em>GLRT</em> était plutôt corrélée à celles-ci.
+Hypthèse : nous sommes sur des durée d&rsquo;exécution considérablement plus longues ici, et il est possible que les autres composants de la machine compris dans les mesures de la prise connectée et de CodeCarbon aient plus d&rsquo;influence à long terme : le GPU !
+<strong>explication est peu triviale intuitivement</strong></p>
+<h5 id="méthode-_log-difference_-">Méthode <em>log difference</em> :</h5>
+<iframe src="../conso-change-clustering/change/perf_energy_2images_method2.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Ici méthode très simple, ultrarapide, avec donc une faible consommation énergétique.</p>
+<h5 id="acp--2">ACP :</h5>
+<p><img src="../conso-change-clustering/change/pca_circle_2.0images_method2.0.png" alt="ACP methode 2 images 2"></p>
+<iframe src="../conso-change-clustering/change/pca_2.0images_method2.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Peu de métriques varient ici, et l&rsquo;analyse de l&rsquo;ACP apparaît alors peu pertinente (peu de corrélation entre les métriques).</p>
+<!-- 
+
+
+<div class="highlight-block warning-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: orange;"> <i class='fa-solid fa-triangle-exclamation'></i> Warning </b>
+  <div style="position: relative; left: 0px">
+    <p>L&rsquo;ACP doit être réalisée plsuieurs fois selon la données utilisée. Dans les résultats suivant, la donnée utilisée apparaît comme une variable prise en compte dans le calcul d&rsquo;ACP (le nombre d&rsquo;images). A terme, cette variable ne sera pas prise en compte dans le calcul, mais plusieurs ACP seront réalisées selon cette valeur.</p>
+<ul>
+<li><strong>Toutes les exécutions n&rsquo;ont pas été prise en compte dans l&rsquo;ACP !</strong> Quelques exécutions trop rapides ayant entraîné une absence de mesure de consommation énergétique ont été ignorées.</li>
+</ul>
+
+  </div>
+
+</div>
+
+
+
+Observations :
+- Données de consommation (Energy, Emissions, CPU, Temperature) très corrélées entre elles et avec la durée d'exécution
+- Données de consommation et nombre d'images corrélées (plus l'algorithme traite d'images, plus il y a d'énergie consommée)
+- AUC et métriques de consommation corrélées (plus on consomme, et plus on traite d'images, plus on a de bonnes performances)
+- Average precision et AUC corrélées (résultat rassurant, on s'attend à de bonne performances selon les deux métriques)
+- Window size totalement plutôt corrélées avec Average precision et sans corrélation avec AUC
+- Mémoire libre et nombre de threads plutôt anti-corrélées (plus on parallélise le calcul, plus on utilise de mémoire RAM, ce qui semble cohérent)
+- Nombre de threads sans corrélation avec les performances (on obtient les mêmes résultats en sortie d'algorithme que le calcul soit parallélisé ou non : résultat rassurant sur notre implémentation de la parallélisation) -->
+<h4 id="clustering">Clustering</h4>
+<iframe src="../conso-change-clustering/clustering/correlation_matrix.html"
+width="1000" height="1000" style="border: none;"></iframe>
+<p>Forte corrélation entre la température, le nombre de lectures, la durée d&rsquo;exécution, et la consommation énergétique mesurée par la prise et celle récoltée par CodeCarbon.</p>
+<iframe src="../conso-change-clustering/clustering/correlation_matrices.html"
+width=" 1000" height="1000" style="border: none;"></iframe>
+<p>Toujours corrélation positive entre la consommation énergétique mesurée par la prise et celle récoltée par CodeCarbon.</p>
+<h5 id="méthode-_logdet_-">Méthode <em>logdet</em> :</h5>
+<p>Pour 2 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_2images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Pour 4 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_4images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>La parallélisation induit ici une plus faible consommation énergétique, mais les mêmes performances de clustering (on a le même résultat, ouf !)</p>
+<p>Une augmentation de la taille de la fenêtre induit une meilleure performance de clustering (score de Calinski-Harabasz), et une plus faible consommation énergétique !
+En effet, dans notre algorithme, les données sont réduite, et l&rsquo;effet de bord dû à la taille de la fenêtre considérée est alors important !</p>
+<p>Pour 17 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_17images_method0.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Idem ici, mais on se rend compte de de l&rsquo;importance du choix de la taille de fenêtre pour la performance de clustering : une taille de 5 pixels permet une meilleure performance qu&rsquo;une taille de 7 pixels, mais ces perfroamcnes sont battues avec une taille de 21 pixels. Ceci est alors dû à la structure de la donnée !</p>
+<h5 id="acp--3">ACP :</h5>
+<p>Pour 2 images :
+<img src="../conso-change-clustering/clustering/pca_circle_2.0images_method0.0.png" alt="ACP methode 0 images 2"></p>
+<iframe src="../conso-change-clustering/clustering/pca_2.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Pour 4 images :
+<img src="../conso-change-clustering/clustering/pca_circle_4.0images_method0.0.png" alt="ACP methode 0 images 4"></p>
+<iframe src="../conso-change-clustering/clustering/pca_4.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>La taille de la fenêtre est très corrélées aux performances de clustering (corrélées au score de Calinski-Harabasz, anticorrélé à Davies-Bouldin).
+Les métriques de performancs énergétqieus Energy (plug), Energy (CodeCarbon), Température, durée d&rsquo;exécution et consommation CPU sont très corrélées
+Ces métriques sont très corrélées à la mémoire libre, donc anti-corrélées avec l&rsquo;utilisation de la RAM : <strong>Résultat surpenant</strong>.
+Hypothèse : Moins on utilise la RAM, plus on utilise le CPU, et plus on consomme d&rsquo;énergie ?
+La parallélisation est également anticorrélée à ces métriques : plus on parlallélise, plus l&rsquo;algorithe est rapide, moins on consomme d&rsquo;énergie.</p>
+<p>Pour 17 images :
+<img src="../conso-change-clustering/clustering/pca_circle_17.0images_method0.0.png" alt="ACP methode 0 images 17"></p>
+<p>Idem</p>
+<iframe src="../conso-change-clustering/clustering/pca_17.0images_method0.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<h5 id="méthode-_riemann_-">Méthode <em>riemann</em> :</h5>
+<p>Pour 2 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_2images_method1.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Pour 4 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_4images_method1.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Ici mêmes observations que pour la méthode 0, mais la parallélisation influe ici légèrement sur le résultat du clustering !</p>
+<p>Pour 17 images :</p>
+<iframe src="../conso-change-clustering/clustering/perf_energy_17images_method1.html"
+width="1000" height="600" style="border: none;"></iframe>
+<p>Idem</p>
+<h5 id="acp--4">ACP :</h5>
+<p>Pour 2 images :
+<img src="../conso-change-clustering/clustering/pca_circle_2.0images_method1.0.png" alt="ACP methode 1 images 2"></p>
+<iframe src="../conso-change-clustering/clustering/pca_2.0images_method1.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Pour 4 images :
+<img src="../conso-change-clustering/clustering/pca_circle_4.0images_method1.0.png" alt="ACP methode 1 images 4"></p>
+<iframe src="../conso-change-clustering/clustering/pca_4.0images_method1.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Idem que pour la méthode 0</p>
+<p>Pour 17 images :
+<img src="../conso-change-clustering/clustering/pca_circle_17.0images_method1.0.png" alt="ACP methode 0 images 17"></p>
+<iframe src="../conso-change-clustering/clustering/pca_17.0images_method1.0.html"
+width="1000" height="400" style="border: none;"></iframe>
+<p>Idem</p>
+<!-- 
+
+
+<div class="highlight-block warning-block">
+  
+  <div class="highlight-vbar info-block"></div>
+  <b style="font-size: 1.1rem; color: orange;"> <i class='fa-solid fa-triangle-exclamation'></i> Warning </b>
+  <div style="position: relative; left: 0px">
+    <strong>Toutes les exécutions n&rsquo;ont pas été prise en compte dans l&rsquo;ACP !</strong>
+Les exécutions trop rapides ayant entraîné une absence de mesure de consommation énergétique ont été ignorées. Celles-ci correspondent notamment aux mesures avec une taille de fenêtre de $21 \times 21$
+  </div>
+
+</div>
+
+
+
+Observations :
+- Score de Davies-Bouldin anti-corrélé avec la métrique de Calinski-Harabaz et le Silhouette-score : **en accord avec leur définition**, un score de Davies-Bouldin annonce de bonnes performances à 0 et de mauvaises à $+\infty$, à l'inverse des deux autres scores
+- Données de consommations très corrélées entre elles (Energy, Emissions, CPU, Duration, Temperature, free memory) **RESULTAT POSSIBLEMENT ANORMAL, les données devraient intuitivement être très corrélées entre elles, à l'exception de la mémoire libre sur la RAM**
+    Hypothèse : moins on utilise de mémoire RAM, plus on utilise de mémoire CPU, plus on consomme d'énergie ? **A vérifier**
+- Nombre de thread anti-corrélé aux consommations énergétiques (plus on parallélise, moins on consomme)
+- Nombre de thread anti-corrélé à la mémoire libre (plus on parallélise, plus on utilise de mémoire) **Résultat normal**
+- Nombre de thread anti-corrélé à la taille de la fenêtre **Résultat ANORMAL, il ne devrait pas avoir de corrélation puisqu'on choisit ces paramètres et on teste toutes les combinaisons : ceci est dû aux exécutions manquantes dans ce plot** -->
+<h3 id="conclusions">Conclusions</h3>
+<p>Nous avons observé une grande corrélation entre les métriques de consommation énergétique (Energy plug et Energy CodeCarbon). Cependant, selon la tâche réalisée, la méthode utilisée, et les données étudiées, les corrélations entre l&rsquo;ensemble des métriques diffèrent significativement ! L&rsquo;energie mesurée par la prise connectée appraâit alros comme porteuse de plus d&rsquo;information que les autres métriques individuellement.
+Notre stratégie basée sur une approche empirique d&rsquo;étude de frugalité d&rsquo;algorithme appraît donc pertinente du point de vue de la prise en compte de l&rsquo;impact réel des algorithmes utilisés.</p>
+  </div>
+</div>
+
+
+
+
+
+<script
+  type="application/javascript"
+  src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"
+></script>
+<script>
+  var config = {
+    startOnLoad: true,
+    theme:'light',
+    align:'center',
+  };
+  mermaid.initialize(config);
+</script>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

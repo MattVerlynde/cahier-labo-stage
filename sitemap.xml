@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>/</loc>
+    <lastmod>2023-06-22T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/plan_stage/</loc>
+  </url><url>
+    <loc>/preparation_soutenance_these/</loc>
+  </url><url>
+    <loc>/preparation_soutenance_stage/</loc>
+  </url><url>
+    <loc>/part_1/</loc>
+  </url><url>
+    <loc>/part_2/</loc>
+  </url><url>
+    <loc>/categories/</loc>
+  </url><url>
+    <loc>/change_detection/</loc>
+  </url><url>
+    <loc>/calcul_performance/</loc>
+  </url><url>
+    <loc>/suivi_performance/</loc>
+  </url><url>
+    <loc>/simulations/</loc>
+  </url><url>
+    <loc>/tags/</loc>
+  </url><url>
+    <loc>/bigearthnet/</loc>
+  </url><url>
+    <loc>/covar/</loc>
+  </url><url>
+    <loc>/reduction-size/</loc>
+  </url>
+</urlset>
